@@ -1,9 +1,16 @@
 commands = {
+    "dev_mode": True,
+    "web_mode": "Entrando no modo WEB, informações do banco de dados não serão listadas\n",
+    "nome": "BOT: ",
+    "usuario": "Voce: ",
     "initial": "Você é um assistente inteligente que responde perguntas sobre a Andritz e outros temas.",
     "database_error": "Não foi possível encontrar uma informação correspondente no banco de dados.",
     "key_security_message": "Caso deseje consultar uma informação específica da Andritz no banco de dados, digite 'Andritz': ",
     "exit_warn": "Digite 'sair' para encerrar o chat.",
     "exit_message": "Chat encerrado.",
     "topic_message": "Qual tema você deseja consultar? ",
-    "api_key": "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"
+    "api_key": "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",
+    "resume/complete": "Você quer um resumo ou a informação completa?",
+    "sector": "Qual setor você quer acessar?",
+    "sector_error": "Setor não encontrado. Tente novamente.",
 }
