@@ -9,10 +9,8 @@ export default function Chatbot() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
 
-    // Referência para a área de mensagens
     const messagesEndRef = useRef(null);
 
-    // Rola automaticamente para o final
     useEffect(() => {
         if (messagesEndRef.current) {
             messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
@@ -39,7 +37,6 @@ export default function Chatbot() {
             e.preventDefault();
             sendMessage();
         } else if (e.key === "Enter" && e.shiftKey) {
-            // Adiciona uma nova linha ao pressionar Shift + Enter
             setInput(input + "\n");
         }
     };
@@ -48,16 +45,20 @@ export default function Chatbot() {
         <div className="relative min-h-screen min-w-screen flex items-center justify-center p-6">
             <div className="absolute inset-0 -z-10"></div>
 
-            <div className="w-full max-w-5xl border border-[#3498db] p-6 rounded-lg shadow-lg">
-                <h1 className="text-4xl font-extrabold text-center text-[#3498db] mb-6 animate-pulse">Chatbot</h1>
+            <div className="w-full max-w-7xl border border-[#3498db] p-6 rounded-lg shadow-lg">
+                <h1 className="text-4xl font-extrabold text-center text-[#3498db] mb-6 shadow-h1-animate">
+                    ChatBot
+                </h1>
+
+
                 <Card className="h-[70vh] flex flex-col border border-[#3498db] bg-slate-900 rounded-md shadow-md relative overflow-hidden animate-border card-with-background">
                     <CardContent ref={messagesEndRef} className="flex-1 overflow-y-auto p-4 space-y-3">
                         {messages.map((msg, index) => (
                             <div
                                 key={index}
                                 className={`p-3 rounded-md text-xs font-bold shadow-sm transition-all duration-500 break-words whitespace-pre-wrap max-w-fit ${msg.sender === "user"
-                                        ? "bg-[#3498db] text-white self-end ml-auto hover:scale-103"
-                                        : "bg-gray-700 text-gray-300 self-start hover:scale-103"
+                                    ? "bg-[#3498db] text-white self-end ml-auto hover:scale-102 custom-font"
+                                    : "bot-reponse-bg text-gray-300 self-start hover:scale-102 custom-font"
                                     }`}
                             >
                                 {msg.text}
@@ -71,7 +72,7 @@ export default function Chatbot() {
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={handleKeyDown}
                         placeholder="Digite sua mensagem..."
-                        className="bg-slate-900 border border-[#3498db] text-white text-xs font-bold rounded-md px-4 py-2 h-10 shadow-md transition-all duration-500 focus:outline-none focus:border-[#0066ff] focus:text-[#3498db] placeholder:text-gray-400"
+                        className="bg-slate-900 border border-[#3498db] text-white text-sm font-bold rounded-md px-4 py-2 h-10 shadow-md transition-all duration-500 focus:outline-none focus:border-[#0066ff] focus:text-[#3498db] placeholder:text-gray-400"
                         rows={4}
                         as="textarea"
                     />

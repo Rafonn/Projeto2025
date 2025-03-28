@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -210,4 +211,49 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.bot-reponse-bg {
+  background: #395176;
+}
+
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 
+      2px 2px 0px #3f4c5f, 
+      -2px -2px 0px #3f4c5f, 
+      -2px 2px 0px #3f4c5f, 
+      2px -2px 0px #3f4c5f;
+  }
+  50% {
+    text-shadow: 
+      6px 6px 10px #3f4c5f, 
+      -6px -6px 10px #3f4c5f, 
+      -6px 6px 10px #3f4c5f, 
+      6px -6px 10px #3f4c5f;
+  }
+  100% {
+    text-shadow: 
+      2px 2px 0px #3f4c5f, 
+      -2px -2px 0px #3f4c5f, 
+      -2px 2px 0px #3f4c5f, 
+      2px -2px 0px #3f4c5f;
+  }
+}
+
+.shadow-h1-animate {
+  text-shadow: 
+    2px 2px 0px #3f4c5f, 
+    -2px -2px 0px #3f4c5f, 
+    -2px 2px 0px #3f4c5f, 
+    2px -2px 0px #3f4c5f;
+  
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 4px;
+  animation: shadowPulse 3s infinite alternate ease-in-out;
+}
+
+.custom-font {
+  font-family: 'Orbitron', sans-serif;
+  font-size: medium;
 }

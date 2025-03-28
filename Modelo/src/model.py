@@ -1,9 +1,12 @@
 import openai
 import os
 import json
+import requests
 from data import ReadData
 from commands import commands
 import sys
+
+API_URL = "http://localhost:8000/logs"  # URL da API para enviar os logs
 
 class ChatAndritz:
     def __init__(self, api_key, base_folder):
@@ -12,37 +15,46 @@ class ChatAndritz:
         self.base_folder = base_folder
         self.history = [{"role": "system", "content": commands["initial"]}]
 
+    def _send_log_to_api(self, log):
+        """ Envia o log para a API """
+        try:
+            response = requests.post(API_URL, json={"log": log})
+            if response.status_code != 200:
+                print(f"Erro ao enviar log para API: {response.text}")
+        except Exception as e:
+            print(f"Erro ao conectar com a API: {str(e)}")
+
+    def _log_and_print(self, message):
+        """ Exibe a mensagem no terminal e envia para a API """
+        print(message)
+        self._send_log_to_api(message)
+
     def _send_model(self, messages):
         try:
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 messages=messages
             )
-
             return response["choices"][0]["message"]["content"].strip()
         except Exception as e:
             return f"Erro ao acessar a API: {str(e)}"
 
     def _verify_input(self):
-        key_security = input(f'{commands["key_security_message"]}\n{commands['usuario']}').strip().lower()
-
-        if(commands["dev_mode"] == True and key_security == "sair"):
-            sys.exit()
-
-        return key_security == "andritz"
+        key_security = True
+        return key_security == True
 
     def _listar_pastas(self):
         return [pasta for pasta in os.listdir(self.base_folder) if os.path.isdir(os.path.join(self.base_folder, pasta))]
 
     def _listar_jsons(self, pasta):
         caminho_pasta = os.path.join(self.base_folder, pasta)
-
         return [arq for arq in os.listdir(caminho_pasta) if arq.endswith(".json")]
 
     def _escolher_pasta(self):
         pastas_disponiveis = self._listar_pastas()
 
-        setor_usuario = input(f"{commands['nome']}{commands["sector"]}\n{commands['usuario']}").strip()
+        setor_usuario = input(f"{commands['nome']}{commands['sector']}\n{commands['usuario']}").strip()
+        self._log_and_print(f"Usuário escolheu setor: {setor_usuario}")
 
         prompt = f"""
         O usuário quer informações sobre "{setor_usuario}" Abaixo está uma lista de setores disponíveis no JSON:
@@ -51,6 +63,7 @@ class ChatAndritz:
         """
 
         setor = self._send_model([{"role": "user", "content": prompt}])
+        self._log_and_print(f"Setor escolhido pelo modelo: {setor}")
 
         return setor if setor in pastas_disponiveis else None
 
@@ -59,12 +72,14 @@ class ChatAndritz:
 
         prompt = f"""
         Forme uma frase legal e humorada falando que há estes itens disponíveis para consulta {jsons_disponiveis}. Quando for listar os itens, coloque apenas
-        o nome dele, sem codigos e numeros. tambem não coloque a extensão .json
+        o nome dele, sem codigos e numeros. Também não coloque a extensão .json
         """
 
         choice_message = self._send_model([{"role": "user", "content": prompt}])
-        
+        self._log_and_print(f"Mensagem humorada gerada: {choice_message}")
+
         json_usuario = input(f"{commands['nome']}{choice_message.strip('"')}\n{commands['usuario']}").strip()
+        self._log_and_print(f"Usuário escolheu JSON: {json_usuario}")
 
         prompt = f"""
         O usuário quer informações sobre "{json_usuario}" Abaixo está uma lista de setores disponíveis no JSON:
@@ -73,36 +88,29 @@ class ChatAndritz:
         """
 
         json_escolhido = self._send_model([{"role": "user", "content": prompt}])
+        self._log_and_print(f"Arquivo JSON escolhido pelo modelo: {json_escolhido}")
 
         return json_escolhido if json_escolhido in jsons_disponiveis else None
 
-    def _resumir_ou_completo(self, conteudo_json):
-        escolha = input(f"{commands['nome']}{commands["resume/complete"]}\n{commands['usuario']}").strip().lower()
-
-        if escolha == "resumo":
-            prompt = f"Faça um resumo do seguinte conteúdo mostrando as informações mais importantes dos tópicos:\n{json.dumps(conteudo_json, ensure_ascii=False, indent=4)}"
-            return self._send_model([{"role": "user", "content": prompt}])
-        else:
-            return "\n".join([f"\n🔹 {chave.upper()}:\n{valor}" for chave, valor in conteudo_json.items()])
+    def _complete(self, conteudo_json):
+        return "\n".join([f"\n🔹 {chave.upper()}:\n{valor}" for chave, valor in conteudo_json.items()])
 
     def chat(self):
         while True:
-            print(f"\n{commands['exit_warn']}")
+            self._log_and_print(f"\n{commands['exit_warn']}")
             question = ""
 
             if self._verify_input():
                 pasta_escolhida = self._escolher_pasta()
 
                 if not pasta_escolhida:
-                    print(f"{commands['nome']}{commands["sector_error"]}\n")
-
+                    self._log_and_print(f"{commands['nome']}{commands['sector_error']}\n")
                     continue
                 
                 json_escolhido = self._escolher_json(pasta_escolhida)
 
                 if not json_escolhido:
-                    print(f"{commands['nome']}{commands["database_error"]}\n")
-
+                    self._log_and_print(f"{commands['nome']}{commands['database_error']}\n")
                     continue
                 
                 caminho_json = os.path.join(self.base_folder, pasta_escolhida, json_escolhido)
@@ -110,14 +118,13 @@ class ChatAndritz:
                 with open(caminho_json, "r", encoding="utf-8") as f:
                     conteudo_json = json.load(f)
                 
-                response = self._resumir_ou_completo(conteudo_json)
+                response = self._complete(conteudo_json)
             else:
-                print(f"{commands["web_mode"]}\n")
-
                 question = input(f"{commands['usuario']}").strip()
+                self._log_and_print(f"Usuário: {question}")
 
-                if (commands["dev_mode"] == True and question.lower() == "sair"):
-                    print(commands["exit_message"])
+                if commands["dev_mode"] == True and question.lower() == "sair":
+                    self._log_and_print(commands["exit_message"])
                     break
 
                 response = self._send_model(self.history + [{"role": "user", "content": question}])
@@ -125,7 +132,7 @@ class ChatAndritz:
             self.history.append({"role": "user", "content": question})
             self.history.append({"role": "assistant", "content": response})
             
-            print(f"{commands['nome']}{response}")
+            self._log_and_print(f"{commands['nome']}{response}")
 
 if __name__ == "__main__":
     openai.api_key = commands["api_key"]
