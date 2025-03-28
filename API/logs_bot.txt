@@ -1,0 +1,341 @@
+[2025-03-28T17:28:07.310Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:28:17.333Z] Usuário escolheu setor: None
+[2025-03-28T17:28:18.567Z] Setor escolhido pelo modelo: Recepcao de materiais
+[2025-03-28T17:28:20.238Z] Mensagem humorada gerada: "Está disponível para consulta a lista de recepção de materiais, matéria prima e insumos. São vários itens para conferir e se divertir!"
+[2025-03-28T17:28:30.265Z] Usuário escolheu JSON: None
+[2025-03-28T17:28:36.432Z] Arquivo JSON escolhido pelo modelo: DSG.002.PT_Recepcao_materiais_materia_prima_e_insumos.json
+[2025-03-28T17:28:36.440Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+
+[2025-03-28T17:28:36.448Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:28:46.476Z] Usuário escolheu setor: None
+[2025-03-28T17:28:47.399Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa o setor "None".
+[2025-03-28T17:28:47.407Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:28:47.413Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:39:29.177Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:39:29.187Z] Usuário escolheu setor: None
+[2025-03-28T17:39:41.297Z] Setor escolhido pelo modelo: Nenhuma das opções acima representa o termo "None". "None" não está disponível na lista de setores fornecida.
+[2025-03-28T17:39:41.305Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:39:41.311Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:39:41.326Z] Usuário escolheu setor: None
+[2025-03-28T17:39:42.120Z] Setor escolhido pelo modelo: Acabamento
+[2025-03-28T17:48:01.998Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:02.016Z] Usuário escolheu setor: None
+[2025-03-28T17:48:14.016Z] Setor escolhido pelo modelo: None
+[2025-03-28T17:48:14.032Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:48:14.040Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:14.053Z] Usuário escolheu setor: None
+[2025-03-28T17:48:14.880Z] Setor escolhido pelo modelo: O setor que melhor representa a intenção do usuário é "Recepcao de materiais".
+[2025-03-28T17:48:14.888Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:48:14.894Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:14.905Z] Usuário escolheu setor: None
+[2025-03-28T17:48:15.397Z] Setor escolhido pelo modelo: None
+[2025-03-28T17:48:15.411Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:48:15.418Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:15.433Z] Usuário escolheu setor: None
+[2025-03-28T17:48:16.586Z] Setor escolhido pelo modelo: Nenhuma das opções apresentadas melhor representa a intenção do usuário, pois o setor "None" não está listado. Dessa forma, não é possível determinar qual setor seria o mais apropriado.
+[2025-03-28T17:48:16.597Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:48:16.604Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:16.616Z] Usuário escolheu setor: None
+[2025-03-28T17:48:17.729Z] Setor escolhido pelo modelo: Não foi especificado nenhum setor específico relacionado a "None" na lista fornecida. Portanto, não é possível determinar qual setor melhor representa a informação desejada.
+[2025-03-28T17:48:17.737Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:48:17.745Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:48:17.756Z] Usuário escolheu setor: None
+[2025-03-28T17:48:18.250Z] Setor escolhido pelo modelo: Mantas
+[2025-03-28T17:48:19.310Z] Mensagem humorada gerada: "Quem quiser saber mais sobre os processos de fabricação de mantas e preparação da mistura, é só consultar os arquivos disponíveis!" 
+Itens disponíveis para consulta: Fabricação de mantas e Preparação da mistura.
+[2025-03-28T17:48:19.326Z] Usuário escolheu JSON: None
+[2025-03-28T17:48:20.117Z] Arquivo JSON escolhido pelo modelo: preparacao da mistura.json
+[2025-03-28T17:50:15.289Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:15.298Z] Usuário escolheu setor: None
+[2025-03-28T17:50:27.042Z] Setor escolhido pelo modelo: None
+[2025-03-28T17:50:27.054Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:27.061Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:27.074Z] Usuário escolheu setor: None
+[2025-03-28T17:50:27.851Z] Setor escolhido pelo modelo: Nenhuma das opções disponíveis no JSON representa a informação sobre "None".
+[2025-03-28T17:50:27.858Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:27.865Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:27.878Z] Usuário escolheu setor: None
+[2025-03-28T17:50:28.978Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa claramente o termo "None". Como não há um setor que corresponda diretamente à pergunta do usuário, não é possível fornecer uma resposta com base nas opções disponíveis no JSON.
+[2025-03-28T17:50:28.992Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:29.001Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:29.017Z] Usuário escolheu setor: None
+[2025-03-28T17:50:29.993Z] Setor escolhido pelo modelo: Nenhum setor mencionado no JSON se encaixa perfeitamente com a intenção do usuário, pois "None" geralmente se refere a algo vazio, nulo ou indefinido.
+[2025-03-28T17:50:30.000Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:30.008Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:30.020Z] Usuário escolheu setor: None
+[2025-03-28T17:50:30.468Z] Setor escolhido pelo modelo: None
+[2025-03-28T17:50:30.480Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:30.486Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:30.499Z] Usuário escolheu setor: None
+[2025-03-28T17:50:31.033Z] Setor escolhido pelo modelo: None
+[2025-03-28T17:50:31.044Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:31.051Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:31.061Z] Usuário escolheu setor: None
+[2025-03-28T17:50:32.035Z] Setor escolhido pelo modelo: Não é possível determinar qual setor representa a intenção do usuário, pois a informação fornecida sobre "None" não está relacionada diretamente com nenhum dos setores listados.
+[2025-03-28T17:50:32.043Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:32.049Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:32.059Z] Usuário escolheu setor: None
+[2025-03-28T17:50:33.115Z] Setor escolhido pelo modelo: Nenhuma das opções acima representa a intenção do usuário, pois "None" não está relacionado a nenhum dos setores listados.
+[2025-03-28T17:50:33.123Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:33.131Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:33.142Z] Usuário escolheu setor: None
+[2025-03-28T17:50:33.711Z] Setor escolhido pelo modelo: Metrologia
+[2025-03-28T17:50:38.514Z] Mensagem humorada gerada: Estamos disponibilizando para consulta: 
+- Controle de Dispositivos de Medição e Monitoramento Rev1
+- Ajuste e calibração sistema medição de força SM HCT NLI
+- Calibração in d velocidade SM HCT NLI
+- Calibração medidores de espessura
+- Ajuste medidor de tensão em fio Schimdt
+- Manuseio, preservação e armazenamento equipamento
+- Calibração testrite modelo MK IV
+- Calibração medidor de torção de fios texcontrol
+- Disposição equipamento não conforme
+- Calibração sis medição controle temp SM HCT NLI
+- Calibração indicadores digitais CLT
+- Marcação e calibração medidores de comprimento HCT SM
+- Calibração indicadores digitais mod DIG200 e 210
+- Calibração sist medição tensão agulhamento NL19 e Hunter
+- Calibração e ajuste sist medição profundidade agulhamento NL19
+- Calibração e ajuste ind densidade agulhamento NL19
+- Calibração e ajuste ind velocidade agulhamento NL19
+- Calibração e ajuste feltometer Hunter e NL19
+- Calibração e ajuste medidores profundidade agulhadeiras
+- Calibração tensiometro digital
+- Calibração sistema de pesagem rolos de manta
+[2025-03-28T17:50:38.531Z] Usuário escolheu JSON: None
+[2025-03-28T17:50:39.632Z] Arquivo JSON escolhido pelo modelo: Nenhum dos arquivos listados parece representar a intenção do usuário de obter informações sobre "None". Sugiro que o usuário forneça mais detalhes ou esclareça sua pergunta para que possamos ajudar de forma mais precisa.
+[2025-03-28T17:50:39.645Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+
+[2025-03-28T17:50:39.654Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:39.668Z] Usuário escolheu setor: None
+[2025-03-28T17:50:40.410Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa "None".
+[2025-03-28T17:50:40.420Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:40.427Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:40.439Z] Usuário escolheu setor: None
+[2025-03-28T17:50:41.053Z] Setor escolhido pelo modelo: Nenhuma das opções mencionadas representa "None".
+[2025-03-28T17:50:41.060Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T17:50:41.066Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:41.077Z] Usuário escolheu setor: None
+[2025-03-28T17:50:41.639Z] Setor escolhido pelo modelo: Acabamento
+[2025-03-28T17:50:42.794Z] Mensagem humorada gerada: "Se precisar de ajuda com termofixação, teste de alargamento ou tratamento B, estamos aqui para te ajudar! 😄" 
+
+Itens disponíveis para consulta: 
+- termofixação
+- teste de alargamento
+- tratamento B
+[2025-03-28T17:50:42.812Z] Usuário escolheu JSON: None
+[2025-03-28T17:50:43.429Z] Arquivo JSON escolhido pelo modelo: None
+[2025-03-28T17:50:43.438Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+
+[2025-03-28T17:50:43.445Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T17:50:43.456Z] Usuário escolheu setor: None
+[2025-03-28T18:09:18.725Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:09:18.739Z] Usuário escolheu setor: None
+[2025-03-28T18:09:31.445Z] Setor escolhido pelo modelo: None.
+[2025-03-28T18:09:31.453Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T18:09:31.458Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:09:31.471Z] Usuário escolheu setor: None
+[2025-03-28T18:09:33.081Z] Setor escolhido pelo modelo: Nenhuma das opções disponíveis no JSON corresponde a "None". Por favor, forneça mais informações ou esclarecimentos sobre o que significa "None" para que eu possa ajudá-lo de forma mais eficaz.
+[2025-03-28T18:09:33.097Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T18:09:33.113Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:09:33.147Z] Usuário escolheu setor: None
+[2025-03-28T18:09:34.524Z] Setor escolhido pelo modelo: Não consigo determinar o setor adequado com base na informação fornecida. Por favor, forneça mais detalhes sobre a informação que o usuário está buscando.
+[2025-03-28T18:09:34.540Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T18:09:34.556Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:09:34.581Z] Usuário escolheu setor: None
+[2025-03-28T18:15:21.338Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:15:45.641Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:15:49.731Z] Usuário escolheu setor: None
+[2025-03-28T18:16:02.218Z] Setor escolhido pelo modelo: PCP
+[2025-03-28T18:16:03.078Z] Mensagem humorada gerada: Venham conferir os manuais de "Planejamento e controle da produção" e "Montagem rolo de urdume" que estão disponíveis para consulta!
+[2025-03-28T18:16:13.147Z] Usuário escolheu JSON: None
+[2025-03-28T18:16:14.185Z] Arquivo JSON escolhido pelo modelo: Não existe um arquivo disponível que represente a intenção do usuário, pois nenhum dos arquivos listados contém informações sobre "None".
+[2025-03-28T18:16:14.220Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+
+[2025-03-28T18:16:14.242Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:20:01.059Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:20:09.245Z] Usuário escolheu setor: [2025-03-28T18:20:07.282Z] oi
+[2025-03-28T18:20:10.982Z] Setor escolhido pelo modelo: Não é possível determinar qual setor melhor representa a intenção do usuário com base na informação fornecida.
+[2025-03-28T18:20:10.993Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T18:20:11.003Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:20:17.083Z] Usuário escolheu setor: [2025-03-28T18:20:15.746Z] mantas
+[2025-03-28T18:20:17.667Z] Setor escolhido pelo modelo: Mantas
+[2025-03-28T18:20:18.630Z] Mensagem humorada gerada: "Estamos disponíveis para consulta sobre fabricação de mantas e preparação da mistura. Aproveite e venha conferir!"
+[2025-03-28T18:20:28.705Z] Usuário escolheu JSON: [2025-03-28T18:20:27.993Z] mistura
+[2025-03-28T18:20:29.402Z] Arquivo JSON escolhido pelo modelo: preparacao da mistura.json
+[2025-03-28T18:27:11.160Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:27:21.259Z] Usuário escolheu setor: [2025-03-28T18:27:20.858Z] oi
+[2025-03-28T18:27:22.253Z] Setor escolhido pelo modelo: Recepcao de materiais
+[2025-03-28T18:27:23.170Z] Mensagem humorada gerada: "Corre lá na recepção que tem a lista de materiais e insumos disponíveis para consulta!"
+[2025-03-28T18:27:41.271Z] Usuário escolheu JSON: [2025-03-28T18:27:39.773Z] a lista de materias e insumos
+[2025-03-28T18:27:42.145Z] Arquivo JSON escolhido pelo modelo: DSG.002.PT Recepcao materiais materia prima e insumos.json
+[2025-03-28T18:27:42.227Z] BOT: 
+🔹 OBJETIVO:
+Estabelecer a sistemática de recepção de materiais, matéria prima e insumos. 
+2.
+
+🔹 RESPONSABILIDADE:
+A responsabilidade da aplicação deste documento é do gestor do almoxarifado. 
+3.
+
+🔹 GLOSSÁRIO:
+RD - Relatório de documento 
+DI - Documento de importação 
+RNCF - Relatório de Não Conformidade de Fornecedor. 
+SCM – Solicitação de compra de materiais 
+4.
+
+🔹 FORMULÁRIOS:
+NA. 
+ 
+5.
+
+🔹 CONDIÇÕES GERAIS:
+Receber os materiais conforme pedido de compras / SCM e comunicar ao solicitante 
+da chegada dos mesmos. 
+ 
+6.
+
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1. Verificar nota fiscal com o pedido de compras / SCM 
+6.1.1. Quantidade solicitada. 
+6.1.2. Quantidade comprada. 
+6.1.3. Preço unitário. 
+6.1.4. Valor total do pedido. 
+6.1.5. Verificar CNPJ e local de faturamento. 
+6.1.6. Verificar se as mercadorias estão de acordo com o pedido e se não há avarias. 
+6.2. Para produtos que não são de estoque, comunicar ao solicitante do material sobre 
+a chegada. O material ficará alocado na área para destinação, aguardando retirada. 
+6.3. Carimbar nota fiscal com carimbo da recepção de materiais. 
+6.3.1 Carimbar o DI com carimbo da recepção de materiais. 
+6.4. Implantar nota fiscal, boleto e conhecimento de transporte digitalizados no sistema 
+DocControl, anexando pedido de compras e SCM. 
+6.5. Encaminhar para controladoria: nota fiscal e documentos auxiliares originais. 
+
+INSTRUÇÃO DE TRABALHO 
+Recepção de materiais, matéria-prima e insumos 
+DSG.002.PT 
+Rev.nº.: 1 
+Data Rev.: 08/01/25 
+Página 2 de 2
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.6. Para materiais importados e importações de matéria prima, desmembrar da 
+seguinte forma: 
+6.6.1 Encaminhar para controladoria: DI original, SCM e RD correspondente. 
+6.7 Normas para devolução de mercadoria: 
+6.7.1 O almoxarifado entrará em contato com departamento de compras e/ou emissor 
+da SCM para tomada de ações (devolver ou aguardar decisão). 
+6.7.2 Quando decidido aguardar contato com fornecedor, identificar o material como 
+produto não conforme. 
+6.7.3 Quando decidido devolver: 
+6.7.3.1 Carimbar, datar e assinar a nota fiscal com carimbo de devolução da recepção 
+de materiais, além de assinalar o motivo da devolução. 
+6.7.3.2 Encaminhar cópia digitalizada da nota fiscal devolvida via e-mail para o 
+departamento de compras, financeiro e controladoria para recusa eletrônica. 
+7.
+[2025-03-28T18:27:42.240Z] 
+Digite 'sair' para encerrar o chat.
+[2025-03-28T18:27:48.301Z] Usuário escolheu setor: [2025-03-28T18:27:46.401Z] sair
+[2025-03-28T18:27:49.053Z] Setor escolhido pelo modelo: Expedicao
+[2025-03-28T18:27:50.487Z] Mensagem humorada gerada: "Está disponível para consulta a incrível barra guia, que vai te ajudar a encontrar o caminho certo para o sucesso!"
+[2025-03-28T19:45:14.662Z] Usuário escolheu setor: [2025-03-28T19:44:21.256Z] oi
+[2025-03-28T22:42:54.344Z] Usuário escolheu setor: [2025-03-28T22:41:21.091Z] oi
+[2025-03-28T22:42:56.552Z] Setor escolhido pelo modelo: Não é possível determinar com precisão qual setor melhor representa a intenção do usuário com a informação fornecida.
+[2025-03-28T22:42:56.566Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T22:44:29.108Z] Usuário escolheu setor: [2025-03-28T22:44:27.289Z] ola
+[2025-03-28T22:44:30.325Z] Setor escolhido pelo modelo: Não consigo identificar um setor específico com base na informação fornecida. Pode fornecer mais detalhes sobre a pergunta do usuário para que eu possa ajudar a determinar o setor mais apropriado?
+[2025-03-28T22:44:30.341Z] BOT: Setor não encontrado. Tente novamente.
+
+[2025-03-28T22:45:06.626Z] Usuário escolheu setor: [2025-03-28T22:45:04.828Z] ola
+[2025-03-28T22:45:07.395Z] Setor escolhido pelo modelo: Recepcao de materiais
+[2025-03-28T22:45:08.413Z] Mensagem humorada gerada: "Na biblioteca de recursos temos disponíveis manuais de consultas como Recepção de Materiais, Matéria Prima e Insumos."
+[2025-03-28T22:45:45.285Z] Usuário: [2025-03-28T22:45:44.626Z] ola
+[2025-03-28T22:45:46.724Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T22:45:58.811Z] Usuário: [2025-03-28T22:45:58.239Z] capital do brasil
+[2025-03-28T22:45:59.818Z] BOT: A capital do Brasil é Brasília. Foi inaugurada em 21 de abril de 1960 e foi projetada pelo arquiteto Oscar Niemeyer.
+[2025-03-28T22:49:41.238Z] Usuário: [2025-03-28T22:49:40.591Z] ola
+[2025-03-28T22:49:42.645Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T22:52:37.652Z] Usuário: [2025-03-28T22:52:37.241Z] ola
+[2025-03-28T22:52:39.216Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T22:52:43.283Z] Usuário: [2025-03-28T22:52:42.132Z] ola
+[2025-03-28T22:52:44.262Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T22:52:48.308Z] Usuário: [2025-03-28T22:52:46.416Z] como vai?
+[2025-03-28T22:52:49.208Z] BOT: Estou aqui para te ajudar! Como posso ser útil a você hoje?
+[2025-03-28T22:52:49.223Z] Usuário: [2025-03-28T22:52:48.643Z] ola
+[2025-03-28T22:52:50.027Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T22:53:04.156Z] Usuário: [2025-03-28T22:53:03.816Z] oi
+[2025-03-28T22:53:05.221Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-28T23:04:55.279Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:05:02.602Z] BOT: Como assistente virtual, não tenho sentimentos, mas estou aqui para ajudar você. O que você gostaria de saber?
+[2025-03-28T23:05:05.702Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:05:17.051Z] BOT: Legal! Se tiver mais alguma pergunta ou teste que queira fazer, estou aqui para ajudar.
+[2025-03-28T23:05:20.018Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:06:16.118Z] BOT: Que ótimo! Fico feliz em saber que está funcionando bem. Se precisar de mais alguma coisa, estou à disposição.
+[2025-03-28T23:06:17.354Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:34:21.530Z] BOT: Olá! Como posso ajudar você?
+[2025-03-28T23:34:30.344Z] BOT: Estou aqui para ajudar! Em que posso ser útil hoje?
+[2025-03-28T23:34:31.261Z] BOT: Olá! Como posso ajudar você?
+[2025-03-28T23:36:42.589Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:36:47.982Z] BOT: Estou aqui para ajudar! Em que posso ser útil hoje?
+[2025-03-28T23:39:12.095Z] BOT: Continuo aqui para ajudar no que precisar. Como posso ser útil hoje?
+[2025-03-28T23:39:16.919Z] BOT: Estou aqui para ajudar! Como posso ser útil a você hoje?
+[2025-03-28T23:39:21.777Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-28T23:39:26.655Z] BOT: Estou aqui para ajudar. O que você gostaria de saber ou discutir hoje?
+[2025-03-28T23:39:31.452Z] BOT: Posso te ajudar em algo mais?

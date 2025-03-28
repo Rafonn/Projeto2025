@@ -5,8 +5,8 @@ import requests
 from data import ReadData
 from commands import commands
 import sys
-
-API_URL = "http://localhost:8000/logs"  # URL da API para enviar os logs
+from api.send import Send
+from api.receive import Receive
 
 class ChatAndritz:
     def __init__(self, api_key, base_folder):
@@ -14,20 +14,13 @@ class ChatAndritz:
         openai.api_key = self.api_key
         self.base_folder = base_folder
         self.history = [{"role": "system", "content": commands["initial"]}]
-
-    def _send_log_to_api(self, log):
-        """ Envia o log para a API """
-        try:
-            response = requests.post(API_URL, json={"log": log})
-            if response.status_code != 200:
-                print(f"Erro ao enviar log para API: {response.text}")
-        except Exception as e:
-            print(f"Erro ao conectar com a API: {str(e)}")
+        self.send_api = Send()
+        self.receive_api = Receive()
 
     def _log_and_print(self, message):
-        """ Exibe a mensagem no terminal e envia para a API """
         print(message)
-        self._send_log_to_api(message)
+
+        self.send_api.send_log_to_api(message)
 
     def _send_model(self, messages):
         try:
@@ -40,7 +33,7 @@ class ChatAndritz:
             return f"Erro ao acessar a API: {str(e)}"
 
     def _verify_input(self):
-        key_security = True
+        key_security = False
         return key_security == True
 
     def _listar_pastas(self):
@@ -53,11 +46,12 @@ class ChatAndritz:
     def _escolher_pasta(self):
         pastas_disponiveis = self._listar_pastas()
 
-        setor_usuario = input(f"{commands['nome']}{commands['sector']}\n{commands['usuario']}").strip()
-        self._log_and_print(f"Usuário escolheu setor: {setor_usuario}")
+        #setor_usuario = input(f"{commands['nome']}{commands['sector']}\n{commands['usuario']}").strip()
+        user = self.receive_api.monitor_logs()
+        self._log_and_print(f"Usuário escolheu setor: {user}")
 
         prompt = f"""
-        O usuário quer informações sobre "{setor_usuario}" Abaixo está uma lista de setores disponíveis no JSON:
+        O usuário quer informações sobre "{user}" Abaixo está uma lista de setores disponíveis no JSON:
         {pastas_disponiveis}
         Qual desses setores melhor representa a intenção do usuário? Responda apenas com o nome exato do setor.
         """
@@ -76,29 +70,28 @@ class ChatAndritz:
         """
 
         choice_message = self._send_model([{"role": "user", "content": prompt}])
-        self._log_and_print(f"Mensagem humorada gerada: {choice_message}")
+        self._log_and_print(choice_message)
 
-        json_usuario = input(f"{commands['nome']}{choice_message.strip('"')}\n{commands['usuario']}").strip()
-        self._log_and_print(f"Usuário escolheu JSON: {json_usuario}")
+        #json_usuario = input(f"{commands['nome']}{choice_message.strip('"')}\n{commands['usuario']}").strip()
+        user = self.receive_api.monitor_logs()
 
         prompt = f"""
-        O usuário quer informações sobre "{json_usuario}" Abaixo está uma lista de setores disponíveis no JSON:
+        O usuário quer informações sobre "{user}" Abaixo está uma lista de setores disponíveis no JSON:
         {jsons_disponiveis}
         Qual desses arquivos melhor representa a intenção do usuário? Responda apenas com o nome exato do arquivo.
         """
 
         json_escolhido = self._send_model([{"role": "user", "content": prompt}])
-        self._log_and_print(f"Arquivo JSON escolhido pelo modelo: {json_escolhido}")
 
         return json_escolhido if json_escolhido in jsons_disponiveis else None
 
     def _complete(self, conteudo_json):
         return "\n".join([f"\n🔹 {chave.upper()}:\n{valor}" for chave, valor in conteudo_json.items()])
-
+    
     def chat(self):
+
         while True:
-            self._log_and_print(f"\n{commands['exit_warn']}")
-            question = ""
+            user = ""
 
             if self._verify_input():
                 pasta_escolhida = self._escolher_pasta()
@@ -120,16 +113,16 @@ class ChatAndritz:
                 
                 response = self._complete(conteudo_json)
             else:
-                question = input(f"{commands['usuario']}").strip()
-                self._log_and_print(f"Usuário: {question}")
+                #question = input(f"{commands['usuario']}").strip()
+                user = self.receive_api.monitor_logs()
 
-                if commands["dev_mode"] == True and question.lower() == "sair":
+                if commands["dev_mode"] == True and user.lower() == "sair":
                     self._log_and_print(commands["exit_message"])
                     break
 
-                response = self._send_model(self.history + [{"role": "user", "content": question}])
+                response = self._send_model(self.history + [{"role": "user", "content": user}])
             
-            self.history.append({"role": "user", "content": question})
+            self.history.append({"role": "user", "content": user})
             self.history.append({"role": "assistant", "content": response})
             
             self._log_and_print(f"{commands['nome']}{response}")

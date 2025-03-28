@@ -1,5 +1,7 @@
 commands = {
     "dev_mode": False,
+    "API_URL_SEND": "http://localhost:8000/logs/bot",
+    "API_URL_RECEIVE": "http://localhost:8000/logs/user",
     "web_mode": "Entrando no modo WEB, informações do banco de dados não serão listadas",
     "nome": "BOT: ",
     "usuario": "Voce: ",
