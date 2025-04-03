@@ -94,11 +94,11 @@ export default function Chatbot() {
                 <div className="flex justify-between text-center relative mb-6">
                     <div>
                         <label className="neo-toggle-container left-0">
-                            <input 
-                                type="checkbox" 
-                                className="neo-toggle-input" 
-                                checked={isToggleActive} 
-                                onChange={handleToggleChange} 
+                            <input
+                                type="checkbox"
+                                className="neo-toggle-input"
+                                checked={isToggleActive}
+                                onChange={handleToggleChange}
                             />
                             <span className="neo-toggle">
                                 <span className="neo-track">
@@ -116,29 +116,33 @@ export default function Chatbot() {
                                     <span className="neo-thumb-pulse"></span>
                                 </span>
                             </span>
+                            <span className="neo-status">
+                                <span className="neo-status-indicator">
+                                    <span className="neo-status-text">Andritz Mode</span>
+                                    <span className="neo-status-dot"></span>
+                                </span>
+                            </span>
                         </label>
                     </div>
                 </div>
 
-                {/* Círculos Animados */}
                 <div className="flex justify-center items-center relative w-full circle-container">
                     <div className="circle"></div>
                     <div className="circle"></div>
                     <div className="circle"></div>
                     <div className="circle"></div>
+                    <div className="circle"></div>
                 </div>
 
-                {/* Chat */}
                 <Card className="h-[70vh] flex flex-col border border-[#3498db] bg-slate-900 rounded-md shadow-md relative overflow-hidden animate-border card-with-background">
                     <CardContent ref={messagesEndRef} className="flex-1 overflow-y-auto p-4 space-y-3">
                         {messages.map((msg, index) => (
                             <div
                                 key={index}
-                                className={`p-3 rounded-md text-xs font-bold shadow-sm transition-all duration-500 break-words whitespace-pre-wrap max-w-fit ${
-                                    msg.sender === "user"
-                                        ? "bg-[#3498db] text-white self-end ml-auto hover:scale-102 custom-font"
-                                        : "bot-reponse-bg text-gray-300 self-start hover:scale-102 custom-font"
-                                }`}
+                                className={`p-3 rounded-md text-xs font-bold shadow-sm transition-all duration-500 break-words whitespace-pre-wrap max-w-fit ${msg.sender === "user"
+                                    ? "bg-[#3498db] text-white self-end ml-auto hover:scale-102 custom-font"
+                                    : "bot-reponse-bg text-gray-300 self-start hover:scale-102 custom-font"
+                                    }`}
                             >
                                 {msg.text}
                             </div>
@@ -146,7 +150,6 @@ export default function Chatbot() {
                     </CardContent>
                 </Card>
 
-                {/* Input e Botão de Envio */}
                 <div className="flex items-center gap-2 mt-4 w-full">
                     <Input
                         value={input}

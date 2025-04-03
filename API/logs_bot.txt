@@ -1043,3 +1043,58 @@ de materiais, além de assinalar o motivo da devolução.
 departamento de compras, financeiro e controladoria para recusa eletrônica. 
 7.
 [2025-04-02T17:59:31.140Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:30:23.219Z] Seja muito bem-vindo ao modo de consulta da Andritz!
+Estamos muito felizes em recebê-lo e esperamos poder ajudá-lo da melhor forma possível. Sinta-se à vontade para explorar todas as informações e recursos disponíveis, e não hesite em entrar em contato conosco caso precise de alguma orientação ou suporte. Estamos aqui para tornar sua experiência conosco a melhor possível. Obrigado por escolher a Andritz e aproveite o modo de consulta!
+[2025-04-03T11:30:45.410Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:32:45.924Z] Olá! Como posso te ajudar hoje?
+[2025-04-03T11:33:14.119Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:33:14.126Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:33:16.530Z] Seja muito bem-vindo(a) ao modo de consulta Andritz! Estamos muito contentes por você estar aqui e esperamos que encontre todas as informações e soluções que procura. Estamos à disposição para ajudá-lo(a) no que precisar, por isso não hesite em entrar em contato conosco caso tenha alguma dúvida. Esperamos que sua experiência seja agradável e produtiva. Seja bem-vindo(a) e aproveite tudo que o modo de consulta Andritz tem a oferecer!
+[2025-04-03T11:33:33.712Z] Beleza! Vou buscar informações em 'Mantas'.
+[2025-04-03T11:33:34.492Z] Estes são os itens disponíveis para consulta: Fabricação de mantas, Preparação da mistura.
+[2025-04-03T11:33:45.387Z] Encontrei um arquivo que pode te ajudar: 'Fabricacao de mantas'!
+[2025-04-03T11:33:45.466Z] 
+🔹 OBJETIVO:
+Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+
+🔹 RESPONSABILIDADE:
+A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+🔹 GLOSSARIO:
+CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+
+🔹 FORMULARIOS:
+a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+
+🔹 CONDICOES GERAIS:
+Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+
+🔹 CONDICOES ESPECIFICAS:
+Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, para medição de gramatura, Balança de precisão eletrônica, Pistola Rolsprint, Tesoura, Máquina de corte. Roteiro de fabricação de manta: Limpar a torre de captação de refugos e os pontos críticos da máquina CLT (alimentador, carda, esteiras, etc). Carregar a carda e o alimentador da máquina com o material a ser produzido. Ajustar a máquina de acordo com o tipo de manta, conforme Processo de Fabricação de Manta e iniciar o processo. Caso necessário, será feita a umidificação das fibras. Quando a manta estiver no enrolador da máquina, posicionar o tubo de manta, verificar a necessidade de ajuste de sobreposição, esperar completar 6 metros e retirar uma amostra de 0,50m x 0,50m para pesar na balança de precisão eletrônica. O resultado será multiplicado por quatro e comparado com o valor estipulado na Ordem de Fabricação de Manta. Caso não se tenha atingido o valor solicitado, realizar ajuste no painel da máquina e retirar quantas amostras forem necessárias para obter a gramatura requerida na Ordem de Fabricação de Manta. Registrar o valor da gramatura na Ordem de Fabricação de Manta. Valor de gramatura diferente do especificado poderá ser liberado pelo líder do setor ou Gestor de Produção / Processo. Atingida a gramatura, posicionar a máquina de corte na largura do rolo de manta a ser fabricado, zerar o marcador de metragem, iniciar o rolo e o gráfico do medidor de massa. Durante o processo, checar a sobreposição da manta e manter a caixa de alimentação da máquina cheia. Para a CLT I e II, utiliza-se o equipamento MS Instrumentos para elaboração do perfil longitudinal de gramatura, com o objetivo de manter a qualidade do rolo durante o processo. Após o término da fabricação do rolo de manta, pesar e realizar cálculo conforme a fórmula presente na OF, registrar a produção no formulário de Produção Diária - CLT I / CLT II, identificar o rolo de manta, anexar o gráfico do medidor de massa na OF, e liberar para a próxima etapa do processo. Todo o desperdício gerado durante a fabricação de um rolo de manta que pode ser reciclado, deve ser ensacado, identificado, pesado e retornado para a área de reciclagem. Troca de mistura: Limpar totalmente a torre de captação de refugos. Descarregar completamente as esteiras e a carda e inserir a nova mistura. Ideal que a troca de mistura seja feita reduzindo o dtex gradativamente. Salvo urgências de produção, onde deverá ser realizada limpeza dos pontos descritos na Pauta de Limpeza do setor.
+[2025-04-03T11:33:47.980Z] Olá! Seja bem-vindo ao modo de consulta Andritz. Estamos felizes em tê-lo(a) aqui e esperamos que sua experiência seja satisfatória. Em caso de dúvidas ou necessidade de assistência, não hesite em nos contatar. Aproveite o acesso às informações e recursos disponíveis. Obrigado pela sua visita!
+[2025-04-03T11:34:52.567Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:34:52.586Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:35:05.403Z] Olá! Como posso te ajudar hoje?
+[2025-04-03T11:35:19.600Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:35:19.623Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T11:35:21.192Z] Olá! Seja muito bem-vindo ao modo de consulta Andritz. Estamos felizes em recebê-lo e esperamos que esta plataforma seja útil e eficaz para as suas necessidades. Sinta-se à vontade para explorar as funcionalidades e recursos disponíveis, e não hesite em entrar em contato caso tenha alguma dúvida ou sugestão. A equipe Andritz está aqui para ajudá-lo da melhor forma possível. Obrigado pela sua escolha e aproveite a sua estadia!
+[2025-04-03T11:35:39.623Z] Prezado usuário,
+
+Agradecemos pela sua escolha! Estamos à disposição para fornecer informações sobre a máquina 'CF1035 / Tear 04' que você está buscando.
+
+Atenciosamente, 
+
+[Seu Nome]
+[2025-04-03T11:35:39.645Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:01m
+Tempo parado do dia: 01h:32m
+Tempo parado do dia anterior: 12h:23m
+Tempo parado na semana anterior: 4d, 00h:37m
+Eficiencia atual: 36.88999938964844
+Batidas: 2173
+
+[2025-04-03T11:35:42.342Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos muito felizes em tê-lo(a) conosco e esperamos que encontre aqui todas as informações e soluções que procura. Conte conosco para ajudá-lo(a) no que precisar. Sinta-se à vontade para explorar e aproveitar ao máximo essa plataforma. Estamos aqui para tornar sua experiência mais fácil e produtiva. Seja bem-vindo(a) e aproveite!
+[2025-04-03T12:13:28.981Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T12:13:28.991Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-03T12:13:36.176Z] Olá! Como posso te ajudar hoje?

@@ -27,7 +27,6 @@ class ChatAndritz:
         self.verify_state = self._verify_input()
         self.restart_flag = threading.Event()
 
-        # Inicia a thread de monitoramento
         self.monitor_thread = threading.Thread(target=self._monitor_input, daemon=True)
         self.monitor_thread.start()
     
@@ -42,12 +41,14 @@ class ChatAndritz:
             current_state = self._verify_input()
             if current_state != self.verify_state:
                 self.verify_state = current_state
-                self.restart_flag.set()  # Ativa o sinal para reiniciar o chat
-            time.sleep(0.1)  # Pequeno delay para evitar uso excessivo da CPU
+                self.restart_flag.set()
+            time.sleep(0.1)
 
     def _check_restart(self):
         if self.restart_flag.is_set():
-            raise InterruptedError("Reiniciando verificações...")  # Interrompe qualquer função que esteja rodando
+            self._log_and_print("⚠️ Mudança detectada! Reiniciando verificações...")
+            return True
+        return False
 
 
 
@@ -85,7 +86,6 @@ class ChatAndritz:
 
     def _escolher_maquina(self, user):
         maquinas_disponiveis = machines
-        print("Entrei no escolher maquina")
 
         prompt = f"""
         O usuário quer informações sobre "{user}". Aqui estão as máquinas disponíveis:
@@ -103,7 +103,7 @@ class ChatAndritz:
             machine_info = OPCUAClient(commands["OPCUA_IP"], especificMachine, machineName)
             info = machine_info.connect()
 
-            mensagem = f"Ótima escolha! Estou buscando informações sobre a máquina **{machineName}**..."
+            mensagem = f"Ótima escolha! Estou buscando informações sobre a máquina '{machineName}'..."
             mensagem = self._mensagem_personalizada(mensagem)
             self._log_and_print(mensagem)
 
@@ -168,7 +168,6 @@ class ChatAndritz:
         resposta = self._send_model([{"role": "user", "content": prompt}])
 
         if resposta.strip().lower() == "máquina":
-            print("Entrei")
             self._escolher_maquina(user_input)
         else:
             pasta_escolhida = self._escolher_pasta(user_input)
@@ -194,7 +193,7 @@ class ChatAndritz:
         prompt = f"""
         O usuário enviou a seguinte mensagem: "{msg}"
         
-        Refaça a mensagem de maneira formal e legal.
+        Refaça a mensagem de maneira legal e divertida.
         """
 
         return self._send_model([{"role": "user", "content": prompt}])
@@ -209,33 +208,52 @@ class ChatAndritz:
 
     def chat(self):
         while True:
-            # Se o sinal de reinício foi ativado, reinicia as verificações
             if self.restart_flag.is_set():
-                self.restart_flag.clear()  # Reseta o sinal
+                self.restart_flag.clear()
                 self._log_and_print("⚠️ Mudança detectada! Reiniciando verificações...")
-
-                # Volta para o início do loop sem executar nada abaixo
-                continue  
+                continue
 
             user = ""
 
             if self._verify_input():
+                if self._check_restart(): continue
+                
                 self._log_and_print(self._initial_message())
-                user = self.receive_api.monitor_logs()
-                self._identificar_contexto(user)
-            else:
+
+                if self._check_restart(): continue
+                
                 user = self.receive_api.monitor_logs()
 
+                if self._check_restart(): continue
+                
+                self._identificar_contexto(user)
+
+                if self._check_restart(): continue
+
+            else:
+                if self._check_restart(): continue
+                
+                user = self.receive_api.monitor_logs()
+
+                if self._check_restart(): continue
+                
                 if commands["dev_mode"] and user.lower() == "sair":
                     self._log_and_print(commands["exit_message"])
                     break
 
                 response = self._send_model(self.history + [{"role": "user", "content": user}])
-            
+                
+                if self._check_restart(): continue
+                
                 self.history.append({"role": "user", "content": user})
                 self.history.append({"role": "assistant", "content": response})
-            
+                
+                if self._check_restart(): continue
+                
                 self._log_and_print(f"{response}")
+
+                if self._check_restart(): continue
+
 
 if __name__ == "__main__":
     openai.api_key = commands["api_key"]

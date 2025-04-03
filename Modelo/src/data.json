@@ -193,5 +193,18 @@
             "Batidas": 4291
         },
         "timestamp": 1743614815.519399
+    },
+    "CF1035 / Tear 04": {
+        "values": {
+            "Parado / Rodando": true,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:01m",
+            "Tempo parado do dia": "01h:32m",
+            "Tempo parado do dia anterior": "12h:23m",
+            "Tempo parado na semana anterior": "4d, 00h:37m",
+            "Eficiencia atual": 36.88999938964844,
+            "Batidas": 2173
+        },
+        "timestamp": 1743680138.645381
     }
 }
