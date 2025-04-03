@@ -1,230 +1,904 @@
-[2025-03-28T17:28:07.310Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:28:17.333Z] Usuário escolheu setor: None
-[2025-03-28T17:28:18.567Z] Setor escolhido pelo modelo: Recepcao de materiais
-[2025-03-28T17:28:20.238Z] Mensagem humorada gerada: "Está disponível para consulta a lista de recepção de materiais, matéria prima e insumos. São vários itens para conferir e se divertir!"
-[2025-03-28T17:28:30.265Z] Usuário escolheu JSON: None
-[2025-03-28T17:28:36.432Z] Arquivo JSON escolhido pelo modelo: DSG.002.PT_Recepcao_materiais_materia_prima_e_insumos.json
-[2025-03-28T17:28:36.440Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+[2025-03-31T11:34:09.323Z] BOT: Olá! Como posso ajudar você hoje?
+[2025-03-31T11:36:12.704Z] Usuário escolheu setor: [2025-03-31T11:36:11.621Z] Quero saber sobre mantas
+[2025-03-31T11:36:13.686Z] Setor escolhido pelo modelo: Mantas
+[2025-03-31T11:36:14.838Z] "Estão disponíveis para consulta a fabricação de mantas e a preparação da mistura. Divirta-se aprendendo!"
+[2025-03-31T11:36:41.679Z] BOT: 
+🔹 OBJETIVO:
+Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
 
-[2025-03-28T17:28:36.448Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:28:46.476Z] Usuário escolheu setor: None
-[2025-03-28T17:28:47.399Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa o setor "None".
-[2025-03-28T17:28:47.407Z] BOT: Setor não encontrado. Tente novamente.
+🔹 RESPONSABILIDADE:
+A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
 
-[2025-03-28T17:28:47.413Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:39:29.177Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:39:29.187Z] Usuário escolheu setor: None
-[2025-03-28T17:39:41.297Z] Setor escolhido pelo modelo: Nenhuma das opções acima representa o termo "None". "None" não está disponível na lista de setores fornecida.
-[2025-03-28T17:39:41.305Z] BOT: Setor não encontrado. Tente novamente.
+🔹 GLOSSARIO:
+CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
 
-[2025-03-28T17:39:41.311Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:39:41.326Z] Usuário escolheu setor: None
-[2025-03-28T17:39:42.120Z] Setor escolhido pelo modelo: Acabamento
-[2025-03-28T17:48:01.998Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:02.016Z] Usuário escolheu setor: None
-[2025-03-28T17:48:14.016Z] Setor escolhido pelo modelo: None
-[2025-03-28T17:48:14.032Z] BOT: Setor não encontrado. Tente novamente.
+🔹 FORMULARIOS:
+a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
 
-[2025-03-28T17:48:14.040Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:14.053Z] Usuário escolheu setor: None
-[2025-03-28T17:48:14.880Z] Setor escolhido pelo modelo: O setor que melhor representa a intenção do usuário é "Recepcao de materiais".
-[2025-03-28T17:48:14.888Z] BOT: Setor não encontrado. Tente novamente.
+🔹 CONDICOES GERAIS:
+Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
 
-[2025-03-28T17:48:14.894Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:14.905Z] Usuário escolheu setor: None
-[2025-03-28T17:48:15.397Z] Setor escolhido pelo modelo: None
-[2025-03-28T17:48:15.411Z] BOT: Setor não encontrado. Tente novamente.
+🔹 CONDICOES ESPECIFICAS:
+Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, para medição de gramatura, Balança de precisão eletrônica, Pistola Rolsprint, Tesoura, Máquina de corte. Roteiro de fabricação de manta: Limpar a torre de captação de refugos e os pontos críticos da máquina CLT (alimentador, carda, esteiras, etc). Carregar a carda e o alimentador da máquina com o material a ser produzido. Ajustar a máquina de acordo com o tipo de manta, conforme Processo de Fabricação de Manta e iniciar o processo. Caso necessário, será feita a umidificação das fibras. Quando a manta estiver no enrolador da máquina, posicionar o tubo de manta, verificar a necessidade de ajuste de sobreposição, esperar completar 6 metros e retirar uma amostra de 0,50m x 0,50m para pesar na balança de precisão eletrônica. O resultado será multiplicado por quatro e comparado com o valor estipulado na Ordem de Fabricação de Manta. Caso não se tenha atingido o valor solicitado, realizar ajuste no painel da máquina e retirar quantas amostras forem necessárias para obter a gramatura requerida na Ordem de Fabricação de Manta. Registrar o valor da gramatura na Ordem de Fabricação de Manta. Valor de gramatura diferente do especificado poderá ser liberado pelo líder do setor ou Gestor de Produção / Processo. Atingida a gramatura, posicionar a máquina de corte na largura do rolo de manta a ser fabricado, zerar o marcador de metragem, iniciar o rolo e o gráfico do medidor de massa. Durante o processo, checar a sobreposição da manta e manter a caixa de alimentação da máquina cheia. Para a CLT I e II, utiliza-se o equipamento MS Instrumentos para elaboração do perfil longitudinal de gramatura, com o objetivo de manter a qualidade do rolo durante o processo. Após o término da fabricação do rolo de manta, pesar e realizar cálculo conforme a fórmula presente na OF, registrar a produção no formulário de Produção Diária - CLT I / CLT II, identificar o rolo de manta, anexar o gráfico do medidor de massa na OF, e liberar para a próxima etapa do processo. Todo o desperdício gerado durante a fabricação de um rolo de manta que pode ser reciclado, deve ser ensacado, identificado, pesado e retornado para a área de reciclagem. Troca de mistura: Limpar totalmente a torre de captação de refugos. Descarregar completamente as esteiras e a carda e inserir a nova mistura. Ideal que a troca de mistura seja feita reduzindo o dtex gradativamente. Salvo urgências de produção, onde deverá ser realizada limpeza dos pontos descritos na Pauta de Limpeza do setor.
+[2025-03-31T11:40:14.715Z] Usuário escolheu setor: [2025-03-31T11:40:13.001Z] Tecelagem
+[2025-03-31T11:40:26.888Z] Setor escolhido pelo modelo: Tecelagem e revisão
+[2025-03-31T11:40:28.268Z] "Se você estiver interessado em aprender mais sobre o mundo da tecelagem, temos disponíveis para consulta o 'fim de rolo urdume', 'Revisao de pano base' e 'Processo de tecelagem'."
+[2025-03-31T11:42:00.290Z] "Se você quer saber mais sobre o fim de rolo, revisão de pano base e o processo de tecelagem, pode consultar esses itens disponíveis: fim de rolo urdume, Revisao de pano base e Processo de tecelagem."
+[2025-03-31T11:42:19.131Z] BOT: 
+🔹 OBJETIVO:
+Este documento padroniza as atividades a serem seguidas quando do final de um rolo 
+de urdume no tear. 
+2.
 
-[2025-03-28T17:48:15.418Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:15.433Z] Usuário escolheu setor: None
-[2025-03-28T17:48:16.586Z] Setor escolhido pelo modelo: Nenhuma das opções apresentadas melhor representa a intenção do usuário, pois o setor "None" não está listado. Dessa forma, não é possível determinar qual setor seria o mais apropriado.
-[2025-03-28T17:48:16.597Z] BOT: Setor não encontrado. Tente novamente.
+🔹 RESPONSABILIDADE:
+2.1. A aplicação deste documento é de responsabilidade dos líderes e co-líderes do 
+setor. 
+ 
+2.2. A administração das operações descritas neste documento é da responsabilidade 
+do Gestor de Produção / Processos. 
+ 
+3.
 
-[2025-03-28T17:48:16.604Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:16.616Z] Usuário escolheu setor: None
-[2025-03-28T17:48:17.729Z] Setor escolhido pelo modelo: Não foi especificado nenhum setor específico relacionado a "None" na lista fornecida. Portanto, não é possível determinar qual setor melhor representa a informação desejada.
-[2025-03-28T17:48:17.737Z] BOT: Setor não encontrado. Tente novamente.
+🔹 GLOSSÁRIO:
+NA. 
+ 
+4.
 
-[2025-03-28T17:48:17.745Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:48:17.756Z] Usuário escolheu setor: None
-[2025-03-28T17:48:18.250Z] Setor escolhido pelo modelo: Mantas
-[2025-03-28T17:48:19.310Z] Mensagem humorada gerada: "Quem quiser saber mais sobre os processos de fabricação de mantas e preparação da mistura, é só consultar os arquivos disponíveis!" 
-Itens disponíveis para consulta: Fabricação de mantas e Preparação da mistura.
-[2025-03-28T17:48:19.326Z] Usuário escolheu JSON: None
-[2025-03-28T17:48:20.117Z] Arquivo JSON escolhido pelo modelo: preparacao da mistura.json
-[2025-03-28T17:50:15.289Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:15.298Z] Usuário escolheu setor: None
-[2025-03-28T17:50:27.042Z] Setor escolhido pelo modelo: None
-[2025-03-28T17:50:27.054Z] BOT: Setor não encontrado. Tente novamente.
+🔹 FORMULÁRIOS:
+a) Ordem de Fabricação (O.F.) 
+ 
+5.
 
-[2025-03-28T17:50:27.061Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:27.074Z] Usuário escolheu setor: None
-[2025-03-28T17:50:27.851Z] Setor escolhido pelo modelo: Nenhuma das opções disponíveis no JSON representa a informação sobre "None".
-[2025-03-28T17:50:27.858Z] BOT: Setor não encontrado. Tente novamente.
+🔹 CONDIÇÕES GERAIS:
+5.1 Antes de tecer o último pano avaliar o comprimento do fio existente no rolo e 
+comparar com a metragem a ser tecida na ordem de fabricação, descontando a 
+metragem necessária para a amarração. 
+ 
+6.
 
-[2025-03-28T17:50:27.865Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:27.878Z] Usuário escolheu setor: None
-[2025-03-28T17:50:28.978Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa claramente o termo "None". Como não há um setor que corresponda diretamente à pergunta do usuário, não é possível fornecer uma resposta com base nas opções disponíveis no JSON.
-[2025-03-28T17:50:28.992Z] BOT: Setor não encontrado. Tente novamente.
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1 Remeteção manual:  
+ 
+6.1.1 Após final do tecimento marcar posição das malhas nas divisões dos quadros de 
+liços em relação aos rolos. 
+ 
+6.1.2 Se o pente for o mesmo para o próximo rolo marcar a cada +/- 20 cm pua com 
+carreira completa para evitar erros no carregamento do novo rolo. 
+ 
+6.1.3 Cortar pano na marca onde o mesmo foi fechado após marcação com fio de cor. 
+Nota: Para melhor entendimento de como cortar o pano base na moenda, consultar 
+JIB 001/2013 - Corte e limpeza de pano base na moenda. 
+ 
+6.1.4 Movimentar moenda para frente com cuidado até retirar pano da mesma. 
+ 
+6.1.5 Desmontar tear retirando batente do pente nos teares onde existe. 
+ 
+6.1.6 Retirar pente soltando parafusos e colocar em local plano. 
+ 
+6.1.7 Retirar sobras dos fios das malhas e rolos. Descarregar rolos vazios do tear, 
+levando-os para local apropriado. 
+ 
+6.1.8 Limpar malhas e quadros de liços com jato de ar. Completar limpeza com estopa 
+e óleo na estrutura e maquineta do tear. 
+ 
+6.1.9 Com a relação da urdideira, separar rolos com possíveis problemas para serem 
 
-[2025-03-28T17:50:29.001Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:29.017Z] Usuário escolheu setor: None
-[2025-03-28T17:50:29.993Z] Setor escolhido pelo modelo: Nenhum setor mencionado no JSON se encaixa perfeitamente com a intenção do usuário, pois "None" geralmente se refere a algo vazio, nulo ou indefinido.
-[2025-03-28T17:50:30.000Z] BOT: Setor não encontrado. Tente novamente.
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 2 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+colocados nas extremidades do tear. 
+ 
+6.1.10 Levar rolos para próximo do tear e iniciar carregamento, com atenção para 
+setas do sentido de rotação, onde os fios saem pela parte de cima do rolo, exceto no 
+tear Jager, que os fios saem pela parte de baixo do rolo. 
+ 
+6.1.11 Após carregar todos os rolos no tear, soltar fios tirando voltas em cada rolo ou 
+girando o rolo maior até que os fios apresentem comprimento adequado para remeter 
+nas malhas ou até se sobreporem aos fios já remetidos. 
+ 
+6.1.12 Passar canos nas cruzes substituindo barbante. 
+ 
+6.1.13 Amarrar canos na estrutura do tear. 
+ 
+6.1.14 Separar fios de acordo com divisão das malhas no rolo anterior. 
+ 
+6.1.15 Remeteção nos liços. 
+ 
+6.1.15.1 Posicionar os quadros de liços na posição mais superior. 
+ 
+6.1.15.2 Fazer remeteção conforme desenho, em 8, 12, 16 ou 24 quadros. Começar 
+pelo quadro número 1 até 8, 12, 16 ou 24, sempre da direita para, colocando um fio 
+em cada liço. 
+ 
+6.1.15.3 A remeteção será executada por 2 pessoas, onde uma delas ficará sentada à 
+mesa, em frente dos quadros de liço com uma passeta, e a outra ficará sentada atrás 
+dos quadros de liço para a seleção de cada fio da cruz, colocando na passeta para ser 
+puxado. 
+ 
+6.1.15.4 Ao final da remeteção retirar canos da cruz. 
+ 
+6.1.16 Passamento no pente 
+ 
+6.1.16.1 Colocar pente especificado na ordem de fabricação, ajustando emendas que 
+não devem ter puas fechadas ou abertas. 
+ 
+6.1.16.2 Observar defeitos tais como puas amassadas, ferrugem, etc. 
+ 
+6.1.16.3 Pente deve ficar alinhado com mesa e espelho da caixa onde lançadeira vai 
+passar. 
+ 
+6.1.16.4 Fixar pente apertando parafusos da mesa ou das barras de fixação. 
+ 
+6.1.16.5 Passar fios no pente seguindo número de fios por pua especificado na ordem 
+de fabricação. 
+ 
+6.1.16.6 Iniciar passagem do meio para as pontas. 
+ 
+6.1.16.7 Alinhar primeiro os fios no pente na mesma direção da saída do rolo para não 
+forçar fios na divisão do quadro de liço. 
+ 
+6.1.16.8 Um operador vai colocar número de fios por pua conferindo cada carreira 
 
-[2025-03-28T17:50:30.008Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:30.020Z] Usuário escolheu setor: None
-[2025-03-28T17:50:30.468Z] Setor escolhido pelo modelo: None
-[2025-03-28T17:50:30.480Z] BOT: Setor não encontrado. Tente novamente.
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 3 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+8,12,16 ou 24 fios. O outro vai puxar com passeta não deixando puas vazias ou com 
+fios excedentes. 
+ 
+6.1.16.9 Se pente estiver com marcas, conferir passamento nas mesmas. Qualquer 
+diferença deve ser corrigida. 
+ 
+6.1.16.10 Após passar todos os fios, acertar todas as divisões dos quadros de liços 
+para urdume ter alinhamento do rolo com pente. 
+ 
+6.1.17 Passagem na moenda e verificação 
+ 
+6.1.17.1 Colocar feltro na moenda e amarrar fios em pequenos nós. Colocar barbante 
+nas ourelas e tecer em teste para estabilizar tensão. 
+ 
+6.1.17.2 Revistando com um quadro em cima de cada vez marcar defeitos com fio de 
+cor. 
+ 
+6.1.17.3 Corrigir defeitos nas malhas e verificar o pente quanto ao número de fios nas 
+puas. 
+ 
+6.1.17.4 Irregularidade no pente deve ser corrigida desmanchando e repassando fios 
+corretamente. 
+ 
+6.2 Remeteção automática:  
+ 
+6.2.1 Preparar o tear quando finalizar a última ordem de fabricação programada. 
+ 
+6.2.1.1 Aumentar a largura total, considerando os rolos que serãor colocados nos 
+eixos traseiros. 
+ 
+6.2.1.2 Raleirar, objetivando tirar o pano da moenda e passar os fios que estiverem 
+para trás e com falta na base. 
+ 
+Nota: Para melhor entendimento de como cortar o pano base na moenda, consultar 
+JIB 001/2013 - Corte e limpeza de pano base na moenda. 
+ 
+6.2.1.3 Fazer a cruz para separar os fios dos quadros pares e ímpares. Feito isso, 
+jogar os fios para cima do tear. 
+ 
+6.2.2 Montar os rolos de urdume nos eixos traseiros. 
+ 
+6.2.2.1 Colocar a máquina de atar preparando-a para iniciar a amarração. 
+ 
+6.2.2.2 Colocam-se os fios dos rolos de urdume penteados manualmente sobre a base 
+da máquina. 
+ 
+6.2.2.3 Colocar os fios do tear sobre a base da máquina, na mesma direção dos fios 
+dos rolos de urdume. 
+ 
+6.2.2.4 Iniciar a amarração, da direita para a esquerda, e finalizar no último rolo. 
+ 
+6.2.3 Após a amarração, os rolos serão puxados manualmente na frente do tear, até 
+passar todos os nós. 
 
-[2025-03-28T17:50:30.486Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:30.499Z] Usuário escolheu setor: None
-[2025-03-28T17:50:31.033Z] Setor escolhido pelo modelo: None
-[2025-03-28T17:50:31.044Z] BOT: Setor não encontrado. Tente novamente.
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 4 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.2.4 No raleiramento feito no preparo do tear, amarrar os fios amarrados separando 
+os de 5,0 a 8,0 cm de fios. 
+ 
+6.2.5 Passar os prováveis erros (rompimentos), quando da puxada dos fios. 
+ 
+6.2.6 Iniciar o tecimento, raleirando e preparando o próximo desenho. 
+ 
+7.
+[2025-03-31T13:03:08.034Z] "Se precisar de dicas sobre tecidos, consulte nossa biblioteca virtual com 'Fim de rolo urdume', 'Revisao de pano base' e 'Processo de tecelagem' disponíveis para acesso!"
+[2025-03-31T13:04:11.632Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
 
-[2025-03-28T17:50:31.051Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:31.061Z] Usuário escolheu setor: None
-[2025-03-28T17:50:32.035Z] Setor escolhido pelo modelo: Não é possível determinar qual setor representa a intenção do usuário, pois a informação fornecida sobre "None" não está relacionada diretamente com nenhum dos setores listados.
-[2025-03-28T17:50:32.043Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T13:06:30.606Z] BOT: Olá! Como posso te ajudar hoje?
+[2025-03-31T13:06:49.768Z] BOT: Claro! Você gostaria de ver um exemplo específico de código JavaScript ou tem alguma dúvida em particular que eu possa te ajudar a resolver com código?
+[2025-03-31T13:07:01.514Z] BOT: Claro! Aqui está um exemplo simples de código JavaScript que exibe uma mensagem de "Olá, mundo!" no console:
 
-[2025-03-28T17:50:32.049Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:32.059Z] Usuário escolheu setor: None
-[2025-03-28T17:50:33.115Z] Setor escolhido pelo modelo: Nenhuma das opções acima representa a intenção do usuário, pois "None" não está relacionado a nenhum dos setores listados.
-[2025-03-28T17:50:33.123Z] BOT: Setor não encontrado. Tente novamente.
+```javascript
+console.log("Olá, mundo!");
+```
 
-[2025-03-28T17:50:33.131Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:33.142Z] Usuário escolheu setor: None
-[2025-03-28T17:50:33.711Z] Setor escolhido pelo modelo: Metrologia
-[2025-03-28T17:50:38.514Z] Mensagem humorada gerada: Estamos disponibilizando para consulta: 
-- Controle de Dispositivos de Medição e Monitoramento Rev1
-- Ajuste e calibração sistema medição de força SM HCT NLI
-- Calibração in d velocidade SM HCT NLI
-- Calibração medidores de espessura
-- Ajuste medidor de tensão em fio Schimdt
-- Manuseio, preservação e armazenamento equipamento
-- Calibração testrite modelo MK IV
-- Calibração medidor de torção de fios texcontrol
-- Disposição equipamento não conforme
-- Calibração sis medição controle temp SM HCT NLI
-- Calibração indicadores digitais CLT
-- Marcação e calibração medidores de comprimento HCT SM
-- Calibração indicadores digitais mod DIG200 e 210
-- Calibração sist medição tensão agulhamento NL19 e Hunter
-- Calibração e ajuste sist medição profundidade agulhamento NL19
-- Calibração e ajuste ind densidade agulhamento NL19
-- Calibração e ajuste ind velocidade agulhamento NL19
-- Calibração e ajuste feltometer Hunter e NL19
-- Calibração e ajuste medidores profundidade agulhadeiras
-- Calibração tensiometro digital
-- Calibração sistema de pesagem rolos de manta
-[2025-03-28T17:50:38.531Z] Usuário escolheu JSON: None
-[2025-03-28T17:50:39.632Z] Arquivo JSON escolhido pelo modelo: Nenhum dos arquivos listados parece representar a intenção do usuário de obter informações sobre "None". Sugiro que o usuário forneça mais detalhes ou esclareça sua pergunta para que possamos ajudar de forma mais precisa.
-[2025-03-28T17:50:39.645Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+Espero que isso te ajude a começar! Se precisar de mais alguma coisa, é só me avisar.
+[2025-03-31T17:32:12.155Z] BOT: Desculpe, mas não consigo responder à pergunta "CLT1" sem mais contexto. Você poderia fornecer mais informações ou esclarecer a sua pergunta? Estou aqui para ajudar!
+[2025-03-31T17:34:29.099Z] BOT: Parece que você digitou "CLT1". Posso te ajudar com alguma informação específica sobre a sigla "CLT1" ou com outra pergunta?
+[2025-03-31T17:42:38.102Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 01h:27m
+Tempo parado do dia: 03h:26m
+Tempo parado do dia anterior: 23h:57m
+Tempo parado na semana anterior: 3d, 17h:38m
+Eficiencia atual: 0.0
+Batidas: 0
 
-[2025-03-28T17:50:39.654Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:39.668Z] Usuário escolheu setor: None
-[2025-03-28T17:50:40.410Z] Setor escolhido pelo modelo: Nenhuma das opções fornecidas representa "None".
-[2025-03-28T17:50:40.420Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T17:55:54.017Z] Parado / Rodando: False
+Tempo parado atual: 08h:54m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 08h:54m
+Tempo parado do dia anterior: 23h:57m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 0.009999999776482582
+Batidas: 1
 
-[2025-03-28T17:50:40.427Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:40.439Z] Usuário escolheu setor: None
-[2025-03-28T17:50:41.053Z] Setor escolhido pelo modelo: Nenhuma das opções mencionadas representa "None".
-[2025-03-28T17:50:41.060Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T17:56:23.101Z] BOT: Olá! Tudo bem e você? Em que posso te ajudar hoje?
+[2025-03-31T18:02:48.502Z] Parado / Rodando: False
+Tempo parado atual: 00h:48m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 07h:12m
+Tempo parado do dia anterior: 23h:22m
+Tempo parado na semana anterior: 3d, 16h:30m
+Eficiencia atual: 18.670000076293945
+Batidas: 3846
 
-[2025-03-28T17:50:41.066Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:41.077Z] Usuário escolheu setor: None
-[2025-03-28T17:50:41.639Z] Setor escolhido pelo modelo: Acabamento
-[2025-03-28T17:50:42.794Z] Mensagem humorada gerada: "Se precisar de ajuda com termofixação, teste de alargamento ou tratamento B, estamos aqui para te ajudar! 😄" 
+[2025-03-31T18:03:18.518Z] BOT: Parece que você mencionou "Tear 03", mas não forneceu muitos detalhes. Você gostaria de saber algo específico sobre um tear número 03, ou está se referindo a algo relacionado à fabricação de tecidos? Por favor, me forneça mais informações para que eu possa te ajudar adequadamente.
+[2025-03-31T18:03:42.057Z] BOT: Desculpe, não entendi sua pergunta. Como posso te ajudar hoje?
+[2025-03-31T18:04:10.641Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:01m
+Tempo parado do dia: 06h:15m
+Tempo parado do dia anterior: 15h:28m
+Tempo parado na semana anterior: 3d, 13h:14m
+Eficiencia atual: 28.8799991607666
+Batidas: 5499
 
-Itens disponíveis para consulta: 
-- termofixação
-- teste de alargamento
-- tratamento B
-[2025-03-28T17:50:42.812Z] Usuário escolheu JSON: None
-[2025-03-28T17:50:43.429Z] Arquivo JSON escolhido pelo modelo: None
-[2025-03-28T17:50:43.438Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+[2025-03-31T18:05:50.149Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 07h:11m
+Tempo parado do dia anterior: 21h:52m
+Tempo parado na semana anterior: 4d, 00h:37m
+Eficiencia atual: 20.270000457763672
+Batidas: 4197
 
-[2025-03-28T17:50:43.445Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T17:50:43.456Z] Usuário escolheu setor: None
-[2025-03-28T18:09:18.725Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:09:18.739Z] Usuário escolheu setor: None
-[2025-03-28T18:09:31.445Z] Setor escolhido pelo modelo: None.
-[2025-03-28T18:09:31.453Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T18:07:32.426Z] Parado / Rodando: False
+Tempo parado atual: 09h:06m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 09h:06m
+Tempo parado do dia anterior: 23h:57m
+Tempo parado na semana anterior: 5d, 02h:28m
+Eficiencia atual: 0.0
+Batidas: 0
 
-[2025-03-28T18:09:31.458Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:09:31.471Z] Usuário escolheu setor: None
-[2025-03-28T18:09:33.081Z] Setor escolhido pelo modelo: Nenhuma das opções disponíveis no JSON corresponde a "None". Por favor, forneça mais informações ou esclarecimentos sobre o que significa "None" para que eu possa ajudá-lo de forma mais eficaz.
-[2025-03-28T18:09:33.097Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T18:07:32.440Z] BOT: 
+[2025-03-31T18:07:37.162Z] Parado / Rodando: False
+Tempo parado atual: 03h:27m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 06h:35m
+Tempo parado do dia anterior: 22h:23m
+Tempo parado na semana anterior: 3d, 21h:04m
+Eficiencia atual: 28.010000228881836
+Batidas: 3830
 
-[2025-03-28T18:09:33.113Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:09:33.147Z] Usuário escolheu setor: None
-[2025-03-28T18:09:34.524Z] Setor escolhido pelo modelo: Não consigo determinar o setor adequado com base na informação fornecida. Por favor, forneça mais detalhes sobre a informação que o usuário está buscando.
-[2025-03-28T18:09:34.540Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T18:07:37.170Z] BOT: 
+[2025-03-31T18:07:48.048Z] Parado / Rodando: False
+Tempo parado atual: 03h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 06h:20m
+Tempo parado do dia anterior: 19h:02m
+Tempo parado na semana anterior: 4d, 21h:06m
+Eficiencia atual: 23.420000076293945
+Batidas: 4099
 
-[2025-03-28T18:09:34.556Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:09:34.581Z] Usuário escolheu setor: None
-[2025-03-28T18:15:21.338Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:15:45.641Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:15:49.731Z] Usuário escolheu setor: None
-[2025-03-28T18:16:02.218Z] Setor escolhido pelo modelo: PCP
-[2025-03-28T18:16:03.078Z] Mensagem humorada gerada: Venham conferir os manuais de "Planejamento e controle da produção" e "Montagem rolo de urdume" que estão disponíveis para consulta!
-[2025-03-28T18:16:13.147Z] Usuário escolheu JSON: None
-[2025-03-28T18:16:14.185Z] Arquivo JSON escolhido pelo modelo: Não existe um arquivo disponível que represente a intenção do usuário, pois nenhum dos arquivos listados contém informações sobre "None".
-[2025-03-28T18:16:14.220Z] BOT: Não foi possível encontrar uma informação correspondente no banco de dados.
+[2025-03-31T18:07:48.065Z] BOT: 
+[2025-03-31T18:07:59.065Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 06h:45m
+Tempo parado do dia anterior: 21h:20m
+Tempo parado na semana anterior: 3d, 08h:46m
+Eficiencia atual: 0.0
+Batidas: 0
 
-[2025-03-28T18:16:14.242Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:20:01.059Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:20:09.245Z] Usuário escolheu setor: [2025-03-28T18:20:07.282Z] oi
-[2025-03-28T18:20:10.982Z] Setor escolhido pelo modelo: Não é possível determinar qual setor melhor representa a intenção do usuário com base na informação fornecida.
-[2025-03-28T18:20:10.993Z] BOT: Setor não encontrado. Tente novamente.
+[2025-03-31T18:07:59.081Z] BOT: 
+[2025-03-31T18:10:06.415Z] Parado / Rodando: False
+Tempo parado atual: 03h:30m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 06h:38m
+Tempo parado do dia anterior: 22h:23m
+Tempo parado na semana anterior: 3d, 21h:04m
+Eficiencia atual: 27.850000381469727
+Batidas: 3830
 
-[2025-03-28T18:20:11.003Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:20:17.083Z] Usuário escolheu setor: [2025-03-28T18:20:15.746Z] mantas
-[2025-03-28T18:20:17.667Z] Setor escolhido pelo modelo: Mantas
-[2025-03-28T18:20:18.630Z] Mensagem humorada gerada: "Estamos disponíveis para consulta sobre fabricação de mantas e preparação da mistura. Aproveite e venha conferir!"
-[2025-03-28T18:20:28.705Z] Usuário escolheu JSON: [2025-03-28T18:20:27.993Z] mistura
-[2025-03-28T18:20:29.402Z] Arquivo JSON escolhido pelo modelo: preparacao da mistura.json
-[2025-03-28T18:27:11.160Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:27:21.259Z] Usuário escolheu setor: [2025-03-28T18:27:20.858Z] oi
-[2025-03-28T18:27:22.253Z] Setor escolhido pelo modelo: Recepcao de materiais
-[2025-03-28T18:27:23.170Z] Mensagem humorada gerada: "Corre lá na recepção que tem a lista de materiais e insumos disponíveis para consulta!"
-[2025-03-28T18:27:41.271Z] Usuário escolheu JSON: [2025-03-28T18:27:39.773Z] a lista de materias e insumos
-[2025-03-28T18:27:42.145Z] Arquivo JSON escolhido pelo modelo: DSG.002.PT Recepcao materiais materia prima e insumos.json
-[2025-03-28T18:27:42.227Z] BOT: 
+[2025-03-31T18:10:13.913Z] Parado / Rodando: False
+Tempo parado atual: 03h:03m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 06h:23m
+Tempo parado do dia anterior: 19h:02m
+Tempo parado na semana anterior: 4d, 21h:06m
+Eficiencia atual: 23.290000915527344
+Batidas: 4099
+
+[2025-03-31T18:10:25.448Z] Parado / Rodando: False
+Tempo parado atual: 00h:02m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 08h:39m
+Tempo parado do dia anterior: 23h:33m
+Tempo parado na semana anterior: 4d, 18h:47m
+Eficiencia atual: 4.710000038146973
+Batidas: 906
+
+[2025-03-31T18:10:40.487Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:01m
+Tempo parado do dia: 06h:46m
+Tempo parado do dia anterior: 21h:20m
+Tempo parado na semana anterior: 3d, 08h:46m
+Eficiencia atual: 0.0
+Batidas: 0
+
+[2025-03-31T18:12:46.029Z] Parado / Rodando: False
+Tempo parado atual: 09h:11m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 09h:11m
+Tempo parado do dia anterior: 23h:57m
+Tempo parado na semana anterior: 2d, 03h:53m
+Eficiencia atual: 0.0
+Batidas: 0
+
+[2025-03-31T18:13:19.427Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:03m
+Tempo parado do dia: 03h:29m
+Tempo parado do dia anterior: 23h:57m
+Tempo parado na semana anterior: 3d, 17h:38m
+Eficiencia atual: 0.0
+Batidas: 0
+
+[2025-03-31T18:14:04.793Z] Parado / Rodando: False
+Tempo parado atual: 09h:13m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 09h:13m
+Tempo parado do dia anterior: 22h:47m
+Tempo parado na semana anterior: 4d, 01h:59m
+Eficiencia atual: 0.0
+Batidas: 0
+
+[2025-03-31T22:37:33.026Z] "Na biblioteca da fábrica, temos verdadeiras obras-primas disponíveis para consulta: fim de rolo urdume, Revisao de pano base e Processo de tecelagem! Aproveite a leitura e divirta-se!"
+[2025-03-31T22:38:10.360Z] 
+🔹 OBJETIVO:
+Este documento padroniza as operações do processo de tecelagem. 
+ 
+ 
+2.
+
+🔹 RESPONSABILIDADE:
+2.1. A aplicação deste documento é de responsabilidade do tecelão e/ou líder do setor. 
+ 
+2.2. A administração das ações descritas neste documento é da responsabilidade da 
+Engenharia de Processo / Supervisão de Produção. 
+ 
+3.
+
+🔹 GLOSSÁRIO:
+OF: Ordem de fabricação. 
+PCP: Planejamento e Controle da Produção. 
+CEP: Controle Estatístico do Processo. 
+ 
+4.
+
+🔹 FORMULÁRIOS:
+a) Ordem de Fabricação. 
+b) Carta de CEP, na rede. 
+ 
+5.
+
+🔹 CONDIÇÕES GERAIS:
+O processo de tecelagem inicia-se com a regulagem do tear, conforme parâmetros 
+estabelecidos na OF e ordem de programação determinada pelo o PCP. 
+ 
+6.
+
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1. Regulagem do Tear 
+ 
+6.1.1. Cabe ao Co-Líder: 
+ 
+6.1.1.1. Entrar com os dados de desenho e passagem de trama no computador de 
+acordo com a OF. 
+ 
+6.1.1.2. Ajustar a tensão de urdume para atingir a passagem desejada na OF. 
+ 
+6.1.1.3. Ajustar a largura do pente de acordo com a OF e fazer uma conferencia junto 
+com outro funcionário. 
+ 
+6.1.1.4. Ajustar a tensão de lançadeira conforme descrito na OF. 
+ 
+6.1.1.4.1 Para feltros com emenda, utilizar a tabela de tensão do Huytec do ANEXO A. 
+ 
+6.1.1.5. Antes de iniciar o tecimento, se faz necessário a regulagem das barras: 
+- Apertos para não soltar durante o tecimento. 
+- Checagem da formação da ourela. 
+ 
+6.1.2. Cabe ao Tecelão: 
+ 
+6.1.2.1. Conferir o desenho de tecimento. 
+
+INSTRUÇÃO DE TRABALHO 
+Processo de Tecelagem 
+DSG.033.PT 
+Rev.nº.: 0 
+Data Rev.: 25/07/19 
+Página 2 de 2
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.1.2.2. Verificar o fio de trama a ser utilizado. 
+ 
+6.1.2.3. Conferir a tensão de lançadeira, a faca da lançadeira e a passagem. A tensão 
+de trama da lançadeira deverá ser verificada/conferida a cada duas medidas e em 
+caso de valores fora do range, a tensão deverá ser ajustada e registrada na Ordem de 
+Fabricação. 
+Nota: As tensões de trama do início, meio e final do pano base devem ser registradas 
+na carta de CEP do respectivo tear/fio. 
+ 
+6.1.2.4. Antes de iniciar o tecimento, revistar o desenho, para eliminar as faltas de fio 
+no sentido de Urdume. 
+ 
+6.2. Tecimento 
+ 
+6.2.1. No início e no término de cada tecido, colocar fio de marcação para identificação 
+do tecimento. 
+ 
+6.2.2. Marcar na fita adesiva as medidas de tecimento indicadas na OF e colar no 
+pano base no final de cada medida. 
+ 
+6.2.2.1. Cada medida de tecimento possui 50cm. 
+ 
+6.2.3. Tecer conforme parâmetros especificados na OF. 
+ 
+Nota: Quando houver tecimento de tecidos Twin(fabricação em conjunto) ou outras 
+informações necessárias, será indicado na OF. 
+ 
+6.2.4. Durante o tecimento, fazer acompanhamento e inspeção do tecimento. 
+ 
+6.2.5. Anotar os defeitos e suas causas na OF e entrar em contato com o supervisor 
+e/ou líder. 
+ 
+7.
+[2025-04-01T11:34:48.701Z] E aí! Parece que você caiu no mundo da Andritz! O que vai querer: informações da máquina ou só papo furado mesmo?
+[2025-04-01T11:34:50.870Z] 1. Relatório Financeiro de Janeiro de 2022
+2. Planilha de Controle de Estoque
+3. Apresentação de Vendas do Último Trimestre
+4. Contrato de Parceria com Fornecedor
+5. Pesquisa de Satisfação dos Clientes
+6. Plano de Marketing para o Próximo Ano
+
+Por favor, selecione o número correspondente ao arquivo que deseja consultar.
+[2025-04-01T11:37:33.942Z] Ops! Parece que o arquivo JSON que você escolheu deu um rolê e não quis ser encontrado. 🤷‍♂️ Que tal tentar de novo com um dos arquivos disponíveis? Tenho certeza de que um deles vai querer ser encontrado! 😉🔍 #DesafioDoJSON
+[2025-04-01T11:37:58.923Z] 
+🔹 OBJETIVO:
+Este documento padroniza as atividades de aplicação de barra guia em feltros acabados.
+
+🔹 RESPONSABILIDADE:
+2.1. A aplicação deste documento é de responsabilidade dos operadores do acabamento, pin seam e/ou expedição. 2.2. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+🔹 GLOSSARIO:
+PSF: Pin Seam Felt (feltro com emenda).
+
+🔹 FORMULARIOS:
+NA.
+
+🔹 CONDICOES_GERAIS:
+5.1 A barra guia é impressa na face e em toda a largura do feltro, próximo ao número do produto, respeitando o sentido da seta existente.
+
+🔹 CONDICOES_ESPECIFICAS:
+6.1 Para a aplicação da barra guia é utilizado o equipamento INKJET (trade line). 6.2 Posicionar o equipamento na posição correta. - Para feltros endless (sem emenda): próximo à identificação. - Para feltros PSF (com emenda): a 1,50m da emenda (a identificação deve estar entre a emenda e a barra guia). 6.3 Acionar o equipamento e imprimir a barra guia, não deixando que a mesma seja impressa desalinhada / torta. 6.4 Para melhor entendimento do processo de aplicação da barra guia, consultar JIB 003/2015 - Aplicação da Barra Guia Inkjet (trade line).
+[2025-04-01T11:38:00.029Z] E aí, navegante perdido no oceano da Andritz! O que você prefere: informações sobre as máquinas ou aquelas curiosidades aleatórias?
+[2025-04-01T11:38:34.005Z] Eu posso te ajudar a encontrar informações específicas nos arquivos. Por favor, escolha o arquivo que deseja consultar: DSG.002.PT Recepcao materiais materia prima ou insumos?
+[2025-04-01T12:09:40.038Z] Bem-vindo ao modo de consulta Andritz! Quer consultar informações de máquina ou gerais?
+[2025-04-01T12:10:16.324Z] Setor não encontrado. Escolha um da lista.
+[2025-04-01T12:28:42.517Z] Setor não encontrado. Escolha um da lista.
+[2025-04-01T12:39:21.790Z] E aí, amigo! Seja muito bem-vindo ao mundo maravilhoso da Andritz! Quer bater um papo sobre informações de máquinas ou deixa eu te contar as novidades gerais? A escolha é sua!
+[2025-04-01T12:40:04.703Z] E aí, firmeza? Aqui é a Andritz no modo consulta mode on! O que você prefere: informações da máquina ou informações em geral?
+[2025-04-01T12:40:17.692Z] E aí, amiguinho! Aqui é o consultor virtual da Andritz. Então, tá afim de saber mais sobre maquininhas ou só quer dar um oi? Me conta aí!
+[2025-04-01T12:40:52.549Z] E aí, beleza? Bem-vindo ao Modo de Consulta da Andritz! Quer bater um papo sobre informações de máquina ou jogar uma ideia sobre informações gerais?
+[2025-04-01T12:40:58.196Z] Maravilha! Qual será a sorteada da vez para a sua consulta, jovem gafanhoto?
+[2025-04-01T12:41:09.394Z] Parado / Rodando: False
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 02h:47m
+Tempo parado do dia anterior: 23h:33m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 22.8799991607666
+Batidas: 1416
+
+[2025-04-01T12:41:10.777Z] E aí, hoje é o dia de dar aquela espiadinha na Andritz! Vai de máquina ou informações gerais?
+[2025-04-01T12:41:53.063Z] E aí, meu chapa! Tá perdido nesse mundão de Deus? Se tá procurando alguma informação sobre máquinas ou algo do tipo, cola com a Andritz! É nois!
+[2025-04-01T12:42:15.516Z] E aí, beleza? Aqui é a Central de Consultas da Andritz! Vamos lá, quer saber mais sobre máquinas ou só conhecer curiosidades aleatórias?
+[2025-04-01T12:42:25.754Z] Maravilha! Qual dessas máquinas incríveis você quer dar uma olhadinha?
+[2025-04-01T12:42:34.729Z] Parado / Rodando: False
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 02h:16m
+Tempo parado do dia anterior: 16h:09m
+Tempo parado na semana anterior: 3d, 08h:46m
+Eficiencia atual: 0.0
+Batidas: 0
+
+[2025-04-01T12:42:36.023Z] E aí, amigo! Bem-vindo ao mundo maravilhoso da Andritz! Quer bater um papo sobre informações de máquina ou informações gerais? Estamos aqui para alegrar seu dia, não se acanhe!
+[2025-04-01T12:43:16.229Z] E aí, meu querido! Tá no modo "chame o expert" da Andritz! Vamos de informações de máquina ou só quer bater um papo sobre geralzão?
+[2025-04-01T12:43:30.551Z] E aí, tudo beleza? Por favor, me responda: Quer informações sobre máquina ou curiosidades aleatórias?
+[2025-04-01T12:56:43.017Z] "Para consultar os processos de fabricação de mantas e preparação da mistura, é só pedir que nós te entregamos em mãos!"
+[2025-04-01T16:41:50.866Z] Beleza! Vou buscar informações em **Mantas**.
+[2025-04-01T16:41:52.206Z] "Se precisar de informações engraçadas e quentinhas, temos para consulta: Fabricação de mantas e Preparação da mistura."
+[2025-04-01T16:42:15.095Z] Encontrei um arquivo que pode te ajudar: **Fabricacao de mantas**!
+[2025-04-01T16:42:15.169Z] 
+🔹 OBJETIVO:
+Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+
+🔹 RESPONSABILIDADE:
+A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+🔹 GLOSSARIO:
+CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+
+🔹 FORMULARIOS:
+a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+
+🔹 CONDICOES GERAIS:
+Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+
+🔹 CONDICOES ESPECIFICAS:
+Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, para medição de gramatura, Balança de precisão eletrônica, Pistola Rolsprint, Tesoura, Máquina de corte. Roteiro de fabricação de manta: Limpar a torre de captação de refugos e os pontos críticos da máquina CLT (alimentador, carda, esteiras, etc). Carregar a carda e o alimentador da máquina com o material a ser produzido. Ajustar a máquina de acordo com o tipo de manta, conforme Processo de Fabricação de Manta e iniciar o processo. Caso necessário, será feita a umidificação das fibras. Quando a manta estiver no enrolador da máquina, posicionar o tubo de manta, verificar a necessidade de ajuste de sobreposição, esperar completar 6 metros e retirar uma amostra de 0,50m x 0,50m para pesar na balança de precisão eletrônica. O resultado será multiplicado por quatro e comparado com o valor estipulado na Ordem de Fabricação de Manta. Caso não se tenha atingido o valor solicitado, realizar ajuste no painel da máquina e retirar quantas amostras forem necessárias para obter a gramatura requerida na Ordem de Fabricação de Manta. Registrar o valor da gramatura na Ordem de Fabricação de Manta. Valor de gramatura diferente do especificado poderá ser liberado pelo líder do setor ou Gestor de Produção / Processo. Atingida a gramatura, posicionar a máquina de corte na largura do rolo de manta a ser fabricado, zerar o marcador de metragem, iniciar o rolo e o gráfico do medidor de massa. Durante o processo, checar a sobreposição da manta e manter a caixa de alimentação da máquina cheia. Para a CLT I e II, utiliza-se o equipamento MS Instrumentos para elaboração do perfil longitudinal de gramatura, com o objetivo de manter a qualidade do rolo durante o processo. Após o término da fabricação do rolo de manta, pesar e realizar cálculo conforme a fórmula presente na OF, registrar a produção no formulário de Produção Diária - CLT I / CLT II, identificar o rolo de manta, anexar o gráfico do medidor de massa na OF, e liberar para a próxima etapa do processo. Todo o desperdício gerado durante a fabricação de um rolo de manta que pode ser reciclado, deve ser ensacado, identificado, pesado e retornado para a área de reciclagem. Troca de mistura: Limpar totalmente a torre de captação de refugos. Descarregar completamente as esteiras e a carda e inserir a nova mistura. Ideal que a troca de mistura seja feita reduzindo o dtex gradativamente. Salvo urgências de produção, onde deverá ser realizada limpeza dos pontos descritos na Pauta de Limpeza do setor.
+[2025-04-01T16:43:23.241Z] Setor não encontrado. Tente novamente.
+[2025-04-01T16:43:54.765Z] Beleza! Vou buscar informações em **Mantas**.
+[2025-04-01T16:43:56.107Z] "Estão disponíveis para consulta os arquivos de Fabricação de mantas e Preparação da mistura. Divirtam-se com esses segredinhos da cozinha!"
+[2025-04-01T16:46:16.201Z] Encontrei um arquivo que pode te ajudar: **preparacao da mistura**!
+[2025-04-01T16:46:16.252Z] 
+🔹 OBJETIVO:
+Este documento padroniza as operações de preparação da mistura para fabricação de manta.
+
+🔹 RESPONSABILIDADE:
+A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+🔹 GLOSSARIO:
+Temafa: Equipamento utilizado para reciclar as fibras. Loba: Equipamento utilizado para reciclar e/ou misturar as fibras no Blending. Medidor de fluxo: Equipamento que faz a dosagem de água da máquina Loba. Blending: Área da reciclagem / mistura de fibras. Pistola Rolsprint: Equipamento utilizado para retirar resíduos de fibras da máquina. JIB's: Documento com ilustrações que descreve o processo de forma mais simples e compreensível. É utilizado para treinamento e integrações.
+
+🔹 FORMULARIOS:
+Folha de produção para mistura de manta - ANEXO A.
+
+🔹 CONDICOES GERAIS:
+Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta (anexo A). Feito isso, codificar para identificação do lote das fibras.
+
+🔹 CONDICOES ESPECIFICAS:
+Aparelhagem: Temafa, Loba, Medidor de fluxo, Balança, Chave de boca, Pistola Rolsprint. Preparação das fibras recicladas: As sobras de manta das agulhadeiras e CLT's, as quais forem recicladas, devem seguir para a área apropriada, onde são recicladas nas máquinas Temafa ou Loba e armazenadas em sacos com as devidas identificações. Para melhorar o entendimento da reciclagem de fibras, consultar o JIB 004/2014 - Reciclagem de fibras pré-agulhadas. Roteiro para preparação da mistura: Limpar a área onde será feita a mistura para que não ocorra contaminação. Pegar e levar as fibras (virgens e/ou recicladas) para o ambiente da máquina Loba e pesar as mesmas. Ligar e ajustar a Loba, bem como, ajustar o medidor de fluxo conforme tipo de mistura a ser realizada. Alimentar a máquina com as camadas de fibras, abrindo-as manualmente. Sempre que for utilizar reciclado na mistura, variar a alimentação na máquina entre fibras virgens e recicladas. Para melhor entendimento das atividades específicas consultar JIB's do setor. Ao terminar a mistura, desligar a Loba e o transportador de mistura. Limpar a máquina manualmente e limpar o local.
+[2025-04-01T16:48:14.439Z] Beleza! Vou buscar informações em **Tecelagem e revisão**.
+[2025-04-01T16:48:15.463Z] "Se precisar de informações divertidas sobre o fim de rolo urdume, revisão de pano base ou processo de tecelagem, estou aqui para ajudar!"
+[2025-04-01T17:24:38.965Z] Que legal! Estou pesquisando mais informações sobre a máquina TP100 / Tear 01...
+[2025-04-01T17:24:38.987Z] Parado / Rodando: False
+Tempo parado atual: 00h:42m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 07h:06m
+Tempo parado do dia anterior: 23h:33m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 14.140000343322754
+Batidas: 1996
+
+[2025-04-01T17:49:12.026Z] Seja muito bem-vindo ao modo de consulta da Andritz!
+
+Estamos muito felizes em tê-lo aqui e esperamos que encontre todas as informações que precisa de forma clara e completa. Nosso objetivo é fornecer um serviço de consulta de alta qualidade para atender às suas necessidades da melhor maneira possível.
+
+Fique à vontade para explorar todas as funcionalidades e recursos disponíveis. Se precisar de alguma ajuda ou tiver alguma dúvida, não hesite em nos contatar. Estamos aqui para ajudá-lo da melhor forma.
+
+Desejamos uma excelente experiência de consulta e esperamos que encontre tudo o que procura. Obrigado por confiar na Andritz. Seja bem-vindo! 🌟
+[2025-04-01T17:50:25.420Z] Olá! Seja bem-vindo ao modo de consulta Andritz! Estamos felizes em tê-lo conosco e esperamos que encontre todas as informações que precisa de forma clara e objetiva. Caso tenha alguma dúvida ou sugestão, não hesite em nos contatar. Estamos aqui para ajudá-lo no que for necessário. Aproveite a sua consulta e obrigado por escolher a Andritz!
+[2025-04-01T17:54:23.206Z] Que legal que você escolheu essa máquina! Estou pesquisando mais informações sobre a **TP100 / Tear 01**...
+[2025-04-01T17:54:23.222Z] Parado / Rodando: False
+Tempo parado atual: 01h:12m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 07h:36m
+Tempo parado do dia anterior: 23h:33m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 13.350000381469727
+Batidas: 1996
+
+[2025-04-01T17:54:25.051Z] Seja muito bem-vindo ao modo de consulta Andritz! Estamos muito felizes em tê-lo conosco e esperamos que encontre aqui todas as informações e soluções que procura. Estamos à disposição para ajudá-lo no que precisar. Sinta-se à vontade para explorar todas as funcionalidades e recursos disponíveis. Esperamos que sua experiência conosco seja a melhor possível. Seja bem-vindo!
+[2025-04-02T11:38:14.295Z] Olá! Seja muito bem-vindo ao modo de consulta Andritz. Estamos muito felizes em tê-lo conosco e esperamos que encontre todas as informações que precisa de forma fácil e rápida. Se tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato conosco. Estamos aqui para ajudá-lo da melhor forma possível. Obrigado por escolher a Andritz e aproveite o modo de consulta!
+[2025-04-02T11:38:32.703Z] Que legal! Estou pesquisando mais sobre a máquina **TP100 / Tear 01**...
+[2025-04-02T11:38:32.720Z] Parado / Rodando: False
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 02h:20m
+Tempo parado do dia anterior: 22h:05m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 8.520000457763672
+Batidas: 377
+
+[2025-04-02T11:38:36.805Z] Olá, seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos que sua experiência seja a melhor possível. Sinta-se à vontade para explorar nossos recursos e tirar todas as suas dúvidas. Estamos aqui para ajudá-lo no que precisar. Obrigado por escolher a Andritz como sua fonte de informações. Seja bem-vindo!
+[2025-04-02T11:59:38.115Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo por aqui e prontos para ajudá-lo no que precisar. Sinta-se à vontade para explorar nossos recursos e informações. Qualquer dúvida, conte conosco para auxiliá-lo. Tenha uma ótima experiência!
+[2025-04-02T12:01:24.772Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos que tenha uma ótima experiência durante sua busca por informações. Caso tenha alguma dúvida ou precisar de alguma ajuda, não hesite em nos contatar. Estamos aqui para ajudá-lo no que precisar. Novamente, seja bem-vindo e aproveite a sua consulta!
+[2025-04-02T12:02:52.875Z] Olá, seja bem-vindo ao modo de consulta Andritz! Estamos muito felizes em tê-lo conosco e esperamos que você encontre todas as informações que precisa de forma rápida e eficaz. Não hesite em nos contatar caso tenha alguma dúvida ou precise de ajuda. Tenha uma ótima experiência de consulta conosco!
+[2025-04-02T12:08:15.522Z] Seja bem-vindo ao modo de consulta Andritz! Estamos felizes em tê-lo conosco e esperamos que sua experiência seja produtiva e enriquecedora. Estamos aqui para ajudá-lo a encontrar as informações que você precisa e estamos disponíveis para qualquer dúvida ou assistência que possa surgir. Sinta-se à vontade para explorar todas as funcionalidades e recursos que oferecemos e aproveite ao máximo sua consulta conosco. Obrigado por escolher a Andritz. Seja muito bem-vindo!
+[2025-04-02T12:09:00.564Z] Seja bem-vindo ao modo de consulta Andritz! É um prazer tê-lo aqui conosco. Esperamos que esta ferramenta de consulta seja útil e eficiente para você. Conte conosco para auxiliá-lo no que for necessário. Aproveite ao máximo essa experiência e não hesite em entrar em contato conosco caso tenha alguma dúvida. Desejamos uma excelente jornada de consulta!
+[2025-04-02T12:09:06.724Z] Que legal a sua escolha! Estou procurando mais informações sobre a máquina **TP100 / Tear 01**...
+[2025-04-02T12:09:06.740Z] Parado / Rodando: True
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 02h:40m
+Tempo parado do dia anterior: 22h:05m
+Tempo parado na semana anterior: 5d, 04h:09m
+Eficiencia atual: 11.5600004196167
+Batidas: 612
+
+[2025-04-02T12:09:08.692Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo conosco e esperamos que sua experiência seja informativa e produtiva. Não hesite em nos contatar caso tenha alguma dúvida ou precisar de suporte durante sua consulta. Obrigado por escolher a Andritz e aproveite sua visita!
+[2025-04-02T12:09:42.037Z] Beleza! Vou buscar informações em **Tecelagem e revisão**.
+[2025-04-02T12:09:43.210Z] Estão disponíveis para consulta os seguintes itens: 
+- fim de rolo urdume
+- Revisao de pano base
+- Processo de tecelagem
+[2025-04-02T12:10:03.083Z] Encontrei um arquivo que pode te ajudar: **DSG.007.PT fim de rolo urdume**!
+[2025-04-02T12:10:03.127Z] 
+🔹 OBJETIVO:
+Este documento padroniza as atividades a serem seguidas quando do final de um rolo 
+de urdume no tear. 
+2.
+
+🔹 RESPONSABILIDADE:
+2.1. A aplicação deste documento é de responsabilidade dos líderes e co-líderes do 
+setor. 
+ 
+2.2. A administração das operações descritas neste documento é da responsabilidade 
+do Gestor de Produção / Processos. 
+ 
+3.
+
+🔹 GLOSSÁRIO:
+NA. 
+ 
+4.
+
+🔹 FORMULÁRIOS:
+a) Ordem de Fabricação (O.F.) 
+ 
+5.
+
+🔹 CONDIÇÕES GERAIS:
+5.1 Antes de tecer o último pano avaliar o comprimento do fio existente no rolo e 
+comparar com a metragem a ser tecida na ordem de fabricação, descontando a 
+metragem necessária para a amarração. 
+ 
+6.
+
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1 Remeteção manual:  
+ 
+6.1.1 Após final do tecimento marcar posição das malhas nas divisões dos quadros de 
+liços em relação aos rolos. 
+ 
+6.1.2 Se o pente for o mesmo para o próximo rolo marcar a cada +/- 20 cm pua com 
+carreira completa para evitar erros no carregamento do novo rolo. 
+ 
+6.1.3 Cortar pano na marca onde o mesmo foi fechado após marcação com fio de cor. 
+Nota: Para melhor entendimento de como cortar o pano base na moenda, consultar 
+JIB 001/2013 - Corte e limpeza de pano base na moenda. 
+ 
+6.1.4 Movimentar moenda para frente com cuidado até retirar pano da mesma. 
+ 
+6.1.5 Desmontar tear retirando batente do pente nos teares onde existe. 
+ 
+6.1.6 Retirar pente soltando parafusos e colocar em local plano. 
+ 
+6.1.7 Retirar sobras dos fios das malhas e rolos. Descarregar rolos vazios do tear, 
+levando-os para local apropriado. 
+ 
+6.1.8 Limpar malhas e quadros de liços com jato de ar. Completar limpeza com estopa 
+e óleo na estrutura e maquineta do tear. 
+ 
+6.1.9 Com a relação da urdideira, separar rolos com possíveis problemas para serem 
+
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 2 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+colocados nas extremidades do tear. 
+ 
+6.1.10 Levar rolos para próximo do tear e iniciar carregamento, com atenção para 
+setas do sentido de rotação, onde os fios saem pela parte de cima do rolo, exceto no 
+tear Jager, que os fios saem pela parte de baixo do rolo. 
+ 
+6.1.11 Após carregar todos os rolos no tear, soltar fios tirando voltas em cada rolo ou 
+girando o rolo maior até que os fios apresentem comprimento adequado para remeter 
+nas malhas ou até se sobreporem aos fios já remetidos. 
+ 
+6.1.12 Passar canos nas cruzes substituindo barbante. 
+ 
+6.1.13 Amarrar canos na estrutura do tear. 
+ 
+6.1.14 Separar fios de acordo com divisão das malhas no rolo anterior. 
+ 
+6.1.15 Remeteção nos liços. 
+ 
+6.1.15.1 Posicionar os quadros de liços na posição mais superior. 
+ 
+6.1.15.2 Fazer remeteção conforme desenho, em 8, 12, 16 ou 24 quadros. Começar 
+pelo quadro número 1 até 8, 12, 16 ou 24, sempre da direita para, colocando um fio 
+em cada liço. 
+ 
+6.1.15.3 A remeteção será executada por 2 pessoas, onde uma delas ficará sentada à 
+mesa, em frente dos quadros de liço com uma passeta, e a outra ficará sentada atrás 
+dos quadros de liço para a seleção de cada fio da cruz, colocando na passeta para ser 
+puxado. 
+ 
+6.1.15.4 Ao final da remeteção retirar canos da cruz. 
+ 
+6.1.16 Passamento no pente 
+ 
+6.1.16.1 Colocar pente especificado na ordem de fabricação, ajustando emendas que 
+não devem ter puas fechadas ou abertas. 
+ 
+6.1.16.2 Observar defeitos tais como puas amassadas, ferrugem, etc. 
+ 
+6.1.16.3 Pente deve ficar alinhado com mesa e espelho da caixa onde lançadeira vai 
+passar. 
+ 
+6.1.16.4 Fixar pente apertando parafusos da mesa ou das barras de fixação. 
+ 
+6.1.16.5 Passar fios no pente seguindo número de fios por pua especificado na ordem 
+de fabricação. 
+ 
+6.1.16.6 Iniciar passagem do meio para as pontas. 
+ 
+6.1.16.7 Alinhar primeiro os fios no pente na mesma direção da saída do rolo para não 
+forçar fios na divisão do quadro de liço. 
+ 
+6.1.16.8 Um operador vai colocar número de fios por pua conferindo cada carreira 
+
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 3 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+8,12,16 ou 24 fios. O outro vai puxar com passeta não deixando puas vazias ou com 
+fios excedentes. 
+ 
+6.1.16.9 Se pente estiver com marcas, conferir passamento nas mesmas. Qualquer 
+diferença deve ser corrigida. 
+ 
+6.1.16.10 Após passar todos os fios, acertar todas as divisões dos quadros de liços 
+para urdume ter alinhamento do rolo com pente. 
+ 
+6.1.17 Passagem na moenda e verificação 
+ 
+6.1.17.1 Colocar feltro na moenda e amarrar fios em pequenos nós. Colocar barbante 
+nas ourelas e tecer em teste para estabilizar tensão. 
+ 
+6.1.17.2 Revistando com um quadro em cima de cada vez marcar defeitos com fio de 
+cor. 
+ 
+6.1.17.3 Corrigir defeitos nas malhas e verificar o pente quanto ao número de fios nas 
+puas. 
+ 
+6.1.17.4 Irregularidade no pente deve ser corrigida desmanchando e repassando fios 
+corretamente. 
+ 
+6.2 Remeteção automática:  
+ 
+6.2.1 Preparar o tear quando finalizar a última ordem de fabricação programada. 
+ 
+6.2.1.1 Aumentar a largura total, considerando os rolos que serãor colocados nos 
+eixos traseiros. 
+ 
+6.2.1.2 Raleirar, objetivando tirar o pano da moenda e passar os fios que estiverem 
+para trás e com falta na base. 
+ 
+Nota: Para melhor entendimento de como cortar o pano base na moenda, consultar 
+JIB 001/2013 - Corte e limpeza de pano base na moenda. 
+ 
+6.2.1.3 Fazer a cruz para separar os fios dos quadros pares e ímpares. Feito isso, 
+jogar os fios para cima do tear. 
+ 
+6.2.2 Montar os rolos de urdume nos eixos traseiros. 
+ 
+6.2.2.1 Colocar a máquina de atar preparando-a para iniciar a amarração. 
+ 
+6.2.2.2 Colocam-se os fios dos rolos de urdume penteados manualmente sobre a base 
+da máquina. 
+ 
+6.2.2.3 Colocar os fios do tear sobre a base da máquina, na mesma direção dos fios 
+dos rolos de urdume. 
+ 
+6.2.2.4 Iniciar a amarração, da direita para a esquerda, e finalizar no último rolo. 
+ 
+6.2.3 Após a amarração, os rolos serão puxados manualmente na frente do tear, até 
+passar todos os nós. 
+
+INSTRUÇÃO DE TRABALHO 
+Final de Rolo de Urdume 
+DSG.007.PT 
+Rev.nº.: 0 
+Data Rev.: 22/07/19 
+Página 4 de 4
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.2.4 No raleiramento feito no preparo do tear, amarrar os fios amarrados separando 
+os de 5,0 a 8,0 cm de fios. 
+ 
+6.2.5 Passar os prováveis erros (rompimentos), quando da puxada dos fios. 
+ 
+6.2.6 Iniciar o tecimento, raleirando e preparando o próximo desenho. 
+ 
+7.
+[2025-04-02T12:10:06.145Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo(a) conosco e esperamos que sua experiência aqui seja positiva e proveitosa. Conte conosco para qualquer dúvida ou necessidade que possa surgir durante sua consulta. Estamos à disposição para ajudá-lo(a. Obrigado(a) por escolher a Andritz e esperamos que sua visita seja agradável. Seja bem-vindo(a)!
+[2025-04-02T12:15:14.545Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em recebê-lo e esperamos que tenha uma excelente experiência durante sua busca por informações. Conte conosco para te auxiliar no que for necessário. Sinta-se à vontade para explorar nossos recursos e tirar todas as suas dúvidas. Estamos aqui para ajudá-lo. Obrigado pela sua visita!
+[2025-04-02T12:15:21.839Z] Beleza! Vou buscar informações em **Tecelagem e revisão**.
+[2025-04-02T12:15:22.678Z] Estão disponíveis para consulta os seguintes itens: fim de rolo urdume, Revisao de pano base e Processo de tecelagem.
+[2025-04-02T17:19:56.267Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em recebê-lo e esperamos que encontre todas as informações e soluções que procura. Fique à vontade para explorar e conhecer mais sobre nossos produtos e serviços. Estamos à disposição para ajudá-lo no que for necessário. Contamos com você para tornar essa experiência ainda mais positiva. Seja bem-vindo e aproveite!
+[2025-04-02T17:22:48.430Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos poder ajudá-lo da melhor maneira possível. Sinta-se à vontade para explorar todas as funcionalidades e recursos disponíveis para que você possa obter as informações necessárias. Estamos aqui para atendê-lo com toda a atenção e dedicação. Se precisar de alguma ajuda ou orientação, não hesite em nos contatar. Mais uma vez, seja muito bem-vindo e aproveite sua experiência conosco!
+[2025-04-02T17:23:05.837Z] "Agradecemos pela escolha! Estamos disponíveis para fornecer informações sobre a máquina **TP500-1 / Tear03**. Como posso te ajudar?"
+[2025-04-02T17:23:05.857Z] Parado / Rodando: False
+Tempo parado atual: 00h:09m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 04h:16m
+Tempo parado do dia anterior: 13h:24m
+Tempo parado na semana anterior: 3d, 13h:14m
+Eficiencia atual: 44.0099983215332
+Batidas: 7748
+
+[2025-04-02T17:23:08.934Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz! Estamos felizes em tê-lo(a) conosco e esperamos que encontre todas as informações que precisa de forma rápida e eficiente. Não hesite em nos contatar caso tenha alguma dúvida ou necessite de ajuda. Estamos aqui para ajudá-lo(a) da melhor forma possível. Aproveite sua consulta e obrigado por escolher a Andritz!
+[2025-04-02T17:23:35.986Z] Olá! Como posso te ajudar hoje?
+[2025-04-02T17:23:55.003Z] Parece que houve um erro na sua mensagem. Como posso te ajudar?
+[2025-04-02T17:23:56.655Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos que sua experiência seja a mais positiva e proveitosa possível. Sinta-se à vontade para explorar todas as funcionalidades e recursos disponíveis para ajudá-lo em suas consultas. Estamos aqui para auxiliá-lo no que precisar. Obrigado por escolher a Andritz e aproveite ao máximo sua visita!
+[2025-04-02T17:26:35.350Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos felizes em tê-lo conosco e esperamos que tenha uma experiência agradável e produtiva durante sua busca por informações. Conte conosco para ajudá-lo no que precisar. Sinta-se à vontade para explorar todas as opções disponíveis e não hesite em nos contatar caso tenha alguma dúvida. Obrigado por escolher a Andritz como sua fonte de consulta. Esperamos que encontre o que procura e tenha uma excelente experiência conosco!
+[2025-04-02T17:26:56.847Z] Prezado(a) usuário(a),
+
+Agradeço pela sua escolha! Estou buscando informações sobre a máquina **Tear08 / TP500-2**. 
+
+Atenciosamente,
+[Seu nome]
+[2025-04-02T17:26:56.867Z] Parado / Rodando: False
+Tempo parado atual: 00h:13m
+Ultimo tempo parado: 00h:00m
+Tempo parado do dia: 05h:50m
+Tempo parado do dia anterior: 16h:34m
+Tempo parado na semana anterior: 4d, 18h:47m
+Eficiencia atual: 24.229999542236328
+Batidas: 4291
+
+[2025-04-02T17:26:59.488Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo por aqui e esperamos que sua experiência conosco seja produtiva e esclarecedora. Sinta-se à vontade para explorar nossos recursos e tirar suas dúvidas. Estamos disponíveis para ajudá-lo no que for necessário. Obrigado pela sua visita e aproveite sua consulta!
+[2025-04-02T17:28:22.044Z] Beleza! Vou buscar informações em 'Recepcao de materiais'.
+[2025-04-02T17:28:23.177Z] No sistema, você pode consultar a lista de materiais disponíveis na recepção de materiais, matéria prima e insumos.
+[2025-04-02T17:28:32.137Z] Encontrei um arquivo que pode te ajudar: 'DSG.002.PT Recepcao materiais materia prima e insumos'!
+[2025-04-02T17:28:32.200Z] 
 🔹 OBJETIVO:
 Estabelecer a sistemática de recepção de materiais, matéria prima e insumos. 
 2.
@@ -289,53 +963,83 @@ de materiais, além de assinalar o motivo da devolução.
 6.7.3.2 Encaminhar cópia digitalizada da nota fiscal devolvida via e-mail para o 
 departamento de compras, financeiro e controladoria para recusa eletrônica. 
 7.
-[2025-03-28T18:27:42.240Z] 
-Digite 'sair' para encerrar o chat.
-[2025-03-28T18:27:48.301Z] Usuário escolheu setor: [2025-03-28T18:27:46.401Z] sair
-[2025-03-28T18:27:49.053Z] Setor escolhido pelo modelo: Expedicao
-[2025-03-28T18:27:50.487Z] Mensagem humorada gerada: "Está disponível para consulta a incrível barra guia, que vai te ajudar a encontrar o caminho certo para o sucesso!"
-[2025-03-28T19:45:14.662Z] Usuário escolheu setor: [2025-03-28T19:44:21.256Z] oi
-[2025-03-28T22:42:54.344Z] Usuário escolheu setor: [2025-03-28T22:41:21.091Z] oi
-[2025-03-28T22:42:56.552Z] Setor escolhido pelo modelo: Não é possível determinar com precisão qual setor melhor representa a intenção do usuário com a informação fornecida.
-[2025-03-28T22:42:56.566Z] BOT: Setor não encontrado. Tente novamente.
+[2025-04-02T17:28:41.466Z] Olá! Como posso te ajudar hoje?
+[2025-04-02T17:28:56.478Z] Eu sou um assistente e estou aqui para te ajudar. Como posso ajudar você hoje?
+[2025-04-02T17:29:18.242Z] Parece que você digitou algo incompreensível. Posso te ajudar com alguma informação ou dúvida específica?
+[2025-04-02T17:52:05.307Z] Seja bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em recebê-lo aqui e esperamos que encontre todas as informações necessárias para sua pesquisa. Caso precise de ajuda ou tenha alguma dúvida, não hesite em entrar em contato conosco. Tenha uma ótima experiência e aproveite ao máximo todas as funcionalidades disponíveis. Obrigado por escolher a Andritz para suas consultas!
+[2025-04-02T17:52:20.553Z] Beleza! Vou buscar informações em 'Preparacao de fios'.
+[2025-04-02T17:52:21.574Z] Estes itens estão disponíveis para consulta: Operaçao urdideira Karl Mayer, Retorcimento de fios, Espulagem, Ensaio de torção por metro em fio retorcido.
+[2025-04-02T17:52:27.190Z] Não foi possível encontrar uma informação correspondente no banco de dados.
+[2025-04-02T17:54:01.310Z] Olá! Como posso ajudar você hoje?
+[2025-04-02T17:58:49.206Z] Olá! Como posso ajudar você hoje?
+[2025-04-02T17:58:49.211Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-02T17:58:51.227Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz! É um prazer tê-lo conosco. Estamos disponíveis para ajudá-lo a encontrar as informações que procura e a sanar suas dúvidas. Sinta-se à vontade para explorar nossos recursos e contar conosco sempre que precisar. Estamos aqui para tornar sua experiência ainda melhor. Obrigado por escolher a Andritz!
+[2025-04-02T17:59:06.488Z] Beleza! Vou buscar informações em 'Recepcao de materiais'.
+[2025-04-02T17:59:07.689Z] Você pode consultar a disponibilidade de recepção de materiais, matéria prima e insumos. Itens disponíveis: DSG.002.PT Recepcao materiais materia prima e insumos
+[2025-04-02T17:59:30.547Z] Encontrei um arquivo que pode te ajudar: 'DSG.002.PT Recepcao materiais materia prima e insumos'!
+[2025-04-02T17:59:30.558Z] 
+🔹 OBJETIVO:
+Estabelecer a sistemática de recepção de materiais, matéria prima e insumos. 
+2.
 
-[2025-03-28T22:44:29.108Z] Usuário escolheu setor: [2025-03-28T22:44:27.289Z] ola
-[2025-03-28T22:44:30.325Z] Setor escolhido pelo modelo: Não consigo identificar um setor específico com base na informação fornecida. Pode fornecer mais detalhes sobre a pergunta do usuário para que eu possa ajudar a determinar o setor mais apropriado?
-[2025-03-28T22:44:30.341Z] BOT: Setor não encontrado. Tente novamente.
+🔹 RESPONSABILIDADE:
+A responsabilidade da aplicação deste documento é do gestor do almoxarifado. 
+3.
 
-[2025-03-28T22:45:06.626Z] Usuário escolheu setor: [2025-03-28T22:45:04.828Z] ola
-[2025-03-28T22:45:07.395Z] Setor escolhido pelo modelo: Recepcao de materiais
-[2025-03-28T22:45:08.413Z] Mensagem humorada gerada: "Na biblioteca de recursos temos disponíveis manuais de consultas como Recepção de Materiais, Matéria Prima e Insumos."
-[2025-03-28T22:45:45.285Z] Usuário: [2025-03-28T22:45:44.626Z] ola
-[2025-03-28T22:45:46.724Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T22:45:58.811Z] Usuário: [2025-03-28T22:45:58.239Z] capital do brasil
-[2025-03-28T22:45:59.818Z] BOT: A capital do Brasil é Brasília. Foi inaugurada em 21 de abril de 1960 e foi projetada pelo arquiteto Oscar Niemeyer.
-[2025-03-28T22:49:41.238Z] Usuário: [2025-03-28T22:49:40.591Z] ola
-[2025-03-28T22:49:42.645Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T22:52:37.652Z] Usuário: [2025-03-28T22:52:37.241Z] ola
-[2025-03-28T22:52:39.216Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T22:52:43.283Z] Usuário: [2025-03-28T22:52:42.132Z] ola
-[2025-03-28T22:52:44.262Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T22:52:48.308Z] Usuário: [2025-03-28T22:52:46.416Z] como vai?
-[2025-03-28T22:52:49.208Z] BOT: Estou aqui para te ajudar! Como posso ser útil a você hoje?
-[2025-03-28T22:52:49.223Z] Usuário: [2025-03-28T22:52:48.643Z] ola
-[2025-03-28T22:52:50.027Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T22:53:04.156Z] Usuário: [2025-03-28T22:53:03.816Z] oi
-[2025-03-28T22:53:05.221Z] BOT: Olá! Como posso te ajudar hoje?
-[2025-03-28T23:04:55.279Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:05:02.602Z] BOT: Como assistente virtual, não tenho sentimentos, mas estou aqui para ajudar você. O que você gostaria de saber?
-[2025-03-28T23:05:05.702Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:05:17.051Z] BOT: Legal! Se tiver mais alguma pergunta ou teste que queira fazer, estou aqui para ajudar.
-[2025-03-28T23:05:20.018Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:06:16.118Z] BOT: Que ótimo! Fico feliz em saber que está funcionando bem. Se precisar de mais alguma coisa, estou à disposição.
-[2025-03-28T23:06:17.354Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:34:21.530Z] BOT: Olá! Como posso ajudar você?
-[2025-03-28T23:34:30.344Z] BOT: Estou aqui para ajudar! Em que posso ser útil hoje?
-[2025-03-28T23:34:31.261Z] BOT: Olá! Como posso ajudar você?
-[2025-03-28T23:36:42.589Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:36:47.982Z] BOT: Estou aqui para ajudar! Em que posso ser útil hoje?
-[2025-03-28T23:39:12.095Z] BOT: Continuo aqui para ajudar no que precisar. Como posso ser útil hoje?
-[2025-03-28T23:39:16.919Z] BOT: Estou aqui para ajudar! Como posso ser útil a você hoje?
-[2025-03-28T23:39:21.777Z] BOT: Olá! Como posso ajudar você hoje?
-[2025-03-28T23:39:26.655Z] BOT: Estou aqui para ajudar. O que você gostaria de saber ou discutir hoje?
-[2025-03-28T23:39:31.452Z] BOT: Posso te ajudar em algo mais?
+🔹 GLOSSÁRIO:
+RD - Relatório de documento 
+DI - Documento de importação 
+RNCF - Relatório de Não Conformidade de Fornecedor. 
+SCM – Solicitação de compra de materiais 
+4.
+
+🔹 FORMULÁRIOS:
+NA. 
+ 
+5.
+
+🔹 CONDIÇÕES GERAIS:
+Receber os materiais conforme pedido de compras / SCM e comunicar ao solicitante 
+da chegada dos mesmos. 
+ 
+6.
+
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1. Verificar nota fiscal com o pedido de compras / SCM 
+6.1.1. Quantidade solicitada. 
+6.1.2. Quantidade comprada. 
+6.1.3. Preço unitário. 
+6.1.4. Valor total do pedido. 
+6.1.5. Verificar CNPJ e local de faturamento. 
+6.1.6. Verificar se as mercadorias estão de acordo com o pedido e se não há avarias. 
+6.2. Para produtos que não são de estoque, comunicar ao solicitante do material sobre 
+a chegada. O material ficará alocado na área para destinação, aguardando retirada. 
+6.3. Carimbar nota fiscal com carimbo da recepção de materiais. 
+6.3.1 Carimbar o DI com carimbo da recepção de materiais. 
+6.4. Implantar nota fiscal, boleto e conhecimento de transporte digitalizados no sistema 
+DocControl, anexando pedido de compras e SCM. 
+6.5. Encaminhar para controladoria: nota fiscal e documentos auxiliares originais. 
+
+INSTRUÇÃO DE TRABALHO 
+Recepção de materiais, matéria-prima e insumos 
+DSG.002.PT 
+Rev.nº.: 1 
+Data Rev.: 08/01/25 
+Página 2 de 2
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.6. Para materiais importados e importações de matéria prima, desmembrar da 
+seguinte forma: 
+6.6.1 Encaminhar para controladoria: DI original, SCM e RD correspondente. 
+6.7 Normas para devolução de mercadoria: 
+6.7.1 O almoxarifado entrará em contato com departamento de compras e/ou emissor 
+da SCM para tomada de ações (devolver ou aguardar decisão). 
+6.7.2 Quando decidido aguardar contato com fornecedor, identificar o material como 
+produto não conforme. 
+6.7.3 Quando decidido devolver: 
+6.7.3.1 Carimbar, datar e assinar a nota fiscal com carimbo de devolução da recepção 
+de materiais, além de assinalar o motivo da devolução. 
+6.7.3.2 Encaminhar cópia digitalizada da nota fiscal devolvida via e-mail para o 
+departamento de compras, financeiro e controladoria para recusa eletrônica. 
+7.
+[2025-04-02T17:59:31.140Z] ⚠️ Mudança detectada! Reiniciando verificações...

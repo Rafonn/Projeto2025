@@ -1,0 +1,197 @@
+{
+    "CLT1": {
+        "values": {
+            "Parado / Rodando": true,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:03m",
+            "Tempo parado do dia": "03h:29m",
+            "Tempo parado do dia anterior": "23h:57m",
+            "Tempo parado na semana anterior": "3d, 17h:38m",
+            "Eficiencia atual": 0.0,
+            "Batidas": 0
+        },
+        "timestamp": 1743444799.414887
+    },
+    "Tear01": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "08h:54m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "08h:54m",
+            "Tempo parado do dia anterior": "23h:57m",
+            "Tempo parado na semana anterior": "5d, 04h:09m",
+            "Eficiencia atual": 0.009999999776482582,
+            "Batidas": 1
+        },
+        "timestamp": 1743443754.012565
+    },
+    "Tear02": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "00h:48m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "07h:12m",
+            "Tempo parado do dia anterior": "23h:22m",
+            "Tempo parado na semana anterior": "3d, 16h:30m",
+            "Eficiencia atual": 18.670000076293945,
+            "Batidas": 3846
+        },
+        "timestamp": 1743444168.4968197
+    },
+    "Tear03": {
+        "values": {
+            "Parado / Rodando": true,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:01m",
+            "Tempo parado do dia": "06h:15m",
+            "Tempo parado do dia anterior": "15h:28m",
+            "Tempo parado na semana anterior": "3d, 13h:14m",
+            "Eficiencia atual": 28.8799991607666,
+            "Batidas": 5499
+        },
+        "timestamp": 1743444250.6302817
+    },
+    "Tear04": {
+        "values": {
+            "Parado / Rodando": true,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "07h:11m",
+            "Tempo parado do dia anterior": "21h:52m",
+            "Tempo parado na semana anterior": "4d, 00h:37m",
+            "Eficiencia atual": 20.270000457763672,
+            "Batidas": 4197
+        },
+        "timestamp": 1743444350.1444097
+    },
+    "Tear05": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "09h:06m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "09h:06m",
+            "Tempo parado do dia anterior": "23h:57m",
+            "Tempo parado na semana anterior": "5d, 02h:28m",
+            "Eficiencia atual": 0.0,
+            "Batidas": 0
+        },
+        "timestamp": 1743444452.4166322
+    },
+    "Tear06": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "03h:30m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "06h:38m",
+            "Tempo parado do dia anterior": "22h:23m",
+            "Tempo parado na semana anterior": "3d, 21h:04m",
+            "Eficiencia atual": 27.850000381469727,
+            "Batidas": 3830
+        },
+        "timestamp": 1743444606.397841
+    },
+    "Tear07": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "03h:03m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "06h:23m",
+            "Tempo parado do dia anterior": "19h:02m",
+            "Tempo parado na semana anterior": "4d, 21h:06m",
+            "Eficiencia atual": 23.290000915527344,
+            "Batidas": 4099
+        },
+        "timestamp": 1743444613.904138
+    },
+    "Dilo": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "02h:16m",
+            "Tempo parado do dia anterior": "16h:09m",
+            "Tempo parado na semana anterior": "3d, 08h:46m",
+            "Eficiencia atual": 0.0,
+            "Batidas": 0
+        },
+        "timestamp": 1743511354.7234719
+    },
+    "Tear08": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "00h:02m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "08h:39m",
+            "Tempo parado do dia anterior": "23h:33m",
+            "Tempo parado na semana anterior": "4d, 18h:47m",
+            "Eficiencia atual": 4.710000038146973,
+            "Batidas": 906
+        },
+        "timestamp": 1743444625.427729
+    },
+    "SixMeter": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "09h:11m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "09h:11m",
+            "Tempo parado do dia anterior": "23h:57m",
+            "Tempo parado na semana anterior": "2d, 03h:53m",
+            "Eficiencia atual": 0.0,
+            "Batidas": 0
+        },
+        "timestamp": 1743444766.014325
+    },
+    "NL19": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "09h:13m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "09h:13m",
+            "Tempo parado do dia anterior": "22h:47m",
+            "Tempo parado na semana anterior": "4d, 01h:59m",
+            "Eficiencia atual": 0.0,
+            "Batidas": 0
+        },
+        "timestamp": 1743444844.7778888
+    },
+    "TP100 / Tear 01": {
+        "values": {
+            "Parado / Rodando": true,
+            "Tempo parado atual": "00h:00m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "02h:40m",
+            "Tempo parado do dia anterior": "22h:05m",
+            "Tempo parado na semana anterior": "5d, 04h:09m",
+            "Eficiencia atual": 11.5600004196167,
+            "Batidas": 612
+        },
+        "timestamp": 1743595745.9347858
+    },
+    "TP500-1 / Tear03": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "00h:09m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "04h:16m",
+            "Tempo parado do dia anterior": "13h:24m",
+            "Tempo parado na semana anterior": "3d, 13h:14m",
+            "Eficiencia atual": 44.0099983215332,
+            "Batidas": 7748
+        },
+        "timestamp": 1743614584.468397
+    },
+    "Tear08 / TP500-2": {
+        "values": {
+            "Parado / Rodando": false,
+            "Tempo parado atual": "00h:13m",
+            "Ultimo tempo parado": "00h:00m",
+            "Tempo parado do dia": "05h:50m",
+            "Tempo parado do dia anterior": "16h:34m",
+            "Tempo parado na semana anterior": "4d, 18h:47m",
+            "Eficiencia atual": 24.229999542236328,
+            "Batidas": 4291
+        },
+        "timestamp": 1743614815.519399
+    }
+}

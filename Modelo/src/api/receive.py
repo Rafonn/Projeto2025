@@ -38,11 +38,9 @@ class Receive():
             
             if logs:
                 if logs[-1] != self.last_data:
-                    print(f"Novos dados: {logs[-1]}")
                     self.last_data = logs[-1]
                     self.save_last_data()
                     return logs[-1]
-                    break
         
             time.sleep(2)
 
