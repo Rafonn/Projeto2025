@@ -4,14 +4,13 @@ import json
 import tiktoken
 import time
 import threading
+import sqlite3
 
-from proData import ReadData
 from api.send import Send
 from api.receive import Receive
 from api.toggleReceive import ToggleReceive
-from data.status import OPCUAClient
-from data.node_id_map import MachineMap
-from maps.machines_ids import machines
+from data.machines_ids import machines
+from data.machineName import MachineName
 from commands import commands
 
 class ChatAndritz:
@@ -50,8 +49,6 @@ class ChatAndritz:
             return True
         return False
 
-
-
     def _log_and_print(self, message):
 
         if commands["dev_mode"]:
@@ -77,12 +74,62 @@ class ChatAndritz:
         else:
             return False
 
-    def _listar_pastas(self):
-        return [pasta for pasta in os.listdir(self.base_folder) if os.path.isdir(os.path.join(self.base_folder, pasta))]
+    def _listar_tabelas(self):
+        try:
+            conn = sqlite3.connect(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db")
+            cursor = conn.cursor()
 
-    def _listar_jsons(self, pasta):
-        caminho_pasta = os.path.join(self.base_folder, pasta)
-        return [arq for arq in os.listdir(caminho_pasta) if arq.endswith(".json")]
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+            tabelas = [row[0] for row in cursor.fetchall()]
+
+            conn.close()
+            return tabelas
+        except Exception as e:
+            return f"Erro ao listar tabelas: {e}"
+    
+    def _consultar_tabela(self, nome_tabela):
+        try:
+            conn = sqlite3.connect(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db")
+            cursor = conn.cursor()
+
+            cursor.execute(f"PRAGMA table_info({nome_tabela})")
+            colunas = [col[1] for col in cursor.fetchall()]
+
+            cursor.execute(f"SELECT * FROM {nome_tabela}")
+            dados = cursor.fetchall()
+
+            resultados = []
+            for row in dados:
+                resultado = {}
+                for idx, col in enumerate(colunas):
+                    resultado[col] = row[idx]
+                resultados.append(resultado)
+
+            conn.close()
+            return resultados
+        except Exception as e:
+            return f"Erro ao consultar a tabela '{nome_tabela}': {e}"
+
+    def _listar_file_names(self, tabela):
+        try:
+            conn = sqlite3.connect("machines_data.db")
+            cursor = conn.cursor()
+
+            cursor.execute(f"PRAGMA table_info({tabela})")
+            colunas = [col[1] for col in cursor.fetchall()]
+            if "file_name" not in colunas:
+                return []
+
+            cursor.execute(f"SELECT DISTINCT file_name FROM {tabela}")
+            arquivos = cursor.fetchall()
+
+            nomes_limpos = [os.path.splitext(row[0])[0] for row in arquivos]
+
+            conn.close()
+            return nomes_limpos
+        except Exception as e:
+            print(f"Erro ao listar file_names da tabela '{tabela}': {e}")
+            return []
 
     def _escolher_maquina(self, user):
         maquinas_disponiveis = machines
@@ -98,10 +145,10 @@ class ChatAndritz:
         machineName = self._send_model([{"role": "user", "content": prompt}])
 
         if machineName in maquinas_disponiveis:
-            machine = MachineMap(machineName)
-            especificMachine = machine.map()
-            machine_info = OPCUAClient(commands["OPCUA_IP"], especificMachine, machineName)
-            info = machine_info.connect()
+
+            machine_info = MachineName(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db", machineName)
+            info = machine_info.getMachineInfo()
+            print(info)
 
             mensagem = f"Ótima escolha! Estou buscando informações sobre a máquina '{machineName}'..."
             mensagem = self._mensagem_personalizada(mensagem)
@@ -125,69 +172,40 @@ class ChatAndritz:
         setor = self._send_model([{"role": "user", "content": prompt}])
 
         return setor if setor in pastas_disponiveis else False
-
-    def _escolher_json(self, pasta):
-        jsons_disponiveis = self._listar_jsons(pasta)
-
-        prompt = f"""
-        Forme uma frase legal falando que há estes itens disponíveis para consulta {jsons_disponiveis}. Quando for listar os itens, coloque apenas
-        o nome dele, sem codigos e numeros. Também não coloque a extensão .json e nem aspas
-        """
-
-        choice_message = self._send_model([{"role": "user", "content": prompt}])
-        self._log_and_print(choice_message)
-
-        user = self.receive_api.monitor_logs()
-
-        prompt = f"""
-        O usuário quer informações sobre "{user}" Abaixo está uma lista de setores disponíveis no JSON:
-        {jsons_disponiveis}
-        Qual desses arquivos melhor representa a intenção do usuário? Responda apenas com o nome exato do arquivo.
-        """
-
-        json_escolhido = self._send_model([{"role": "user", "content": prompt}])
-
-        return json_escolhido if json_escolhido in jsons_disponiveis else None
-            
-
-    def _complete(self, conteudo_json):
-        return "\n".join([f"\n🔹 {chave.upper()}:\n{valor}" for chave, valor in conteudo_json.items()])
     
-    def _identificar_contexto(self, user_input):  
-        maquinas_disponiveis = machines
+    def _identificar_contexto(self, user_input):  #Continuar com as máquinas
+        tabelas = self._listar_tabelas()
 
         prompt = f"""
         O usuário enviou a seguinte mensagem: "{user_input}"
-        
-        Classifique a intenção do usuário em uma das seguintes opções:
-        - "máquina" se ele estiver pedindo informações sobre uma máquina específica: {list(maquinas_disponiveis.keys())}
-        - "geral" se ele quiser informações gerais sobre os arquivos disponíveis
-        Responda apenas com uma dessas palavras e nada mais.
+        Aqui estão as tabelas disponíveis no banco: {tabelas}
+
+        Qual dessas tabelas o usuário está querendo consultar?
+        Responda apenas com o nome exato da tabela sem "ç" e acento. Para nomes com espaço, faça os espaços com "_" e cada palvra começa com letra maiúscula. Se não identificar nenhuma, 
+        responda com "vazio". Caso a mensagem contenha uma dessas palavras: {machines}. responda APENAS com "machine".
         """
 
-        resposta = self._send_model([{"role": "user", "content": prompt}])
+        tabela_escolhida = self._send_model([{"role": "user", "content": prompt}])
 
-        if resposta.strip().lower() == "máquina":
-            self._escolher_maquina(user_input)
+        if tabela_escolhida in tabelas:
+            dados = self._consultar_tabela(tabela_escolhida)
+
+            if not dados:
+                self._log_and_print("A tabela está vazia.")
+                return
+
+            prompt = f"""
+            Gere uma resposta amigável com os dados da tabela '{tabela_escolhida}'.
+            Formate de forma fácil de ler para humanos:
+            {json.dumps(dados, indent=2, ensure_ascii=False)}
+            """
+
+            resposta = self._send_model([{"role": "user", "content": prompt}])
+            self._log_and_print(resposta)
+        elif tabela_escolhida.lower() == "machine":
+            dados = self._escolher_maquina(user_input)
         else:
-            pasta_escolhida = self._escolher_pasta(user_input)
-            if pasta_escolhida:
-                self._log_and_print(f"Beleza! Vou buscar informações em '{pasta_escolhida}'.")
-                json_escolhido = self._escolher_json(pasta_escolhida)
-                if json_escolhido:
-                    self._log_and_print(f"Encontrei um arquivo que pode te ajudar: '{json_escolhido.replace('.json', '')}'!")
-                    caminho_json = os.path.join(self.base_folder, pasta_escolhida, json_escolhido)
-                    with open(caminho_json, "r", encoding="utf-8") as f:
-                        conteudo_json = json.load(f)
-                    response = self._complete(conteudo_json)
-                    self._log_and_print(response)
-                else:
-                    self._log_and_print(commands['database_error'])
-            else:
-                self._log_and_print(commands['sector_error'])
-
-        resposta = self._send_model([{"role": "user", "content": prompt}])
-        return resposta.strip().lower()
+            self._log_and_print("Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?")
     
     def _mensagem_personalizada(self, msg):
         prompt = f"""

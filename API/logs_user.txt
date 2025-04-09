@@ -110,3 +110,34 @@
 [2025-04-03T11:35:35.821Z] gostaria de saber sobre o tear 4
 [2025-04-03T12:13:28.659Z] Ola
 [2025-04-03T12:13:33.415Z] Ola
+[2025-04-03T19:41:52.203Z] ola
+[2025-04-06T18:33:10.419Z] Ola
+[2025-04-06T18:33:47.402Z] Ola
+[2025-04-06T18:33:55.890Z] Ola
+[2025-04-06T18:34:07.784Z] Ola
+[2025-04-06T18:35:11.232Z] Quem venceu a f1 de 1991?
+[2025-04-06T18:35:44.492Z] Ola
+[2025-04-06T18:36:08.567Z] Quero saber sobre o setor de mantas
+[2025-04-06T18:36:26.086Z] Fabricação de mantas
+[2025-04-06T18:40:44.405Z] ola
+[2025-04-06T18:41:03.805Z] ola
+[2025-04-06T18:42:01.554Z] Ola
+[2025-04-08T17:33:45.097Z] Mantas
+[2025-04-08T17:33:52.067Z] Mantas
+[2025-04-08T17:34:58.359Z] Mantas
+[2025-04-08T17:41:11.436Z] Mantas
+[2025-04-08T17:44:38.181Z] metrologia
+[2025-04-08T17:46:19.095Z] Mantas
+[2025-04-08T17:46:56.102Z] Mantas
+[2025-04-09T11:38:58.334Z] gostaria de saber sobre o tear 01
+[2025-04-09T11:41:12.328Z] gostaria de saber sobre o tear 01
+[2025-04-09T13:31:22.377Z] quero saber sobre a CLT1
+[2025-04-09T13:35:26.841Z] Quero saber sobre o tear 01
+[2025-04-09T13:42:28.241Z] Quero saber sobre o tear 01
+[2025-04-09T13:44:21.564Z] Quero saber sobre o tear 01
+[2025-04-09T14:08:19.612Z] Quero saber sobre o tear 01
+[2025-04-09T14:32:19.692Z] ola
+[2025-04-09T14:32:26.485Z] Ola
+[2025-04-09T14:32:35.297Z] mantas
+[2025-04-09T14:33:05.205Z] mantas
+[2025-04-09T14:33:15.950Z] mantas

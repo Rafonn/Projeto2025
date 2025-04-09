@@ -1098,3 +1098,453 @@ Batidas: 2173
 [2025-04-03T12:13:28.981Z] ⚠️ Mudança detectada! Reiniciando verificações...
 [2025-04-03T12:13:28.991Z] ⚠️ Mudança detectada! Reiniciando verificações...
 [2025-04-03T12:13:36.176Z] Olá! Como posso te ajudar hoje?
+[2025-04-03T19:42:12.555Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo por aqui e esperamos que você encontre todas as informações necessárias para suas necessidades. Estamos à disposição para ajudá-lo no que for preciso, então não hesite em nos contatar. Esperamos que sua experiência conosco seja proveitosa e enriquecedora. Seja bem-vindo e aproveite!
+[2025-04-03T19:42:14.143Z] Setor não encontrado. Tente novamente.
+[2025-04-03T19:42:17.086Z] Seja bem-vindo ao modo de consulta Andritz! É um prazer tê-lo(a) conosco. Esperamos que você encontre todas as informações que procura de forma rápida e eficiente. Se precisar de ajuda ou tiver alguma dúvida, não hesite em nos contatar. Estamos aqui para ajudá-lo(a) da melhor maneira possível. Obrigado por escolher a Andritz e aproveite sua consulta!
+[2025-04-06T18:33:30.456Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo(a) aqui conosco. Esperamos que encontre todas as informações que precisa de forma clara e objetiva. Estamos à disposição para ajudá-lo(a) no que for necessário. Sinta-se à vontade para explorar e aproveitar ao máximo essa plataforma. Obrigado por confiar em nós. Seja bem-vindo(a)!
+[2025-04-06T18:33:31.760Z] Setor não encontrado. Tente novamente.
+[2025-04-06T18:33:33.651Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo(a) conosco para ajudá-lo(a) a encontrar as informações que você precisa. Fique à vontade para explorar todas as funcionalidades disponíveis e não hesite em nos contatar caso tenha alguma dúvida ou precisar de alguma ajuda. Esperamos que sua experiência conosco seja agradável e produtiva. Obrigado por escolher a Andritz!
+[2025-04-06T18:33:48.946Z] Beleza! Vou buscar informações em 'Recepcao de materiais'.
+[2025-04-06T18:33:49.548Z] Temos o arquivo Recepcao materiais materia prima e insumos disponível para consulta.
+[2025-04-06T18:33:58.581Z] Encontrei um arquivo que pode te ajudar: 'DSG.002.PT Recepcao materiais materia prima e insumos'!
+[2025-04-06T18:33:58.635Z] 
+🔹 OBJETIVO:
+Estabelecer a sistemática de recepção de materiais, matéria prima e insumos. 
+2.
+
+🔹 RESPONSABILIDADE:
+A responsabilidade da aplicação deste documento é do gestor do almoxarifado. 
+3.
+
+🔹 GLOSSÁRIO:
+RD - Relatório de documento 
+DI - Documento de importação 
+RNCF - Relatório de Não Conformidade de Fornecedor. 
+SCM – Solicitação de compra de materiais 
+4.
+
+🔹 FORMULÁRIOS:
+NA. 
+ 
+5.
+
+🔹 CONDIÇÕES GERAIS:
+Receber os materiais conforme pedido de compras / SCM e comunicar ao solicitante 
+da chegada dos mesmos. 
+ 
+6.
+
+🔹 CONDIÇÕES ESPECÍFICAS:
+6.1. Verificar nota fiscal com o pedido de compras / SCM 
+6.1.1. Quantidade solicitada. 
+6.1.2. Quantidade comprada. 
+6.1.3. Preço unitário. 
+6.1.4. Valor total do pedido. 
+6.1.5. Verificar CNPJ e local de faturamento. 
+6.1.6. Verificar se as mercadorias estão de acordo com o pedido e se não há avarias. 
+6.2. Para produtos que não são de estoque, comunicar ao solicitante do material sobre 
+a chegada. O material ficará alocado na área para destinação, aguardando retirada. 
+6.3. Carimbar nota fiscal com carimbo da recepção de materiais. 
+6.3.1 Carimbar o DI com carimbo da recepção de materiais. 
+6.4. Implantar nota fiscal, boleto e conhecimento de transporte digitalizados no sistema 
+DocControl, anexando pedido de compras e SCM. 
+6.5. Encaminhar para controladoria: nota fiscal e documentos auxiliares originais. 
+
+INSTRUÇÃO DE TRABALHO 
+Recepção de materiais, matéria-prima e insumos 
+DSG.002.PT 
+Rev.nº.: 1 
+Data Rev.: 08/01/25 
+Página 2 de 2
+ 
+ANDRITZ FABRICS AND ROLLS 
+6.6. Para materiais importados e importações de matéria prima, desmembrar da 
+seguinte forma: 
+6.6.1 Encaminhar para controladoria: DI original, SCM e RD correspondente. 
+6.7 Normas para devolução de mercadoria: 
+6.7.1 O almoxarifado entrará em contato com departamento de compras e/ou emissor 
+da SCM para tomada de ações (devolver ou aguardar decisão). 
+6.7.2 Quando decidido aguardar contato com fornecedor, identificar o material como 
+produto não conforme. 
+6.7.3 Quando decidido devolver: 
+6.7.3.1 Carimbar, datar e assinar a nota fiscal com carimbo de devolução da recepção 
+de materiais, além de assinalar o motivo da devolução. 
+6.7.3.2 Encaminhar cópia digitalizada da nota fiscal devolvida via e-mail para o 
+departamento de compras, financeiro e controladoria para recusa eletrônica. 
+7.
+[2025-04-06T18:33:59.299Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:33:59.314Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:34:10.054Z] Olá! Como posso te ajudar hoje?
+[2025-04-06T18:35:13.478Z] A temporada da Fórmula 1 de 1991 foi vencida pelo piloto brasileiro Ayrton Senna, competindo pela equipe McLaren-Honda. Foi o terceiro título mundial de Senna na Fórmula 1.
+[2025-04-06T18:35:45.777Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:35:45.794Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:35:47.435Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos que sua experiência seja produtiva e enriquecedora. Estamos à disposição para ajudá-lo em qualquer dúvida ou necessidade que possa surgir durante a sua consulta. Sinta-se à vontade para explorar nossos recursos e conteúdos. Obrigado por escolher a Andritz e aproveite a sua visita!
+[2025-04-06T18:36:10.978Z] Beleza! Vou buscar informações em 'Mantas'.
+[2025-04-06T18:36:11.918Z] Estes itens estão disponíveis para consulta: Fabricacao de mantas e preparacao da mistura.
+[2025-04-06T18:36:29.124Z] Encontrei um arquivo que pode te ajudar: 'Fabricacao de mantas'!
+[2025-04-06T18:36:29.222Z] 
+🔹 OBJETIVO:
+Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+
+🔹 RESPONSABILIDADE:
+A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+🔹 GLOSSARIO:
+CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+
+🔹 FORMULARIOS:
+a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+
+🔹 CONDICOES GERAIS:
+Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+
+🔹 CONDICOES ESPECIFICAS:
+Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, para medição de gramatura, Balança de precisão eletrônica, Pistola Rolsprint, Tesoura, Máquina de corte. Roteiro de fabricação de manta: Limpar a torre de captação de refugos e os pontos críticos da máquina CLT (alimentador, carda, esteiras, etc). Carregar a carda e o alimentador da máquina com o material a ser produzido. Ajustar a máquina de acordo com o tipo de manta, conforme Processo de Fabricação de Manta e iniciar o processo. Caso necessário, será feita a umidificação das fibras. Quando a manta estiver no enrolador da máquina, posicionar o tubo de manta, verificar a necessidade de ajuste de sobreposição, esperar completar 6 metros e retirar uma amostra de 0,50m x 0,50m para pesar na balança de precisão eletrônica. O resultado será multiplicado por quatro e comparado com o valor estipulado na Ordem de Fabricação de Manta. Caso não se tenha atingido o valor solicitado, realizar ajuste no painel da máquina e retirar quantas amostras forem necessárias para obter a gramatura requerida na Ordem de Fabricação de Manta. Registrar o valor da gramatura na Ordem de Fabricação de Manta. Valor de gramatura diferente do especificado poderá ser liberado pelo líder do setor ou Gestor de Produção / Processo. Atingida a gramatura, posicionar a máquina de corte na largura do rolo de manta a ser fabricado, zerar o marcador de metragem, iniciar o rolo e o gráfico do medidor de massa. Durante o processo, checar a sobreposição da manta e manter a caixa de alimentação da máquina cheia. Para a CLT I e II, utiliza-se o equipamento MS Instrumentos para elaboração do perfil longitudinal de gramatura, com o objetivo de manter a qualidade do rolo durante o processo. Após o término da fabricação do rolo de manta, pesar e realizar cálculo conforme a fórmula presente na OF, registrar a produção no formulário de Produção Diária - CLT I / CLT II, identificar o rolo de manta, anexar o gráfico do medidor de massa na OF, e liberar para a próxima etapa do processo. Todo o desperdício gerado durante a fabricação de um rolo de manta que pode ser reciclado, deve ser ensacado, identificado, pesado e retornado para a área de reciclagem. Troca de mistura: Limpar totalmente a torre de captação de refugos. Descarregar completamente as esteiras e a carda e inserir a nova mistura. Ideal que a troca de mistura seja feita reduzindo o dtex gradativamente. Salvo urgências de produção, onde deverá ser realizada limpeza dos pontos descritos na Pauta de Limpeza do setor.
+[2025-04-06T18:36:31.474Z] Olá, seja muito bem-vindo ao modo de consulta Andritz! Estamos muito felizes em tê-lo(a) conosco e esperamos que sua experiência seja agradável e proveitosa. Em caso de dúvidas ou necessidade de ajuda, não hesite em nos contatar. Estamos aqui para lhe proporcionar a melhor assistência possível. Aproveite a consulta e sinta-se em casa!
+[2025-04-06T18:40:45.481Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:40:45.492Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-06T18:41:06.879Z] Olá! Como posso te ajudar hoje?
+[2025-04-06T18:42:05.136Z] Olá! Como posso te ajudar hoje?
+[2025-04-08T17:33:29.741Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo conosco e esperamos que essa experiência seja enriquecedora e produtiva para você. Conte conosco para ajudá-lo da melhor forma possível. Estamos à disposição para tirar suas dúvidas e auxiliá-lo no que for necessário. Esperamos que aproveite ao máximo essa plataforma e que ela contribua para o seu sucesso. Seja bem-vindo e sinta-se em casa!
+[2025-04-08T17:33:30.340Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:33:33.141Z] Seja muito bem-vindo ao modo de consulta Andritz! É um prazer tê-lo conosco e esperamos que tenha uma ótima experiência durante sua consulta. Estamos aqui para ajudá-lo da melhor maneira possível, então sinta-se à vontade para explorar todas as funcionalidades disponíveis. Se precisar de alguma ajuda ou orientação, estamos à disposição para auxiliá-lo. Obrigado por escolher a Andritz e aproveite ao máximo sua consulta!
+[2025-04-08T17:33:45.813Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:33:47.455Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos muito felizes em tê-lo(a) aqui e esperamos que encontre todas as informações que procura de forma clara e objetiva. Sinta-se à vontade para explorar o conteúdo e se precisar de alguma ajuda, não hesite em nos contatar. Estamos à disposição para auxiliá-lo(a) no que for necessário. Aproveite a sua consulta e tenha uma excelente experiência conosco!
+[2025-04-08T17:33:54.270Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:33:56.705Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos felizes em tê-lo conosco e esperamos que você encontre aqui todas as informações que precisa de forma clara e objetiva. Estamos à disposição para ajudá-lo no que for necessário, então não hesite em entrar em contato conosco caso tenha alguma dúvida. Esperamos que sua experiência conosco seja agradável e produtiva. Seja bem-vindo e aproveite o nosso modo de consulta!
+[2025-04-08T17:34:44.471Z] Olá! Seja muito bem-vindo ao modo de consulta Andritz. Estamos felizes em tê-lo(a) aqui e esperamos que encontre as informações que busca de forma rápida e eficiente. Caso precise de ajuda ou tenha alguma dúvida, não hesite em entrar em contato conosco. Tenha uma ótima experiência!
+[2025-04-08T17:34:59.312Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:35:01.062Z] Seja muito bem-vindo ao modo de consulta Andritz! É um prazer tê-lo conosco e esperamos que sua experiência seja enriquecedora. Estamos aqui para ajudá-lo no que precisar, então sinta-se à vontade para explorar e tirar suas dúvidas. Conte conosco para te auxiliar da melhor forma possível. Mais uma vez, seja bem-vindo e aproveite!
+[2025-04-08T17:40:54.872Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo(a) por aqui e esperamos que encontre todas as informações que necessita. Não hesite em nos contatar caso tenha alguma dúvida ou precisar de ajuda. Estamos à disposição para auxiliá-lo(a) da melhor forma possível. Mais uma vez, seja bem-vindo(a) e aproveite a sua consulta!
+[2025-04-08T17:41:13.802Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:41:15.764Z] Olá! Seja muito bem-vindo(a) ao modo de consulta da Andritz. Estamos muito felizes em recebê-lo(a) aqui e esperamos que encontre todas as informações que procura de forma fácil e rápida. Em caso de dúvidas ou necessidade de ajuda, não hesite em entrar em contato conosco. Nossa equipe está sempre à disposição para ajudar. Aproveite a sua consulta e esperamos que tenha uma excelente experiência! Obrigado por escolher a Andritz.
+[2025-04-08T17:44:26.166Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em ter você aqui conosco. Esperamos que você encontre todas as informações que precisa de forma rápida e eficiente. Não hesite em nos contatar caso tenha alguma dúvida ou sugestão. Estamos sempre à disposição para ajudá-lo da melhor maneira possível. Mais uma vez, seja bem-vindo e aproveite o nosso modo de consulta!
+[2025-04-08T17:44:39.021Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:44:41.290Z] Olá! Seja bem-vindo ao modo de consulta Andritz. Estamos muito felizes em tê-lo(a) por aqui e esperamos que você encontre as informações que procura de forma rápida e eficiente. Em caso de dúvidas ou necessidade de orientação, não hesite em nos contatar. Aproveite sua visita e esperamos que sua experiência seja produtiva e satisfatória. Obrigado por escolher a Andritz!
+[2025-04-08T17:46:13.859Z] Olá e seja bem-vindo ao modo de consulta da Andritz! É um prazer tê-lo aqui conosco para ajudá-lo a encontrar todas as informações que você precisa. Esperamos que esta experiência seja positiva e que você consiga obter todas as respostas que procura. Se precisar de ajuda durante a consulta, não hesite em nos contatar. Obrigado por escolher a Andritz e aproveite o seu tempo navegando em nosso modo de consulta!
+[2025-04-08T17:46:20.529Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-04-08T17:46:22.124Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo conosco e estamos à disposição para ajudá-lo da melhor forma possível. Não hesite em nos contatar caso tenha alguma dúvida ou necessite de suporte. Esperamos que sua experiência conosco seja produtiva e satisfatória. Obrigado por escolher a Andritz!
+[2025-04-08T17:46:48.078Z] Olá e seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo(a) conosco e esperamos que você encontre todas as informações que precisa de forma prática e eficiente. Conte conosco para auxiliá-lo(a) com qualquer dúvida ou dificuldade que possa surgir durante a sua consulta. Agradecemos por escolher a Andritz e estamos à disposição para tornar a sua experiência conosco a melhor possível. Seja bem-vindo(a)!
+[2025-04-08T17:47:02.882Z] Aqui estão os dados das mantas disponíveis:
+
+1. Fabricacao de mantas:
+- Objetivo: Padronizar as operações de fabricação de manta nas máquinas CLT I e CLT II.
+- Responsabilidade: Operadores e/ou líder do setor são responsáveis pela aplicação do documento, e a administração das operações é responsabilidade do Gestor de Produção / Processos.
+- Glossário: Termos como CLT, MS Instrumentos e Carda são definidos.
+- Formulários: Inclui Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Produção Diária - CLT I / CLT II.
+- Condições Gerais: Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+- Condições Específicas: Detalhes sobre equipamentos e roteiro de fabricação de manta.
+
+2. Preparacao da mistura:
+- Objetivo: Padronizar as operações de preparação da mistura para fabricação de manta.
+- Responsabilidade: Mesma responsabilidade dos operadores e/ou líder do setor e do Gestor de Produção / Processos.
+- Glossário: Define termos como Temafa, Loba, Blending, JIB's, etc.
+- Formulários: Folha de produção para mistura de manta - ANEXO A.
+- Condições Gerais: Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta.
+- Condições Específicas: Detalhes sobre aparelhagem, preparação das fibras recicladas e roteiro para preparação da mistura.
+
+Espero que essas informações tenham sido úteis! Se precisar de mais detalhes, é só perguntar.
+[2025-04-08T17:47:04.613Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo conosco e esperamos que encontre as informações que procura de forma rápida e eficiente. Estamos à disposição para ajudá-lo no que precisar. Sinta-se à vontade para explorar e tirar o máximo proveito de nossa plataforma. Obrigado por nos escolher. Tenha uma ótima consulta!
+[2025-04-08T17:51:28.771Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos muito felizes em tê-lo(a) por aqui e esperamos que encontre todas as informações que está buscando. Caso precise de ajuda ou tenha alguma dúvida, não hesite em entrar em contato conosco. Estamos à disposição para ajudá-lo(a) da melhor forma possível. Aproveite a sua consulta e seja muito bem-vindo(a) à nossa plataforma!
+[2025-04-09T11:38:33.719Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos extremamente felizes em tê-lo(a) aqui e esperamos que encontre todas as informações e soluções que procura. Estamos à disposição para ajudá-lo(a no que precisar, por isso fique à vontade para navegar, explorar e tirar suas dúvidas. Conte conosco para tornar sua experiência conosco a melhor possível. Seja bem-vindo(a) e aproveite tudo o que temos a oferecer!
+[2025-04-09T11:41:08.021Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Aqui você encontrará todas as informações e suporte necessários para aproveitar ao máximo nossos serviços. Estamos sempre disponíveis para ajudá-lo no que precisar. Sinta-se à vontade para explorar e tirar suas dúvidas. Estamos felizes em tê-lo conosco!
+[2025-04-09T11:41:16.550Z] "Parabéns pela excelente escolha! Estou super curioso para saber mais sobre essa máquina incrível, o 'TP100 / Tear 01'. Vamos descobrir juntos?"
+[2025-04-09T11:41:16.554Z] As máquinas estão fora do ar, desculpe o transtorno. Tente novamente mais tarde.
+[2025-04-09T11:41:18.465Z] Olá e seja muito bem-vindo(a) ao modo de consulta da Andritz! Ficamos muito felizes por você estar aqui em busca de informações e estamos à disposição para ajudá-lo(a) da melhor maneira possível. Sinta-se à vontade para explorar e descobrir tudo o que precisa saber sobre nossos produtos e serviços. Estamos ansiosos para atendê-lo(a) e tornar sua experiência conosco a melhor possível. Conte conosco!
+[2025-04-09T13:31:00.516Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos felizes em recebê-lo e prontos para auxiliá-lo da melhor forma possível. Conte conosco para esclarecer todas as suas dúvidas e encontrar as soluções ideais para suas necessidades. Estamos aqui para ajudar, por isso sinta-se à vontade para explorar nossa plataforma e aproveitar ao máximo todos os recursos disponíveis. Seja bem-vindo e boa consulta!
+[2025-04-09T13:31:25.855Z] Que legal, você fez uma escolha incrível! Estou ansioso para descobrir mais sobre a lendária máquina 'CLT1'! Vamos nessa!
+[2025-04-09T13:31:25.862Z] TP100 / Tear 01 - Parado / Rodando: False
+TP100 / Tear 01 - Tempo parado atual: 00h:01m
+TP100 / Tear 01 - Ultimo tempo parado: 00h:00m
+TP100 / Tear 01 - Tempo parado do dia: 01h:43m
+TP100 / Tear 01 - Tempo parado do dia anterior: 13h:45m
+TP100 / Tear 01 - Tempo parado na semana anterior: 3d, 16h:39m
+TP100 / Tear 01 - Eficiencia atual: 56.93000030517578
+TP100 / Tear 01 - Batidas: 4320
+CF1015 / Tear 02 - Parado / Rodando: True
+CF1015 / Tear 02 - Tempo parado atual: 00h:00m
+CF1015 / Tear 02 - Ultimo tempo parado: 00h:00m
+CF1015 / Tear 02 - Tempo parado do dia: 03h:04m
+CF1015 / Tear 02 - Tempo parado do dia anterior: 18h:22m
+CF1015 / Tear 02 - Tempo parado na semana anterior: 4d, 05h:53m
+CF1015 / Tear 02 - Eficiencia atual: 28.889999389648438
+CF1015 / Tear 02 - Batidas: 2975
+TP500-1 / Tear03 - Parado / Rodando: False
+TP500-1 / Tear03 - Tempo parado atual: 00h:02m
+TP500-1 / Tear03 - Ultimo tempo parado: 00h:00m
+TP500-1 / Tear03 - Tempo parado do dia: 03h:35m
+TP500-1 / Tear03 - Tempo parado do dia anterior: 14h:27m
+TP500-1 / Tear03 - Tempo parado na semana anterior: 3d, 12h:51m
+TP500-1 / Tear03 - Eficiencia atual: 18.690000534057617
+TP500-1 / Tear03 - Batidas: 1773
+CF1035 / Tear 04 - Parado / Rodando: True
+CF1035 / Tear 04 - Tempo parado atual: 00h:00m
+CF1035 / Tear 04 - Ultimo tempo parado: 00h:00m
+CF1035 / Tear 04 - Tempo parado do dia: 03h:59m
+CF1035 / Tear 04 - Tempo parado do dia anterior: 11h:23m
+CF1035 / Tear 04 - Tempo parado na semana anterior: 3d, 09h:30m
+CF1035 / Tear 04 - Eficiencia atual: 10.5
+CF1035 / Tear 04 - Batidas: 1081
+Tear05 / HF324 - Parado / Rodando: False
+Tear05 / HF324 - Tempo parado atual: 04h:30m
+Tear05 / HF324 - Ultimo tempo parado: 00h:00m
+Tear05 / HF324 - Tempo parado do dia: 04h:30m
+Tear05 / HF324 - Tempo parado do dia anterior: 23h:57m
+Tear05 / HF324 - Tempo parado na semana anterior: 4d, 15h:44m
+Tear05 / HF324 - Eficiencia atual: 0.0
+Tear05 / HF324 - Batidas: 0
+Tear06 / HF820 - Parado / Rodando: True
+Tear06 / HF820 - Tempo parado atual: 00h:00m
+Tear06 / HF820 - Ultimo tempo parado: 00h:01m
+Tear06 / HF820 - Tempo parado do dia: 03h:01m
+Tear06 / HF820 - Tempo parado do dia anterior: 15h:56m
+Tear06 / HF820 - Tempo parado na semana anterior: 4d, 03h:51m
+Tear06 / HF820 - Eficiencia atual: 34.2599983215332
+Tear06 / HF820 - Batidas: 2321
+Tear07 / TM872 - Parado / Rodando: True
+Tear07 / TM872 - Tempo parado atual: 00h:00m
+Tear07 / TM872 - Ultimo tempo parado: 00h:03m
+Tear07 / TM872 - Tempo parado do dia: 03h:36m
+Tear07 / TM872 - Tempo parado do dia anterior: 19h:47m
+Tear07 / TM872 - Tempo parado na semana anterior: 3d, 13h:34m
+Tear07 / TM872 - Eficiencia atual: 21.079999923706055
+Tear07 / TM872 - Batidas: 1828
+Tear08 / TP500-2 - Parado / Rodando: True
+Tear08 / TP500-2 - Tempo parado atual: 00h:00m
+Tear08 / TP500-2 - Ultimo tempo parado: 00h:01m
+Tear08 / TP500-2 - Tempo parado do dia: 03h:39m
+Tear08 / TP500-2 - Tempo parado do dia anterior: 17h:48m
+Tear08 / TP500-2 - Tempo parado na semana anterior: 4d, 06h:21m
+Tear08 / TP500-2 - Eficiencia atual: 20.450000762939453
+Tear08 / TP500-2 - Batidas: 1940
+Tear09 / Jurgens - Parado / Rodando: False
+Tear09 / Jurgens - Tempo parado atual: 00h:04m
+Tear09 / Jurgens - Ultimo tempo parado: 00h:00m
+Tear09 / Jurgens - Tempo parado do dia: 03h:17m
+Tear09 / Jurgens - Tempo parado do dia anterior: 15h:10m
+Tear09 / Jurgens - Tempo parado na semana anterior: 4d, 02h:24m
+Tear09 / Jurgens - Eficiencia atual: 25.780000686645508
+Tear09 / Jurgens - Batidas: 2236
+Tear10 / 633 - Parado / Rodando: False
+Tear10 / 633 - Tempo parado atual: 04h:30m
+Tear10 / 633 - Ultimo tempo parado: 00h:00m
+Tear10 / 633 - Tempo parado do dia: 04h:30m
+Tear10 / 633 - Tempo parado do dia anterior: 23h:57m
+Tear10 / 633 - Tempo parado na semana anterior: 4d, 23h:19m
+Tear10 / 633 - Eficiencia atual: 0.0
+Tear10 / 633 - Batidas: 0
+Tear11 / TM798 - Parado / Rodando: False
+Tear11 / TM798 - Tempo parado atual: 02h:03m
+Tear11 / TM798 - Ultimo tempo parado: 00h:00m
+Tear11 / TM798 - Tempo parado do dia: 03h:37m
+Tear11 / TM798 - Tempo parado do dia anterior: 12h:50m
+Tear11 / TM798 - Tempo parado na semana anterior: 4d, 04h:55m
+Tear11 / TM798 - Eficiencia atual: 20.6299991607666
+Tear11 / TM798 - Batidas: 1957
+Tear12 / Jurgens 17.4 - Parado / Rodando: False
+Tear12 / Jurgens 17.4 - Tempo parado atual: 00h:01m
+Tear12 / Jurgens 17.4 - Ultimo tempo parado: 00h:00m
+Tear12 / Jurgens 17.4 - Tempo parado do dia: 02h:17m
+Tear12 / Jurgens 17.4 - Tempo parado do dia anterior: 20h:00m
+Tear12 / Jurgens 17.4 - Tempo parado na semana anterior: 4d, 03h:13m
+Tear12 / Jurgens 17.4 - Eficiencia atual: 49.75
+Tear12 / Jurgens 17.4 - Batidas: 5123
+Tear13 - Parado / Rodando: False
+Tear13 - Tempo parado atual: 00h:02m
+Tear13 - Ultimo tempo parado: 00h:00m
+Tear13 - Tempo parado do dia: 01h:54m
+Tear13 - Tempo parado do dia anterior: 13h:14m
+Tear13 - Tempo parado na semana anterior: 3d, 13h:33m
+Tear13 - Eficiencia atual: 50.279998779296875
+Tear13 - Batidas: 6813
+NL19 - Parado / Rodando: True
+NL19 - Tempo parado atual: 00h:00m
+NL19 - Ultimo tempo parado: 00h:44m
+NL19 - Tempo parado do dia: 02h:08m
+NL19 - Tempo parado do dia anterior: 13h:49m
+NL19 - Tempo parado na semana anterior: 4d, 19h:32m
+NL19 - Eficiencia atual: 0.03999999910593033
+NL19 - Batidas: 70
+Dilo - Parado / Rodando: False
+Dilo - Tempo parado atual: 00h:00m
+Dilo - Ultimo tempo parado: 00h:00m
+Dilo - Tempo parado do dia: 02h:55m
+Dilo - Tempo parado do dia anterior: 13h:06m
+Dilo - Tempo parado na semana anterior: 3d, 18h:31m
+Dilo - Eficiencia atual: 7.699999809265137
+Dilo - Batidas: 25029
+Hechtenberg - Parado / Rodando: True
+Hechtenberg - Tempo parado atual: 00h:00m
+Hechtenberg - Ultimo tempo parado: 00h:00m
+Hechtenberg - Tempo parado do dia: 01h:57m
+Hechtenberg - Tempo parado do dia anterior: 07h:24m
+Hechtenberg - Tempo parado na semana anterior: 3d, 05h:17m
+Hechtenberg - Eficiencia atual: 0.0
+Hechtenberg - Batidas: 0
+SixMeter - Parado / Rodando: True
+SixMeter - Tempo parado atual: 00h:00m
+SixMeter - Ultimo tempo parado: 00h:00m
+SixMeter - Tempo parado do dia: 01h:31m
+SixMeter - Tempo parado do dia anterior: 06h:40m
+SixMeter - Tempo parado na semana anterior: 1d, 16h:45m
+SixMeter - Eficiencia atual: 0.0
+SixMeter - Batidas: 0
+CLT1 - Parado / Rodando: True
+CLT1 - Tempo parado atual: 00h:00m
+CLT1 - Ultimo tempo parado: 00h:14m
+CLT1 - Tempo parado do dia: 00h:55m
+CLT1 - Tempo parado do dia anterior: 14h:32m
+CLT1 - Tempo parado na semana anterior: 3d, 03h:53m
+CLT1 - Eficiencia atual: 0.0
+CLT1 - Batidas: 0
+CLT2 - Parado / Rodando: True
+CLT2 - Tempo parado atual: 00h:00m
+CLT2 - Ultimo tempo parado: 00h:02m
+CLT2 - Tempo parado do dia: 01h:00m
+CLT2 - Tempo parado do dia anterior: 11h:54m
+CLT2 - Tempo parado na semana anterior: 3d, 04h:09m
+CLT2 - Eficiencia atual: 0.0
+CLT2 - Batidas: 0
+
+[2025-04-09T13:31:28.226Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos felizes em tê-lo conosco e esperamos que encontre todas as informações que precisa. Conte conosco para te auxiliar durante sua navegação e não hesite em nos contatar caso tenha alguma dúvida. Tenha uma ótima experiência!
+[2025-04-09T13:35:16.773Z] Seja muito bem-vindo ao modo de consulta da Andritz! Estamos felizes em tê-lo(a) conosco e esperamos que encontre todas as informações que procura de forma rápida e eficiente. Sinta-se à vontade para explorar nossos serviços e produtos. Qualquer dúvida ou necessidade de ajuda, estamos à disposição para auxiliá-lo. Tenha uma excelente experiência!
+[2025-04-09T13:35:31.506Z] "Que demais! Estou super curioso(a) sobre a máquina 'TP100 / Tear 01'... Vamos investigar juntos!"
+[2025-04-09T13:35:31.527Z] TP100 / Tear 01,1,00h:00m,00h:01m,01h:44m,13h:45m,3d, 16h:39m,56.880001068115234,4379
+[2025-04-09T13:35:33.670Z] Olá! Seja muito bem-vindo(a) ao modo de consulta da Andritz. Estamos muito felizes em tê-lo(a) aqui e esperamos que encontre todas as informações que está buscando. Sinta-se à vontade para explorar e utilizar nossos recursos. Estamos à disposição para ajudá-lo(a no que precisar. Tenha uma excelente experiência!
+[2025-04-09T13:42:24.533Z] Seja bem-vindo ao modo de consulta Andritz! Estamos muito felizes em tê-lo conosco e esperamos poder atender suas necessidades da melhor forma possível. Fique à vontade para explorar todas as opções e recursos disponíveis, e em caso de dúvidas, não hesite em nos contatar. Esperamos que sua experiência seja produtiva e satisfatória. Obrigado por escolher a Andritz como sua fonte de consulta. Seja muito bem-vindo!
+[2025-04-09T13:42:35.278Z] Aqui estão os dados das máquinas de forma fácil de ler:
+
+1. Máquina: TP100 / Tear 01
+   - Parado / Rodando: 1
+   - Tempo parado atual: 00h:00m
+   - Último tempo parado: 00h:01m
+   - Tempo parado do dia: 01h:44m
+   - Tempo parado do dia anterior: 13h:45m
+   - Tempo parado na semana anterior: 3d, 16h:39m
+   - Eficiência atual: 56.88%
+   - Batidas: 4379
+
+2. Máquina: CF1015 / Tear 02
+   - Parado / Rodando: 1
+   - Tempo parado atual: 00h:00m
+   - Último tempo parado: 00h:00m
+   - Tempo parado do dia: 03h:04m
+   - Tempo parado do dia anterior: 18h:22m
+   - Tempo parado na semana anterior: 4d, 05h:53m
+   - Eficiência atual: 29.73%
+   - Batidas: 3107
+
+3. Máquina: TP500-1 / Tear 03
+   - Parado / Rodando: 1
+   - Tempo parado atual: 00h:00m
+   - Último tempo parado: 00h:05m
+   - Tempo parado do dia: 03h:38m
+   - Tempo parado do dia anterior: 14h:27m
+   - Tempo parado na semana anterior: 3d, 12h:51m
+   - Eficiência atual: 18.47%
+   - Batidas: 1778
+
+E assim por diante. Espero que essas informações sejam úteis!
+[2025-04-09T13:42:37.341Z] Seja muito bem-vindo ao modo de consulta da Andritz!
+
+Estamos felizes em te receber aqui e esperamos que encontre todas as informações que precisa de forma clara e objetiva. Estamos à disposição para te ajudar no que for necessário, então não hesite em entrar em contato conosco caso tenha alguma dúvida ou precise de suporte.
+
+Esperamos que sua experiência conosco seja positiva e que possamos contribuir para o seu sucesso. Obrigado por escolher a Andritz!
+
+Tenha uma ótima consulta!
+[2025-04-09T13:44:21.264Z] Seja muito bem-vindo ao modo de consulta da Andritz!
+
+Estamos felizes em tê-lo conosco e disponibilizamos essa ferramenta para facilitar e agilizar o processo de consulta de informações. Esperamos que encontre tudo o que precisa de forma clara e objetiva.
+
+Caso tenha alguma dúvida ou sugestão, não hesite em entrar em contato conosco. Estamos aqui para ajudá-lo da melhor forma possível.
+
+Mais uma vez, seja bem-vindo e aproveite ao máximo o nosso modo de consulta da Andritz. Estamos à disposição para auxiliá-lo no que for necessário.
+
+Tenha uma ótima experiência!
+[2025-04-09T13:44:26.400Z] Que legal! Parece que você fez uma ótima escolha! Estou super animado para saber mais sobre a máquina 'TP100 / Tear 01' com você! Vamos descobrir juntos, isso vai ser muito divertido!
+[2025-04-09T13:44:26.413Z] ('TP100 / Tear 01', 1, '00h:00m', '00h:01m', '01h:44m', '13h:45m', '3d, 16h:39m', 56.880001068115234, 4379)
+[2025-04-09T13:44:28.352Z] Seja bem-vindo ao modo de consulta da Andritz! Estamos felizes em tê-lo aqui e prontos para auxiliá-lo no que precisar. Sinta-se à vontade para explorar e tirar suas dúvidas. Esperamos que sua experiência seja produtiva e enriquecedora. Estamos à disposição para ajudá-lo no que precisar. Aproveite!
+[2025-04-09T14:08:13.877Z] Olá! Seja muito bem-vindo ao modo de consulta Andritz. Estamos felizes em tê-lo conosco e prontos para te ajudar da melhor forma possível. Em caso de dúvidas, sugestões ou qualquer outra questão, não hesite em entrar em contato conosco. Esperamos que sua experiência conosco seja inovadora e enriquecedora. Obrigado por escolher a Andritz!
+[2025-04-09T14:08:22.352Z] "Uau, que escolha maravilhosa! Vamos descobrir mais sobre a máquina 'TP100 / Tear 01' juntos, vai ser uma aventura e tanto!"
+[2025-04-09T14:08:22.356Z] machine_name: TP100 / Tear 01
+Parado___Rodando: 1
+Tempo_parado_atual: 00h:00m
+Ultimo_tempo_parado: 00h:01m
+Tempo_parado_do_dia: 01h:44m
+Tempo_parado_do_dia_anterior: 13h:45m
+Tempo_parado_na_semana_anterior: 3d, 16h:39m
+Eficiencia_atual: 56.880001068115234
+Batidas: 4379
+[2025-04-09T14:08:24.184Z] Bem-vindo ao modo de consulta Andritz!
+
+É um prazer tê-lo(a) conosco e esperamos que encontre todas as informações que procura de forma fácil e rápida.
+
+Fique à vontade para explorar e utilizar todas as ferramentas disponíveis. Estamos aqui para ajudá-lo(a) no que precisar.
+
+Se precisar de alguma assistência, não hesite em nos contatar.
+
+Desejamos uma excelente experiência de consulta!
+[2025-04-09T14:32:20.161Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-09T14:32:20.170Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-09T14:32:29.373Z] Olá! Como posso te ajudar hoje?
+[2025-04-09T14:32:35.402Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-09T14:32:35.407Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-09T14:32:37.474Z] Olá! Seja muito bem-vindo ao modo de consulta da Andritz. Estamos muito felizes em tê-lo(a) por aqui e esperamos que essa ferramenta possa te ajudar a encontrar todas as informações que você precisa. Sinta-se à vontade para explorar e utilizar nossos recursos. Qualquer dúvida ou sugestão, estamos à disposição para ajudar. Obrigado por nos escolher e esperamos que sua experiência seja muito produtiva!
+[2025-04-09T14:33:17.024Z] Aqui estão os dados da tabela 'Mantas' formatados de forma fácil de ler para humanos:
+
+1. Fabricacao de mantas.json
+   - OBJETIVO: Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+   - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+   - GLOSSÁRIO: CLT - Maquinário utilizado para processamento da manta. MS Instrumentos - Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda - Parte componente das máquinas CLT I e CLT II.
+   - FORMULÁRIOS: 
+     a) Processo de Fabricação de Manta
+     b) Ordem de Fabricação de Manta
+     c) Produção Diária - CLT I / CLT II
+   - CONDIÇÕES GERAIS: Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+   - CONDIÇÕES ESPECÍFICAS: 
+     - Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, Balança de precisão eletrônica, entre outros.
+     - Roteiro de fabricação de manta: Limpar a torre de captação de refugos, carregar a carda e o alimentador da máquina com o material a ser produzido, ajustar a máquina de acordo com o tipo de manta, realizar umidificação das fibras, entre outros passos.
+
+2. preparacao da mistura.json
+   - OBJETIVO: Este documento padroniza as operações de preparação da mistura para fabricação de manta.
+   - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+   - GLOSSÁRIO: Temafa, Loba, Medidor de fluxo, Blending, Pistola Rolsprint, JIB's.
+   - FORMULÁRIOS: Folha de produção para mistura de manta - ANEXO A.
+   - CONDIÇÕES GERAIS: Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta (anexo A).
+   - CONDIÇÕES ESPECÍFICAS: 
+     - Aparelhagem: Temafa, Loba, Medidor de fluxo, Balança, Chave de boca, Pistola Rolsprint.
+     - Preparação das fibras recicladas: Consultar o JIB 004/2014 - Reciclagem de fibras pré-agulhadas para entender melhor o processo.
+
+Espero que essas informações sejam úteis e compreensíveis! Se precisar de mais alguma coisa, estou à disposição.
+[2025-04-09T14:33:18.629Z] Seja bem-vindo ao modo de consulta Andritz! Estamos muito felizes em tê-lo conosco e esperamos que encontre todas as informações necessárias para atender às suas necessidades. Se precisar de alguma ajuda ou tiver alguma dúvida, não hesite em entrar em contato conosco. Estamos aqui para ajudá-lo da melhor maneira possível. Mais uma vez, seja muito bem-vindo!
+[2025-04-09T14:33:41.300Z] Aqui estão os dados da tabela 'Mantas':
+
+1- Fabricacao de mantas.json:
+
+OBJETIVO: Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+
+RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+GLOSSARIO: CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+
+FORMULARIOS: a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+
+CONDICOES GERAIS: Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+
+CONDICOES ESPECIFICAS: Equipamentos: Máquinas CLT I e CLT II, MS Instrumentos, Gabarito, para medição de gramatura, Balança de precisão eletrônica, Pistola Rolsprint, Tesoura, Máquina de corte. Roteiro de fabricação de manta: Limpar a torre de captação de refugos e os pontos críticos da máquina CLT (alimentador, carda, esteiras, etc). Carregar a carda e o alimentador da máquina com o material a ser produzido. Ajustar a máquina de acordo com o tipo de manta, conforme Processo de Fabricação de Manta e iniciar o processo. Caso necessário, será feita a umidificação das fibras. Quando a manta estiver no enrolador da máquina, posicionar o tubo de manta, verificar a necessidade de ajuste de sobreposição, esperar completar 6 metros e retirar uma amostra de 0,50m x 0,50m para pesar na balança de precisão eletrônica. O resultado será multiplicado por quatro e comparado com o valor estipulado na Ordem de Fabricação de Manta. Caso não se tenha atingido o valor solicitado, realizar ajuste no painel da máquina e retirar quantas amostras forem necessárias para obter a gramatura requerida na Ordem de Fabricação de Manta. Registrar o valor da gramatura na Ordem de Fabricação de Manta. Valor de gramatura diferente do especificado poderá ser liberado pelo líder do setor ou Gestor de Produção / Processo. Atingida a gramatura, posicionar a máquina de corte na largura do rolo de manta a ser fabricado, zerar o marcador de metragem, iniciar o rolo e o gráfico do medidor de massa. Durante o processo, checar a sobreposição da manta e manter a caixa de alimentação da máquina cheia. Para a CLT I e II, utiliza-se o equipamento MS Instrumentos para elaboração do perfil longitudinal de gramatura, com o objetivo de manter a qualidade do rolo durante o processo. Após o término da fabricação do rolo de manta, pesar e realizar cálculo conforme a fórmula presente na OF, registrar a produção no formulário de Produção Diária - CLT I / CLT II, identificar o rolo de manta, anexar o gráfico do medidor de massa na OF, e liberar para a próxima etapa do processo. Todo o desperdício gerado durante a fabricação de um rolo de manta que pode ser reciclado, deve ser ensacado, identificado, pesado e retornado para a área de reciclagem. Troca de mistura: Limpar totalmente a torre de captação de refugos. Descarregar completamente as esteiras e a carda e inserir a nova mistura. Ideal que a troca de mistura seja feita reduzindo o dtex gradativamente. Salvo urgências de produção, onde deverá ser realizada limpeza dos pontos descritos na Pauta de Limpeza do setor.
+
+2- preparacao da mistura.json:
+
+OBJETIVO: Este documento padroniza as operações de preparação da mistura para fabricação de manta.
+
+RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+
+GLOSSARIO: Temafa: Equipamento utilizado para reciclar as fibras. Loba: Equipamento utilizado para reciclar e/ou misturar as fibras no Blending. Medidor de fluxo: Equipamento que faz a dosagem de água da máquina Loba. Blending: Área da reciclagem / mistura de fibras. Pistola Rolsprint: Equipamento utilizado para retirar resíduos de fibras da máquina. JIB's: Documento com ilustrações que descreve o processo de forma mais simples e compreensível. É utilizado para treinamento e integrações.
+
+FORMULARIOS: Folha de produção para mistura de manta - ANEXO A.
+
+CONDICOES GERAIS: Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta (anexo A). Feito isso, codificar para identificação do lote das fibras.
+
+CONDICOES ESPECIFICAS: Aparelhagem: Temafa, Loba, Medidor de fluxo, Balança, Chave de boca, Pistola Rolsprint. Preparação das fibras recicladas: As sobras de manta das agulhadeiras e CLT's, as quais forem recicladas, devem seguir para a área apropriada, onde são recicladas nas máquinas Temafa ou Loba e armazenadas em sacos com as devidas identificações. Para melhorar o entendimento da reciclagem de fibras, consultar o JIB 004/2014 - Reciclagem de fibras pré-agulhadas. Roteiro para preparação da mistura: Limpar a área onde será feita a mistura para que não ocorra contaminação. Pegar e levar as fibras (virgens e/ou recicladas) para o ambiente da máquina Loba e pesar as mesmas. Ligar e ajustar a Loba, bem como, ajustar o medidor de fluxo conforme tipo de mistura a ser realizada. Alimentar a máquina com as camadas de fibras, abrindo-as manualmente. Sempre que for utilizar reciclado na mistura, variar a alimentação na máquina entre fibras virgens e recicladas. Para melhor entendimento das atividades específicas consultar JIB's do setor. Ao terminar a mistura, desligar a Loba e o transportador de mistura. Limpar a máquina manualmente e limpar o local.
+[2025-04-09T14:33:41.303Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-09T14:33:41.307Z] ⚠️ Mudança detectada! Reiniciando verificações...

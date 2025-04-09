@@ -4,7 +4,7 @@ import os
 caminho_config = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "maps"))
 sys.path.append(caminho_config)
 
-from machines_ids import machines
+from data.machines_ids import machines
 
 class MachineMap:
     
