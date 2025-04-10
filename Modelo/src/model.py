@@ -13,6 +13,9 @@ from data.machines_ids import machines
 from data.machineName import MachineName
 from commands import commands
 
+class RestartException(Exception):
+    pass
+
 class ChatAndritz:
     def __init__(self, api_key, base_folder):
         self.api_key = api_key
@@ -155,10 +158,6 @@ class ChatAndritz:
             self._log_and_print(mensagem)
 
             self._log_and_print(info)
-        elif machineName == "vazio":
-            user = self.receive_api.monitor_logs()
-            self._log_and_print("Por favor, escolha uma máquina.")
-            self._escolher_maquina(user)
 
     def _escolher_pasta(self, user):
         pastas_disponiveis = self._listar_pastas()
@@ -173,7 +172,7 @@ class ChatAndritz:
 
         return setor if setor in pastas_disponiveis else False
     
-    def _identificar_contexto(self, user_input):  #Continuar com as máquinas
+    def _identificar_contexto(self, user_input):
         tabelas = self._listar_tabelas()
 
         prompt = f"""
@@ -187,7 +186,7 @@ class ChatAndritz:
 
         tabela_escolhida = self._send_model([{"role": "user", "content": prompt}])
 
-        if tabela_escolhida in tabelas:
+        if tabela_escolhida in tabelas and tabela_escolhida != "machine":
             dados = self._consultar_tabela(tabela_escolhida)
 
             if not dados:
@@ -211,66 +210,42 @@ class ChatAndritz:
         prompt = f"""
         O usuário enviou a seguinte mensagem: "{msg}"
         
-        Refaça a mensagem de maneira legal e divertida.
-        """
-
-        return self._send_model([{"role": "user", "content": prompt}])
-
-    def _initial_message(self):
-        prompt = f"""
-        Faça uma mensagem educada e legal de "boas vindas ao modo de consulta Andritz".
+        Refaça a mensagem de maneira legal e divertida. Não use aspas.
         """
 
         return self._send_model([{"role": "user", "content": prompt}])
     
+    def _esperar_entrada_usuario(self):
+        while not self.restart_flag.is_set():
+            user = self.receive_api.monitor_logs(restart_flag=self.restart_flag, timeout=1.5)
+            if self.restart_flag.is_set():
+                raise RestartException("Mudança detectada")
+            if user:
+                return user
 
     def chat(self):
         while True:
-            if self.restart_flag.is_set():
-                self.restart_flag.clear()
+            try:
+                while True:
+                    if self.restart_flag.is_set():
+                        raise RestartException()
+
+                    if self._verify_input():
+                        user = self._esperar_entrada_usuario()
+                        self._identificar_contexto(user)
+                    else:
+                        user = self._esperar_entrada_usuario()
+                        if commands["dev_mode"] and user.lower() == "sair":
+                            self._log_and_print(commands["exit_message"])
+                            return
+                        response = self._send_model(self.history + [{"role": "user", "content": user}])
+                        self.history.append({"role": "user", "content": user})
+                        self.history.append({"role": "assistant", "content": response})
+                        self._log_and_print(response)
+            except RestartException:
                 self._log_and_print("⚠️ Mudança detectada! Reiniciando verificações...")
-                continue
+                self.restart_flag.clear()
 
-            user = ""
-
-            if self._verify_input():
-                if self._check_restart(): continue
-                
-                self._log_and_print(self._initial_message())
-
-                if self._check_restart(): continue
-                
-                user = self.receive_api.monitor_logs()
-
-                if self._check_restart(): continue
-                
-                self._identificar_contexto(user)
-
-                if self._check_restart(): continue
-
-            else:
-                if self._check_restart(): continue
-                
-                user = self.receive_api.monitor_logs()
-
-                if self._check_restart(): continue
-                
-                if commands["dev_mode"] and user.lower() == "sair":
-                    self._log_and_print(commands["exit_message"])
-                    break
-
-                response = self._send_model(self.history + [{"role": "user", "content": user}])
-                
-                if self._check_restart(): continue
-                
-                self.history.append({"role": "user", "content": user})
-                self.history.append({"role": "assistant", "content": response})
-                
-                if self._check_restart(): continue
-                
-                self._log_and_print(f"{response}")
-
-                if self._check_restart(): continue
 
 
 if __name__ == "__main__":
