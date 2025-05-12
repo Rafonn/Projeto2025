@@ -17,3 +17,30 @@
 [2025-04-10T16:35:47.124Z] qual o status do tp100?
 [2025-04-10T16:37:39.876Z] tear 5
 [2025-04-10T16:38:37.668Z] ola
+[2025-04-10T17:27:04.132Z] qual o status do tear 1?
+[2025-04-10T17:27:28.883Z] ola
+[2025-04-10T17:27:38.067Z] qual o status do tear 1?
+[2025-04-10T17:29:10.394Z] qual o status do tear 1?
+[2025-04-10T17:40:20.804Z] ola
+[2025-04-10T17:40:30.552Z] ola
+[2025-04-10T17:40:35.462Z] mantas
+[2025-04-10T17:40:58.067Z] tear 1
+[2025-04-10T17:41:52.109Z] mantas
+[2025-04-10T17:42:08.260Z] tear 1
+[2025-04-10T17:42:17.546Z] ola
+[2025-04-28T14:03:36.665Z] Ola
+[2025-04-28T14:05:40.927Z] Ola
+[2025-04-28T14:05:53.242Z] Qual a capital do Brasil?
+[2025-04-28T14:12:21.043Z] quero saber sobre o setor de mantas
+[2025-04-28T14:12:49.194Z] quero saber o status do tear 1
+[2025-04-28T14:13:14.663Z] Ola
+[2025-04-28T14:28:34.688Z] Ola
+[2025-04-28T14:28:45.154Z] Qual a capital do Brasil?
+[2025-04-28T14:28:52.317Z] Como vai?
+[2025-04-28T14:29:05.147Z] Faça uma frase humorada
+[2025-04-28T14:29:25.445Z] Quero saber o status do tear 1
+[2025-04-29T12:06:16.705Z] Ola
+[2025-05-07T13:12:11.468Z] ola
+[2025-05-07T13:12:43.260Z] me fale sobre o setor da tecelagem
+[2025-05-07T13:12:53.714Z] tecelagem?
+[2025-05-07T13:13:04.331Z] mantas

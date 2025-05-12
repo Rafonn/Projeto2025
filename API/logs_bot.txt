@@ -123,3 +123,127 @@ Eficiência: 0.0
 Batidas do dia: 0
 [2025-04-10T16:38:33.214Z] ⚠️ Mudança detectada! Reiniciando verificações...
 [2025-04-10T16:38:38.945Z] Olá! Como posso te auxiliar hoje?
+[2025-04-10T17:26:47.921Z] Olá! Como posso ajudar você hoje?
+[2025-04-10T17:26:53.552Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:26:55.910Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:26:58.543Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:27:26.360Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:27:29.867Z] Olá! Como posso ajudar você hoje?
+[2025-04-10T17:27:32.641Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:29:03.348Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:29:05.310Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:40:28.718Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:40:31.612Z] Olá! Como posso te ajudar hoje?
+[2025-04-10T17:40:33.370Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:40:43.400Z] Aqui estão os dados da tabela 'Mantas' formatados para uma leitura mais amigável:
+
+- Fabricação de mantas:
+  - OBJETIVO: Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+  - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+  - GLOSSÁRIO: CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+  - FORMULÁRIOS: a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+  - CONDIÇÕES GERAIS: Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+  - CONDIÇÕES ESPECÍFICAS: Equipamentos, roteiro de fabricação de manta, troca de mistura, entre outros detalhes.
+
+- Preparação da mistura:
+  - OBJETIVO: Este documento padroniza as operações de preparação da mistura para fabricação de manta.
+  - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+  - GLOSSÁRIO: Temafa, Loba, Medidor de fluxo, Blending, Pistola Rolsprint, JIB's.
+  - FORMULÁRIOS: Folha de produção para mistura de manta - ANEXO A.
+  - CONDIÇÕES GERAIS: Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta (anexo A).
+  - CONDIÇÕES ESPECÍFICAS: Equipamentos, preparação das fibras recicladas, roteiro para preparação da mistura, entre outros detalhes.
+
+Espero que essas informações sejam úteis e fáceis de entender. Se precisar de mais detalhes ou ajuda, estou à disposição!
+[2025-04-10T17:42:00.093Z] Aqui estão os dados da tabela 'Mantas':
+
+1. Arquivo: Fabricacao de mantas.json
+   - OBJETIVO: Este documento padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+   - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+   - GLOSSÁRIO: CLT: Maquinário utilizado para processamento da manta. MS Instrumentos: Equipamento utilizado para elaborar o perfil longitudinal de gramatura da manta. Carda: Parte componente das máquinas CLT I e CLT II.
+   - FORMULÁRIOS: a) Processo de Fabricação de Manta. b) Ordem de Fabricação de Manta. c) Produção Diária - CLT I / CLT II.
+   - CONDIÇÕES GERAIS: Fabricar a manta conforme sequência de produção, Processo de Fabricação de Manta, Ordem de Fabricação de Manta e Tabela de Comprimento Máximo do Rolo de Manta.
+   - CONDIÇÕES ESPECÍFICAS: Equipamentos, roteiro de fabricação de manta e troca de mistura.
+
+2. Arquivo: preparacao da mistura.json
+   - OBJETIVO: Este documento padroniza as operações de preparação da mistura para fabricação de manta.
+   - RESPONSABILIDADE: A aplicação deste documento é de responsabilidade dos operadores e/ou líder do setor. A administração das operações descritas neste documento é da responsabilidade do Gestor de Produção / Processos.
+   - GLOSSÁRIO: Termos e equipamentos utilizados.
+   - FORMULÁRIOS: Folha de produção para mistura de manta - ANEXO A.
+   - CONDIÇÕES GERAIS: Preparar a mistura conforme sequência de produção e Tabela para Mistura de Manta, registrando a produção na Folha de produção para mistura de manta (anexo A). Codificar para identificação do lote das fibras.
+   - CONDIÇÕES ESPECÍFICAS: Equipamentos, preparação das fibras recicladas e roteiro para preparação da mistura.
+[2025-04-10T17:42:00.102Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:42:04.829Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:42:14.857Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-10T17:42:19.260Z] Olá novamente! Estou à disposição para ajudar com qualquer dúvida que você possa ter. Como posso ajudar você hoje?
+[2025-04-28T14:02:54.958Z] Olá! Como posso te ajudar hoje?
+[2025-04-28T14:03:37.705Z] Olá! Como posso ajudar você hoje?
+[2025-04-28T14:05:42.565Z] Olá! Como posso ajudar você hoje?
+[2025-04-28T14:05:53.981Z] A capital do Brasil é Brasília.
+[2025-04-28T14:12:13.072Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-28T14:12:28.044Z] Aqui estão as informações sobre as mantas disponíveis nos arquivos:
+
+1) Fabricação de mantas:
+- OBJETIVO: Padroniza as operações de fabricação de manta nas máquinas CLT I e CLT II.
+- RESPONSABILIDADE: Aplicação é responsabilidade dos operadores e/ou líder do setor, com administração do Gestor de Produção/Processos.
+- GLOSSÁRIO: Define termos como CLT, MS Instrumentos, Carda.
+- FORMULÁRIOS: Processo de Fabricação de Manta, Ordem de Fabricação de Manta, Produção Diária - CLT I / CLT II.
+- CONDIÇÕES GERAIS: Fabricação conforme a sequência de produção.
+- CONDIÇÕES ESPECÍFICAS: Detalha o roteiro de fabricação de manta, a troca de mistura e os procedimentos finais.
+
+2) Preparação da mistura:
+- OBJETIVO: Define as operações de preparação da mistura para fabricação de manta.
+- RESPONSABILIDADE: Aplicação é responsabilidade dos operadores e/ou líder do setor, com administração do Gestor de Produção/Processos.
+- GLOSSÁRIO: Define termos como Temafa, Loba, Blending, JIB's.
+- FORMULÁRIOS: Folha de produção para mistura de manta.
+- CONDIÇÕES GERAIS: Preparação da mistura conforme a sequência de produção.
+- CONDIÇÕES ESPECÍFICAS: Detalha os equipamentos, a preparação das fibras recicladas e o roteiro para a preparação da mistura.
+
+Espero que essas informações sejam úteis!
+[2025-04-28T14:12:52.338Z] Que legal! Sua escolha foi sensacional! Estou super animado para lhe fornecer todas as informações sobre a máquina 'TP100 / Tear 01'. Vamos lá! 🚀
+[2025-04-28T14:12:52.364Z] Equipamento: TP100 / Tear 01
+Parado / Rodando: Rodando
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:01m
+Tempo parado do dia: 01h:44m
+Tempo parado do dia anterior: 13h:45m
+Tempo parado na semana anterior: 3d, 16h:39m
+Eficiência: 56.880001068115234
+Batidas do dia: 4379
+[2025-04-28T14:13:11.919Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-28T14:13:15.467Z] Olá! Como posso ajudar você hoje?
+[2025-04-28T14:28:36.488Z] Olá! Como posso te ajudar hoje?
+[2025-04-28T14:28:45.911Z] A capital do Brasil é Brasília.
+[2025-04-28T14:28:53.357Z] Como assistente virtual, estou sempre pronto para te ajudar! Como posso ajudar você hoje?
+[2025-04-28T14:29:06.095Z] Por que o celular foi ao hospital? Porque ele estava sem bateria! 😄
+[2025-04-28T14:29:11.556Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-04-28T14:29:28.313Z] Que legal! "TP100 / Tear 01" é uma máquina incrível que estou pesquisando. Vamos descobrir juntos mais informações sobre ela? Vai ser demais! 😉🔍 #curiosidadeMil #VamoQueVamo
+[2025-04-28T14:29:28.349Z] Equipamento: TP100 / Tear 01
+Parado / Rodando: Rodando
+Tempo parado atual: 00h:00m
+Ultimo tempo parado: 00h:01m
+Tempo parado do dia: 01h:44m
+Tempo parado do dia anterior: 13h:45m
+Tempo parado na semana anterior: 3d, 16h:39m
+Eficiência: 56.880001068115234
+Batidas do dia: 4379
+[2025-05-07T13:12:13.380Z] Olá! Como posso ajudá-lo hoje?
+[2025-05-07T13:12:27.561Z] ⚠️ Mudança detectada! Reiniciando verificações...
+[2025-05-07T13:12:45.346Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-05-07T13:12:54.485Z] Não consegui identificar nenhuma tabela com esse nome. Pode tentar de novo?
+[2025-05-07T13:13:10.320Z] Aqui estão as informações sobre as mantas disponíveis:
+
+1. Fabricacao de mantas.json
+   - OBJETIVO: Padronizar as operações de fabricação de manta nas máquinas CLT I e CLT II.
+   - RESPONSABILIDADE: Aplicação é responsabilidade dos operadores e/ou líder do setor.
+   - GLOSSARIO: Termos em destaque.
+   - FORMULARIOS: Documentos relacionados ao processo de fabricação.
+   - CONDICOES GERAIS: Procedimentos gerais de fabricação de manta.
+   - CONDICOES ESPECIFICAS: Detalhes sobre os equipamentos e roteiro de fabricação de manta.
+
+2. preparacao da mistura.json
+   - OBJETIVO: Padronizar as operações de preparação da mistura para fabricação de manta.
+   - RESPONSABILIDADE: Aplicação é responsabilidade dos operadores e/ou líder do setor.
+   - GLOSSARIO: Definição de termos específicos.
+   - FORMULARIOS: Folha de produção para mistura de manta.
+   - CONDICOES GERAIS: Preparação da mistura conforme sequência de produção.
+   - CONDICOES ESPECIFICAS: Detalhes sobre os equipamentos e roteiro para preparação da mistura.

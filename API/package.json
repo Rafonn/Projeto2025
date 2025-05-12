@@ -12,6 +12,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "mssql": "^11.0.1",
+    "socket.io": "^4.8.1",
     "ws": "^8.18.1"
   }
 }
