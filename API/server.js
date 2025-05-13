@@ -28,23 +28,18 @@ pool.connect()
 app.use(express.json());
 app.use(cors());
 
-// *** Cria o servidor HTTP e o de WebSocket ***
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-// Quando um cliente abre conexão WS:
 wss.on("connection", (ws, req) => {
-  // Parseia userId e lastTimestamp da URL de conexão
   const { userId, lastTimestamp } = url.parse(req.url, true).query;
   if (!userId) {
     ws.send(JSON.stringify({ error: "Parâmetro 'userId' na query é obrigatório." }));
     return ws.close();
   }
 
-  // Marca o último timestamp conhecido (ou 0 se for a primeira vez)
   let lastTs = lastTimestamp ? new Date(lastTimestamp) : new Date(0);
 
-  // Função que busca o último log do bot para esse userId
   async function fetchLatestBotLog() {
     const result = await pool.request()
       .input("userId", sql.NVarChar(50), userId)
@@ -83,10 +78,8 @@ wss.on("connection", (ws, req) => {
   });
 });
 
-
 // ————————————— Rotas REST —————————————
 
-// Insere log do usuário e notifica clientes WS do bot
 app.post("/logs/user", async (req, res) => {
   try {
     const { log, userId } = req.body;
@@ -111,7 +104,6 @@ app.post("/logs/user", async (req, res) => {
   }
 });
 
-// Busca último log do bot (rota HTTP fallback)
 app.get("/logs/bot/:userId", async (req, res) => {
   const { userId } = req.params;
   if (!userId) {
@@ -136,7 +128,6 @@ app.get("/logs/bot/:userId", async (req, res) => {
   }
 });
 
-// Busca último log do usuário (rota HTTP)
 app.get("/logs/user/:userId", async (req, res) => {
   const { userId } = req.params;
   if (!userId) {
@@ -161,7 +152,6 @@ app.get("/logs/user/:userId", async (req, res) => {
   }
 });
 
-// Insere/Atualiza toggle
 app.post("/logs/toggle", async (req, res) => {
   try {
     const { toggle, userId } = req.body;
@@ -190,7 +180,6 @@ app.post("/logs/toggle", async (req, res) => {
   }
 });
 
-// Busca estado do toggle
 app.get("/logs/toggle/:userId", async (req, res) => {
   const { userId } = req.params;
   if (!userId) {
