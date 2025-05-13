@@ -1,10 +1,10 @@
-import sqlite3
+import pyodbc
 
 nomes_personalizados = {
     "machine_name": "Equipamento",
     "Parado___Rodando": "Parado / Rodando",
     "Tempo_parado_atual": "Tempo parado atual",
-    "Ultimo_tempo_parado": "Ultimo tempo parado",
+    "Ultimo_tempo_parado": "Último tempo parado",
     "Tempo_parado_do_dia": "Tempo parado do dia",
     "Tempo_parado_do_dia_anterior": "Tempo parado do dia anterior",
     "Tempo_parado_na_semana_anterior": "Tempo parado na semana anterior",
@@ -12,29 +12,53 @@ nomes_personalizados = {
     "Batidas": "Batidas do dia",
 }
 
-class MachineName:
-    def __init__(self, dbFile, name):
-        self.dbFile = dbFile
-        self.name = name
+class MachineInfoSQL:
+    def __init__(
+        self,
+        machine_name: str,
+    ):
+        self.conn_str = (
+            "DRIVER={ODBC Driver 17 for SQL Server};"
+            "SERVER=localhost;"
+            "DATABASE=ConversationData;"
+            "UID=teste;"
+            "PWD=Mpo69542507!;"
+        )
+        self.machine_name = machine_name
 
-    def getMachineInfo(self):
-        conn = sqlite3.connect(self.dbFile)
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM machines WHERE machine_name = ?", (self.name,))
+    def get_machine_info(self) -> str:
+        cnxn = pyodbc.connect(self.conn_str)
+        cursor = cnxn.cursor()
+
+        sql = "SELECT * FROM machines WHERE machine_name = ?"
+        cursor.execute(sql, (self.machine_name,))
         row = cursor.fetchone()
-        column_names = [desc[0] for desc in cursor.description]
-        conn.close()
+        if row is None:
+            cursor.close()
+            cnxn.close()
+            return f"Equipamento '{self.machine_name}' não encontrado."
+
+        column_names = [col[0] for col in cursor.description]
+
+        cursor.close()
+        cnxn.close()
 
         linhas = []
         for col, val in zip(column_names, row):
             nome_exibido = nomes_personalizados.get(col, col)
             if col == "Parado___Rodando":
-                val = "Parado" if val == 0 else "Rodando" if val == 1 else val
+                if val == 0:
+                    val = "Parado"
+                elif val == 1:
+                    val = "Rodando"
             linhas.append(f"{nome_exibido}: {val}")
-        
-        result = '\n'.join(linhas)
-        return result
-    
+
+        return "\n".join(linhas)
+
+
 if __name__ == "__main__":
-    machineName = MachineName(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db", "CLT1")
-    machineName.getMachineInfo()
+    machine = MachineInfoSQL(
+        machine_name="CLT1"
+    )
+    info = machine.get_machine_info()
+    print(info)

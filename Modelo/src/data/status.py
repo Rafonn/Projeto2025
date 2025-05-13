@@ -1,14 +1,29 @@
-import sqlite3
+import pyodbc
 from opcua import Client
 from machines_ids import machines
-
+import datetime
 
 class OPCUAClient:
-    def __init__(self, url, machines_dict, db_file=r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db"):
+    def __init__(
+        self,
+        url,
+        machines_dict,
+        server: str,
+        database: str,
+        user: str,
+        password: str,
+        driver: str = "{ODBC Driver 17 for SQL Server}"
+    ):
         self.url = url
         self.client = Client(url)
-        self.db_file = db_file
         self.machines = machines_dict
+        self.conn_str = (
+            f"DRIVER={driver};"
+            f"SERVER={server};"
+            f"DATABASE={database};"
+            f"UID={user};"
+            f"PWD={password}"
+        )
         self.setup_database()
 
     def connect(self):
@@ -16,74 +31,137 @@ class OPCUAClient:
             self.client.connect()
             return self.run()
         except Exception as e:
-            print(f"Erro ao conectar: {e}")
-            return "As máquinas estão fora do ar, desculpe o transtorno. Tente novamente mais tarde."
+            print(f"Erro ao conectar ao OPC UA: {e}")
+            return "As máquinas estão fora do ar, tente novamente mais tarde."
 
     def disconnect(self):
         self.client.disconnect()
+        if hasattr(self, 'cnxn'):
+            self.cnxn.close()
 
     def read_tag(self, node_id):
         try:
-            node = self.client.get_node(node_id)
-            value = node.get_value()
-            return value
+            return self.client.get_node(node_id).get_value()
         except Exception as e:
             print(f"Erro ao ler a tag {node_id}: {e}")
             return None
 
     def setup_database(self):
-        self.conn = sqlite3.connect(self.db_file)
-        self.cursor = self.conn.cursor()
-
+        self.cnxn = pyodbc.connect(self.conn_str, autocommit=False)
+        self.cursor = self.cnxn.cursor()
+        # Cria tabela principal
         self.cursor.execute("""
-            CREATE TABLE IF NOT EXISTS machines (
-                machine_name TEXT PRIMARY KEY
+            IF NOT EXISTS (
+                SELECT * FROM sys.tables WHERE name = 'machines'
             )
+            CREATE TABLE machines (
+                machine_name NVARCHAR(100) PRIMARY KEY
+            );
         """)
-        self.conn.commit()
+        self.cnxn.commit()
 
-    def save_data_to_db(self, machine_name, values):
+    def infer_sql_type(self, value):
+        if isinstance(value, bool):
+            return "BIT"
+        if isinstance(value, int):
+            return "INT"
+        if isinstance(value, float):
+            return "FLOAT"
+        if isinstance(value, datetime.datetime):
+            return "DATETIME2"
+        # tudo o mais vira texto (ajuste max length se quiser)
+        length = max(50, len(str(value)))
+        return f"NVARCHAR({length})"
+
+    def ensure_columns(self, col_type_map):
+        # Busca colunas já existentes e tipos
+        self.cursor.execute("""
+            SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH 
+            FROM INFORMATION_SCHEMA.COLUMNS 
+            WHERE TABLE_NAME='machines'
+        """)
+        existing = {
+            row.COLUMN_NAME: (row.DATA_TYPE, row.CHARACTER_MAXIMUM_LENGTH)
+            for row in self.cursor.fetchall()
+        }
+
+        for col, sql_type in col_type_map.items():
+            if col not in existing:
+                # adiciona coluna nova
+                self.cursor.execute(f"ALTER TABLE machines ADD {col} {sql_type} NULL;")
+            else:
+                # opcional: poderia validar se existing[col] bate com sql_type e alterar se necessário
+                pass
+
+        self.cnxn.commit()
+
+    def save_data_to_db(self, machine_name, values: dict):
         try:
-            for key in values.keys():
-                column = key.replace(" ", "_").replace("/", "_")
-                try:
-                    self.cursor.execute(f"ALTER TABLE machines ADD COLUMN '{column}'")
-                except sqlite3.OperationalError:
-                    pass
+            # 1) prepara nomes de colunas limpos
+            col_names = [
+                key.replace(" ", "_").replace("/", "_")
+                for key in values.keys()
+            ]
+            # 2) infere tipos e garante colunas
+            col_type_map = {
+                col: self.infer_sql_type(val)
+                for col, val in zip(col_names, values.values())
+            }
+            self.ensure_columns(col_type_map)
 
-            columns = ", ".join([f"'{key.replace(' ', '_').replace('/', '_')}'" for key in values])
-            placeholders = ", ".join(["?"] * len(values))
-            update_clause = ", ".join([f"{col}=excluded.{col}" for col in columns.split(", ")])
-
-            values_list = list(values.values())
-
-            self.cursor.execute(f"""
-                INSERT INTO machines (machine_name, {columns})
+            # 3) tenta INSERT
+            cols_str = ", ".join(col_names)
+            placeholders = ", ".join("?" for _ in col_names)
+            insert_sql = f"""
+                INSERT INTO machines (machine_name, {cols_str})
                 VALUES (?, {placeholders})
-                ON CONFLICT(machine_name) DO UPDATE SET {update_clause}
-            """, [machine_name] + values_list)
+            """
+            params = [machine_name] + list(values.values())
+            self.cursor.execute(insert_sql, params)
+            self.cnxn.commit()
 
-            self.conn.commit()
+        except pyodbc.IntegrityError:
+            # PK já existe: faz UPDATE
+            try:
+                set_clause = ", ".join(f"{col}=?" for col in col_names)
+                update_sql = f"""
+                    UPDATE machines
+                    SET {set_clause}
+                    WHERE machine_name = ?
+                """
+                update_params = list(values.values()) + [machine_name]
+                self.cursor.execute(update_sql, update_params)
+                self.cnxn.commit()
+            except Exception as e2:
+                print(f"Erro no UPDATE: {e2}")
+                self.cnxn.rollback()
+
         except Exception as e:
-            print(f"Erro ao salvar os dados no banco de dados: {e}")
+            print(f"Erro ao salvar dados no SQL Server: {e}")
+            self.cnxn.rollback()
 
     def run(self):
         result = ""
         for machine_name, node_map in self.machines.items():
             values = {}
             for node_id, tag_label in node_map.items():
-                value = self.read_tag(node_id)
-                if value is not None:
-                    values[tag_label] = value
-                    result += f"{machine_name} - {tag_label}: {value}\n"
-
+                val = self.read_tag(node_id)
+                if val is not None:
+                    values[tag_label] = val
+                    result += f"{machine_name} - {tag_label}: {val}\n"
             if values:
                 self.save_data_to_db(machine_name, values)
-
         return result
 
 
 if __name__ == "__main__":
-    opcua_client = OPCUAClient("opc.tcp://10.243.74.204:5000", machines)
+    opcua_client = OPCUAClient(
+        url="opc.tcp://10.243.74.204:5000",
+        machines_dict=machines,
+        server="localhost",
+        database="ConversationData",
+        user="teste",
+        password="Mpo69542507!"
+    )
     opcua_client.connect()
     opcua_client.disconnect()

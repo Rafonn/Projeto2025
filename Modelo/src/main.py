@@ -1,17 +1,19 @@
 import openai
+import traceback
 import os
 import json
 import tiktoken
 import time
 import threading
-import sqlite3
 from multiprocessing import Process, set_start_method
 
-from api.receive import LastMessageFetcher
-from api.toggleReceive import ToggleButtonStatus
+from db_logs.receive import LastMessageFetcher
+from db_logs.toggleReceive import ToggleButtonStatus
 from data.machines_ids import machines
-from data.machineName import MachineName
+from data.machineName import MachineInfoSQL
 from data.conversation import Conversation
+from helpers.users import SqlServerUserFetcher
+from helpers.context import Context
 from commands import commands
 
 class RestartException(Exception):
@@ -72,53 +74,16 @@ class ChatAndritz:
             return f"Erro ao acessar a API: {e}"
 
     def _verify_input(self):
-        key = self.receive_toggle.fetch_status()
-        return key
+        key = ToggleButtonStatus(self.user_id)
+        return key.fetch_status()
 
     def _listar_tabelas(self):
-        try:
-            conn = sqlite3.connect(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db")
-            cur = conn.cursor()
-            cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
-            tabelas = [r[0] for r in cur.fetchall()]
-            conn.close()
-            return tabelas
-        except Exception as e:
-            return f"Erro ao listar tabelas: {e}"
+        tabel = Context()
+        return tabel.listar_tabelas_sql_server()
     
     def _consultar_tabela(self, nome_tabela):
-        try:
-            conn = sqlite3.connect(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db")
-            cur = conn.cursor()
-            cur.execute(f"PRAGMA table_info({nome_tabela})")
-            cols = [c[1] for c in cur.fetchall()]
-            cur.execute(f"SELECT * FROM {nome_tabela}")
-            rows = cur.fetchall()
-            conn.close()
-
-            resultados = []
-            for r in rows:
-                d = {cols[i]: r[i] for i in range(len(cols))}
-                resultados.append(d)
-            return resultados
-        except Exception as e:
-            return f"Erro ao consultar a tabela '{nome_tabela}': {e}"
-
-    def _listar_file_names(self, tabela):
-        try:
-            conn = sqlite3.connect("machines_data.db")
-            cur = conn.cursor()
-            cur.execute(f"PRAGMA table_info({tabela})")
-            cols = [c[1] for c in cur.fetchall()]
-            if "file_name" not in cols:
-                return []
-            cur.execute(f"SELECT DISTINCT file_name FROM {tabela}")
-            files = [os.path.splitext(r[0])[0] for r in cur.fetchall()]
-            conn.close()
-            return files
-        except Exception as e:
-            print(f"Erro ao listar file_names da tabela '{tabela}': {e}")
-            return []
+        data = Context()
+        return data.consultar_tabela(nome_tabela)
 
     def _escolher_maquina(self, user):
         maquinas_disponiveis = machines
@@ -129,8 +94,8 @@ class ChatAndritz:
         """
         machineName = self._send_model([{"role": "user", "content": prompt}])
         if machineName in maquinas_disponiveis:
-            mi = MachineName(r"C:\Users\Rafael\Desktop\Projeto 2025\DB\DadosAndritz.db", machineName)
-            info = mi.getMachineInfo()
+            mi = MachineInfoSQL(machineName)
+            info = mi.get_machine_info()
             mensagem = f"Ótima escolha! Buscando informações sobre '{machineName}'..."
             mensagem = self._mensagem_personalizada(mensagem)
             self._log_and_print(mensagem)
@@ -184,7 +149,7 @@ class ChatAndritz:
             if nova:
                 return nova
 
-            """ # Opcional: se quiser fallback ao arquivo
+            """ Opcional: fallback ao arquivo
             user_file = self.receive_api.monitor_logs(restart_flag=self.restart_flag, timeout=0.5)
             if self.restart_flag.is_set():
                 raise RestartException("Mudança detectada")
@@ -220,9 +185,14 @@ class ChatAndritz:
 def start_chat_for_user(user_id, api_key, base_folder):
     try:
         bot = ChatAndritz(api_key=api_key, base_folder=base_folder, user_id=user_id)
+    except Exception as e:
+        traceback.print_exc()
+        return
+
+    try:
         bot.chat()
     except Exception as e:
-        print(f"[{user_id}] erro: {e!r}", flush=True)
+        traceback.print_exc()
 
 if __name__ == "__main__":
     try:
@@ -230,23 +200,29 @@ if __name__ == "__main__":
     except RuntimeError:
         pass
 
-    # só aqui defino a chave e a pasta
     openai.api_key = commands["api_key"]
+    users = SqlServerUserFetcher()
     base_folder = r"C:\Users\Rafael\Desktop\Projeto 2025\Data\Limpo"
 
-    user_ids = [
-        "251dc48b-fed5-49b2-b022-4c0f585af2e8",
-    ]
+    active_processes = {}
+    POLL_INTERVAL = 60
 
-    processes = []
-    for uid in user_ids:
-        p = Process(
-            target=start_chat_for_user,
-            args=(uid, openai.api_key, base_folder),
-            name=f"ChatAndritz-{uid}"
-        )
-        p.start()
-        processes.append(p)
+    while True:
+        current_ids = set(users.get_user_ids())
+        running_ids = set(active_processes.keys())
 
-    for p in processes:
-        p.join()
+        for uid in (current_ids - running_ids):
+            p = Process(
+                target=start_chat_for_user,
+                args=(uid, openai.api_key, base_folder),
+                name=f"ChatAndritz-{uid}"
+            )
+            p.daemon = True
+            p.start()
+            active_processes[uid] = p
+
+        for uid, p in list(active_processes.items()):
+            if not p.is_alive():
+                active_processes.pop(uid)
+
+        time.sleep(POLL_INTERVAL)

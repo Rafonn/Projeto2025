@@ -27,7 +27,6 @@ export default function Chatbot() {
         });
     }
 
-    // Gera ou recupera userId do cookie
     function getOrCreateUserId() {
         let userId = getCookie("user_id");
         if (!userId) {
@@ -37,17 +36,14 @@ export default function Chatbot() {
         return userId;
     }
 
-    // Scroll automático para a última mensagem
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages]);
 
-    // Ao montar: busca toggle e abre WS
     useEffect(() => {
         const userId = getOrCreateUserId();
 
-        // 1) busca estado atual do toggle
-        fetch(`http://localhost:8001/logs/toggle/${userId}`)
+        fetch(`http://10.61.245.205:8001/logs/toggle/${userId}`)
             .then((res) => {
                 if (!res.ok) throw new Error("Nenhum toggle encontrado");
                 return res.json();
@@ -59,8 +55,7 @@ export default function Chatbot() {
                 console.warn("Toggle não inicializado:", err);
             });
 
-        // 2) abre WebSocket para receber respostas do bot
-        const ws = new WebSocket(`ws://localhost:8001?userId=${encodeURIComponent(userId)}`);
+        const ws = new WebSocket(`ws://10.61.245.205:8001?userId=${encodeURIComponent(userId)}`);
         socketRef.current = ws;
 
         ws.onopen = () => {
@@ -89,20 +84,18 @@ export default function Chatbot() {
             ws.close();
         };
 
-        // cleanup
         return () => {
             ws.close();
         };
     }, []);
 
-    // Envia toggle para a API
     const handleToggleChange = async (e) => {
         const toggle = e.target.checked;
         setIsToggleActive(toggle);
         const userId = getOrCreateUserId();
 
         try {
-            const res = await fetch("http://localhost:8001/logs/toggle", {
+            const res = await fetch("http://10.61.245.205:8001/logs/toggle", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ toggle, userId }),
@@ -114,13 +107,11 @@ export default function Chatbot() {
         }
     };
 
-    // Função de envio de mensagem
     const sendMessage = async () => {
         if (!input.trim()) return;
         const userId = getOrCreateUserId();
         setLoading(true);
 
-        // 1) mostra no chat a bolha do usuário
         const textToSend = input;
         setMessages((prev) => [
             ...prev,
@@ -128,14 +119,12 @@ export default function Chatbot() {
         ]);
         setInput("");
 
-        // 2) envia log do usuário via REST
         try {
-            await fetch("http://localhost:8001/logs/user", {
+            await fetch("http://10.61.245.205:8001/logs/user", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ log: textToSend, userId }),
             });
-            // NÃO chamamos mais /logs/bot: a resposta do bot virá pelo WebSocket
         } catch (err) {
             console.error("Erro ao enviar log do usuário:", err);
             setLoading(false);
