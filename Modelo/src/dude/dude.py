@@ -1,4 +1,4 @@
-from controller import DudeConnectionBase
+from dude.controller import DudeConnectionBase
 
 """ 
     Filtrar por:
@@ -15,17 +15,35 @@ from controller import DudeConnectionBase
 
 class DudeSolutions:
 
-    def __init__(self, status, ativo, data):
-        self.status = status
-        self.ativo = ativo
+    def __init__(self, data, status):
         self.data = data
+        self.status = status
     
     def getOrderBy(self):
+
         controller = DudeConnectionBase()
-        ordens = controller.fetch_new_requests("Petropolis", self.status, self.data)
+        ordens = controller.fetch_new_requests("Petropolis", self.data, self.status)
+        orders = []
+        
         for ordem in ordens:
-            print (f"{ordem['IdOrdem']}\n")
+            s = {
+                "ID": ordem['IdOrdem'],
+                "Nome": ordem['Nome'],
+                "Problema": ordem.get('Problema', '—'),
+                "Categoria": ordem['Categoria'],
+                "Setor": ordem['Setor'],
+                "Ativo": ordem['Ativo'],
+                "Status": ordem['Status'],
+                "Criado em": ordem['CriadoEm'],
+                "Trabalho requisitado": ordem.get('TrabalhoReq', '').strip(),
+                "Última modificação": ordem['UltimaModif'],
+                "Data Esperada": ordem['DataEsperada'],
+            }
+            
+            orders.append(s)
+        
+        return orders
 
 if __name__ == "__main__":
-    teste = DudeSolutions("Completed", "teste", "2025-05-02T07:22:00")
-    teste.getOrderBy()
+    teste = DudeSolutions("2025-05-10T06:00:00", "Completed")
+    print(teste.getOrderBy())

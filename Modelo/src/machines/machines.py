@@ -1,0 +1,21 @@
+machines_names = {
+    "TP100 / Tear 01",
+    "CF1015 / Tear 02",
+    "TP500-1 / Tear03",
+    "CF1035 / Tear 04",
+    "Tear05 / HF324",
+    "Tear06 / HF820",
+    "Tear07 / TM872",
+    "Tear08 / TP500-2",
+    "Tear09 / Jurgens",
+    "Tear10 / 633",
+    "Tear11 / TM798",
+    "Tear12 / Jurgens 17.4",
+    "Tear13",
+    "NL19",
+    "Dilo",
+    "Hechtenberg",
+    "SixMeter",
+    "CLT1",
+    "CLT2"
+}

@@ -43,7 +43,7 @@ export default function Chatbot() {
     useEffect(() => {
         const userId = getOrCreateUserId();
 
-        fetch(`http://10.61.245.205:8001/logs/toggle/${userId}`)
+        fetch(`http://localhost:8001/logs/toggle/${userId}`)
             .then((res) => {
                 if (!res.ok) throw new Error("Nenhum toggle encontrado");
                 return res.json();
@@ -55,7 +55,7 @@ export default function Chatbot() {
                 console.warn("Toggle não inicializado:", err);
             });
 
-        const ws = new WebSocket(`ws://10.61.245.205:8001?userId=${encodeURIComponent(userId)}`);
+        const ws = new WebSocket(`ws://localhost:8001?userId=${encodeURIComponent(userId)}`);
         socketRef.current = ws;
 
         ws.onopen = () => {
@@ -95,7 +95,7 @@ export default function Chatbot() {
         const userId = getOrCreateUserId();
 
         try {
-            const res = await fetch("http://10.61.245.205:8001/logs/toggle", {
+            const res = await fetch("http://localhost:8001/logs/toggle", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ toggle, userId }),
@@ -120,7 +120,7 @@ export default function Chatbot() {
         setInput("");
 
         try {
-            await fetch("http://10.61.245.205:8001/logs/user", {
+            await fetch("http://localhost:8001/logs/user", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ log: textToSend, userId }),
