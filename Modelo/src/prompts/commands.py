@@ -15,4 +15,5 @@ commands = {
     "sector": "Qual setor você quer acessar?",
     "sector_error": "Setor não encontrado. Tente novamente.",
     "OPCUA_IP": "opc.tcp://10.243.74.204:5000",
+    "line_braker": "APENAS RESPONDA A PERGUNTA DO USUÁRIO USANDO A TAG <br /> na resposta quando for para quebrar quebrar linha em texto normal. NÃO COMENTE SOBRE ESSA TAG DE MANEIRA ALGUMA, APENAS RESPONDA"
 }

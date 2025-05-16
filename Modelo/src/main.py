@@ -131,7 +131,7 @@ class ChatAndritz:
                         self._identificar_contexto(user)
                     else:
                         user = self._esperar_entrada_usuario()
-                        response = self._send_model(self.history + [{"role": "user", "content": user}])
+                        response = self._send_model(self.history + [{"role": "user", "content": f"O Usuário enviu:{user}. {commands["line_braker"]}"}])
                         self.history.append({"role": "user", "content": user})
                         self.history.append({"role": "assistant", "content": response})
                         self._log_and_print(response)

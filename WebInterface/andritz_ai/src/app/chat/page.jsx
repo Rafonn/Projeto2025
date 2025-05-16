@@ -1,6 +1,8 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import ReactMarkdown from 'react-markdown'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import React, { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import "../globals.css";
@@ -138,12 +140,51 @@ export default function Chatbot() {
         }
     };
 
+    useEffect(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, [messages]);
+
+    const CODE_DELIM = '```';
+    const LINE_BREAK_TOKEN = /<br\s*\/?>/gi;
+
+    const renderContent = (text) => {
+        const parts = text.split(CODE_DELIM);
+
+        return parts.map((part, idx) => {
+            if (idx % 2 === 1) {
+                const code = part.replace(/^\w+\n/, '');
+                return (
+                    <pre
+                        key={idx}
+                        className="overflow-x-auto rounded-md p-2"
+                        style={{ backgroundColor: '#2d2d2d' }}
+                    >
+                        <code style={{ fontFamily: 'monospace', color: '#e0e0e0' }}>
+                            {code}
+                        </code>
+                    </pre>
+                );
+            }
+
+            const lines = part.split(LINE_BREAK_TOKEN);
+            return (
+                <p key={idx} className="whitespace-pre-wrap font-medium">
+                    {lines.map((line, i) => (
+                        <React.Fragment key={i}>
+                            {line}
+                            {i < lines.length - 1 && <br />}
+                        </React.Fragment>
+                    ))}
+                </p>
+            );
+        })
+    };
+
     return (
-        <div className="relative min-h-screen min-w-screen flex items-center justify-center p-6">
+        <div className="relative min-h-screen min-w-screen flex items-center justify-center p-6 w-full h-full">
             <div className="absolute inset-0 -z-10"></div>
 
-            <div className="w-full max-w-7xl border border-[#3498db] p-6 rounded-lg shadow-lg">
-                {/* Toggle */}
+            <div className="flex flex-col h-full w-full border border-[#3498db] p-6 rounded-lg shadow-lg overflow-auto">
                 <div className="flex justify-between text-center relative mb-6">
                     <label className="neo-toggle-container left-0">
                         <input
@@ -177,7 +218,6 @@ export default function Chatbot() {
                     </label>
                 </div>
 
-                {/* Fundo animado */}
                 <div className="flex justify-center items-center relative w-full circle-container">
                     <div className="circle"></div>
                     <div className="circle"></div>
@@ -186,45 +226,53 @@ export default function Chatbot() {
                     <div className="circle"></div>
                 </div>
 
-                {/* Janela de chat */}
-                <Card className="h-[70vh] flex flex-col border border-[#3498db] bg-slate-900 rounded-md shadow-md relative overflow-hidden animate-border card-with-background">
-                    <CardContent
-                        ref={messagesEndRef}
-                        className="flex-1 overflow-y-auto p-4 space-y-3"
-                    >
-                        {messages.map((msg, index) => (
-                            <div
-                                key={index}
-                                className={`p-3 rounded-md text-xs font-bold shadow-sm transition-all duration-500 break-words whitespace-pre-wrap max-w-fit ${msg.sender === "user"
-                                    ? "bg-[#3498db] text-white self-end ml-auto hover:scale-102 custom-font"
-                                    : "bot-reponse-bg text-gray-300 self-start hover:scale-102 custom-font"
-                                    }`}
-                            >
-                                {msg.text}
-                            </div>
-                        ))}
-                    </CardContent>
-                </Card>
+                <div className="flex flex-col gap-4">
+                    <Card className="h-[75vh] w-full border border-[#3498db] bg-slate-900 rounded-md shadow-md overflow-hidden animate-border card-with-background">
+                        <CardContent
+                            ref={messagesEndRef}
+                            className="h-full overflow-y-auto p-4 space-y-3"
+                        >
+                            {messages.map((msg, i) => (
+                                <div
+                                    key={i}
+                                    className={`p-3 rounded-md shadow-sm break-words max-w-fit font-bold
+                                        ${msg.sender === 'user'
+                                            ? 'bg-[#3498db] text-white self-end ml-auto'
+                                            : 'bot-reponse-bg text-gray-300 self-start'
+                                        }`}
+                                >
+                                    {renderContent(msg.text)}
+                                </div>
+                            ))}
+                        </CardContent>
+                    </Card>
 
-                {/* Input e botão */}
-                <div className="flex items-center gap-2 mt-4 w-full">
-                    <Input
-                        as="textarea"
-                        rows={4}
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={handleKeyDown}
-                        placeholder="Digite sua mensagem..."
-                        className="bg-slate-900 border border-[#3498db] text-white text-sm font-bold rounded-md px-4 py-2 h-10 shadow-md transition-all duration-500 focus:outline-none focus:border-[#0066ff] focus:text-[#3498db] placeholder:text-gray-400"
-                    />
-                    <button
-                        onClick={sendMessage}
-                        className="group relative bg-slate-900 h-10 w-36 border border-[#3498db] text-white text-xs font-bold rounded-md overflow-hidden transform transition-all duration-500 hover:scale-105 hover:border-[#0066ff] hover:text-[#3498db] p-1 flex items-center justify-center disabled:opacity-50"
-                    >
-                        {loading ? "Carregando..." : "Enviar"}
-                    </button>
+                    <div className="flex flex-wrap items-center gap-2 w-full">
+                        <Input
+                            as="textarea"
+                            rows={4}
+                            value={input}
+                            onChange={e => setInput(e.target.value)}
+                            onKeyDown={handleKeyDown}
+                            placeholder="Digite sua mensagem..."
+                            className="flex-1 min-w-0 bg-slate-900 border border-[#3498db]
+                            text-[#3498db] rounded-md px-4 py-2 h-12
+                            focus:outline-none focus:border-[#0066ff] focus:text-white
+                            placeholder:text-gray-400"
+                        />
+                        <button
+                            onClick={sendMessage}
+                            disabled={loading}
+                            className="w-32 sm:w-36 bg-slate-900 h-12 border border-[#3498db]
+                            rounded-md font-bold disabled:opacity-50 text-white
+                            transition-transform duration-300 hover:scale-105 hover:border-[#0066ff] hover:text-[#3498db]"
+                        >
+                            {loading ? "Carregando..." : "Enviar"}
+                        </button>
+                    </div>
                 </div>
             </div>
+
         </div>
     );
 }

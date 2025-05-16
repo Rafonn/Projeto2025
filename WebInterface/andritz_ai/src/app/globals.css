@@ -126,9 +126,11 @@
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: radial-gradient(black 55%, #0000), linear-gradient(135deg, navy, royalblue, dodgerblue, deepskyblue, cyan, lightskyblue, steelblue);
-    background-size: 100% 0.5%, contain;
-    background-blend-mode: hard-light;
+    background-image: url('../images/fundo.png');
+    background-size: cover;       /* faz a imagem cobrir toda a área */
+    background-position: center;  /* centra a imagem */
+    background-repeat: no-repeat; /* evita repetição da imagem */
+    background-color: #202123;
   }
 }
 

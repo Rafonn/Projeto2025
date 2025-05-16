@@ -40,7 +40,7 @@ class Filter:
             "em", "no", "na", "nos", "nas",
             "por", "com", "para", "e", "que", "é", "ao", "à", "às", "aos",
             "saber", "sobre", "tear", "dilo", "nl19", "hechtenberg", "nli", "sixmeter",
-            "iso"
+            "iso", "0", "1", "2", "3", "4", "5", "6", "7", "9"
         }
 
         word1 = {word1 for word1 in self.user_message.lower().split() if word1 not in stopwords}

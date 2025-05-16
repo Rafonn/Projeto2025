@@ -29,7 +29,8 @@ class Prompts:
     def context_identify(self, message, tabelas, maquinas):
         prompt = f"""
             O usuário enviou: "{message}".
-            Se a mensagem contiver e APENAS SE CONTIVER uma dessas palavra como "dude" ou "ordens de serviço", podendo ser plural ou singular,
+            Se a mensagem contiver e APENAS SE CONTIVER uma dessas palavra como "dude" ou "ordem de serviço", 
+            PODENDO AS PALAVRAS SEREM NO PLURAL OU SINGULAR,
             responda com "dude". Senão, responda com "vazio". ANALISE BEM A PALVRA E A LOGICA QUE VOCE IRA USAR. OBS:
             Responda APENAS com "vazio" ou "dude". Sem aspas, pontuações e tudo em minusculo.
         """
