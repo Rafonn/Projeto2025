@@ -6,7 +6,7 @@ from multiprocessing import Process, set_start_method
 
 from db_logs.receive import LastMessageFetcher
 from db_logs.toggleReceive import ToggleButtonStatus
-from data.conversation import Conversation
+from user_conversation.conversation import Conversation
 from helpers.users import SqlServerUserFetcher
 from helpers.context import Context
 from machines.machines import machines_names
@@ -81,6 +81,10 @@ class ChatAndritz:
         machine = Prompts()
         self._log_and_print(machine.machine_identify(user))
     
+    def _escolher_produto(self, user):
+        product = Prompts()
+        self._log_and_print(product.machine_identify(user))
+    
     def _dude(self, user):
         dude_options = Prompts()
         dude = dude_options.dude_identify(user, formated_machines)
@@ -106,6 +110,8 @@ class ChatAndritz:
 
         elif escolha.lower() == "machine":
             self._escolher_maquina(user_input)
+        elif escolha.lower() == "produto":
+            self._escolher_produto(user_input)
         elif escolha.lower() == "dude":
             self._dude(user_input)
         else:
@@ -131,10 +137,11 @@ class ChatAndritz:
                         self._identificar_contexto(user)
                     else:
                         user = self._esperar_entrada_usuario()
-                        response = self._send_model(self.history + [{"role": "user", "content": f"O Usuário enviu:{user}. {commands["line_braker"]}"}])
+                        response = Prompts()
+                        bot_response = response.default_prompt(self.history, user)
                         self.history.append({"role": "user", "content": user})
-                        self.history.append({"role": "assistant", "content": response})
-                        self._log_and_print(response)
+                        self.history.append({"role": "assistant", "content": bot_response})
+                        self._log_and_print(bot_response)
             except RestartException:
                 self._log_and_print("⚠️ Mudança detectada! Reiniciando verificações...")
                 self.restart_flag.clear()

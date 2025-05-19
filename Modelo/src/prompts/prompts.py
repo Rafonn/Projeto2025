@@ -2,7 +2,8 @@ import openai
 import json
 from prompts.commands import commands
 from machines.machines import machines_names
-from data.machineName import MachineInfoSQL
+from machine_data.machineName import MachineInfoSQL
+from product_data.productName import ProductInfoSQL
 
 class Prompts:
     def __init__(self):
@@ -18,6 +19,11 @@ class Prompts:
             return resp.choices[0].message.content
         except Exception as e:
             return f"Erro ao acessar a API: {e}"
+    
+    def default_prompt(self, history, message):
+        response = self._send_model(history + [{"role": "user", "content": f"O Usuário enviu:{message}. {commands["line_braker"]}"}])
+
+        return response
     
     def _personalized_message(self, message):
         prompt = f"""
@@ -40,7 +46,19 @@ class Prompts:
         if(res == "vazio"):
             prompt = f"""
                 O usuário enviou a seguinte mensagem: {message}
-                Se a mensagem contiver alguma chave: {maquinas}, responda "machine". A palavra deve ser identifida baseada
+                Se a mensagem contiver alguma palavra como: "produto", "pano", "cliente", podendo ser plural ou singular, responda "produto".
+                A palavra deve ser identificada baseada
+                no contexto do usuário. Por isso, caso ele escreva "tecelagem", a resposta seria "vazio", pois ele quer saber
+                sobre a tecelagem e não sobre o produto em si.
+                Senão, responda com "vazio". ANALISE BEM A PALVRA E PENSE NA LOGICA QUE VOCE IRA USAR. OBS:
+                Responda APENAS com "vazio" ou "machine". Sem aspas, pontuações e tudo em minusculo.
+            """
+            res = self._send_model([{"role": "user", "content": prompt}])
+
+        if(res == "vazio"):
+            prompt = f"""
+                O usuário enviou a seguinte mensagem: {message}
+                Se a mensagem contiver alguma chave: {maquinas}, responda "machine". A palavra deve ser identificada baseada
                 no contexto do usuário. Por isso, caso ele escreva "tecelagem", a resposta seria "vazio", pois ele quer saber
                 sobre a tecelagem e não sobre a máquina em si.
                 Senão, responda com "vazio". ANALISE BEM A PALVRA E PENSE NA LOGICA QUE VOCE IRA USAR. OBS:
@@ -111,6 +129,22 @@ class Prompts:
         if machineName in machines_names:
             mi = MachineInfoSQL(machineName)
             info = mi.get_machine_info()
+            bot_msg = f"Ótima escolha! Buscando informações sobre '{machineName}'..."
+            bot_msg = self._personalized_message(bot_msg)
+            return f"{bot_msg}\n{info}"
+        
+    def product_identify(self, message):
+        prompt = f"""
+        O usuário quer informações sobre "{message}". Aqui estão as máquinas disponíveis:
+        {machines_names}
+        Qual dessas máquinas é a mais relevante? Responda APENAS com o nome exato da máquina mais parecida
+        com a que o usuário informou.
+        """
+        machineName = self._send_model([{"role": "user", "content": prompt}])
+
+        if machineName in machines_names:
+            mi = ProductInfoSQL(machineName)
+            info = mi.get_product_info()
             bot_msg = f"Ótima escolha! Buscando informações sobre '{machineName}'..."
             bot_msg = self._personalized_message(bot_msg)
             return f"{bot_msg}\n{info}"

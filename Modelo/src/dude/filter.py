@@ -1,6 +1,4 @@
-import re
 from dude.dude import DudeSolutions
-from dude.formated_machines import formated_machines
 
 class Filter:
 
@@ -62,18 +60,18 @@ class Filter:
 
     def _format_item(self, s):
         return f"""
-            ___ORDEM DE SERVIÇO__
-            ID: {s['ID']}
-            Nome: {s['Nome']}
-            Problema: {s['Problema']}
-            Categoria: {s['Categoria']}
-            Setor: {s['Setor']}
-            Ativo: {s['Ativo']}
-            Status: {s['Status']}
-            Criado em: {s['Criado em']}
-            Trabalho requisitado: {s['Trabalho requisitado']}
-            Última modificação: {s['Última modificação']}
-            Data Esperada: {s['Data Esperada']}
+            ### ORDEM DE SERVIÇO
+            *** ID: {s['ID']}
+            *** Nome: {s['Nome']}
+            *** Problema: {s['Problema']}
+            *** Categoria: {s['Categoria']}
+            *** Setor: {s['Setor']}
+            *** Ativo: {s['Ativo']}
+            *** Status: {s['Status']}
+            *** Criado em: {s['Criado em']}
+            *** Trabalho requisitado: {s['Trabalho requisitado']}
+            *** Última modificação: {s['Última modificação']}
+            *** Data Esperada: {s['Data Esperada']}
         """
 
 if __name__ == "__main__":

@@ -1,5 +1,4 @@
 import pyodbc
-from datetime import datetime
 
 class ToggleButtonStatus:
     def __init__(self, user_id):

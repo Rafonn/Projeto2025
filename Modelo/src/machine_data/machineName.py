@@ -1,15 +1,15 @@
 import pyodbc
 
 nomes_personalizados = {
-    "machine_name": "Equipamento",
-    "Parado___Rodando": "Parado / Rodando",
-    "Tempo_parado_atual": "Tempo parado atual",
-    "Ultimo_tempo_parado": "Último tempo parado",
-    "Tempo_parado_do_dia": "Tempo parado do dia",
-    "Tempo_parado_do_dia_anterior": "Tempo parado do dia anterior",
-    "Tempo_parado_na_semana_anterior": "Tempo parado na semana anterior",
-    "Eficiencia_atual": "Eficiência",
-    "Batidas": "Batidas do dia",
+    "machine_name": "#### Equipamento",
+    "Parado___Rodando": "#### Parado / Rodando",
+    "Tempo_parado_atual": "#### Tempo parado atual",
+    "Ultimo_tempo_parado": "#### Último tempo parado",
+    "Tempo_parado_do_dia": "#### Tempo parado do dia",
+    "Tempo_parado_do_dia_anterior": "#### Tempo parado do dia anterior",
+    "Tempo_parado_na_semana_anterior": "#### Tempo parado na semana anterior",
+    "Eficiencia_atual": "#### Eficiência",
+    "Batidas": "#### Batidas do dia",
 }
 
 class MachineInfoSQL:
@@ -43,7 +43,7 @@ class MachineInfoSQL:
         cursor.close()
         cnxn.close()
 
-        linhas = []
+        linhas = ["### STATUS:"]
         for col, val in zip(column_names, row):
             nome_exibido = nomes_personalizados.get(col, col)
             if col == "Parado___Rodando":
@@ -51,6 +51,10 @@ class MachineInfoSQL:
                     val = "Parado"
                 elif val == 1:
                     val = "Rodando"
+            
+            if col == "Eficiencia_atual":
+                val = f"{round(val, 1)} %"
+
             linhas.append(f"{nome_exibido}: {val}")
 
         return "\n".join(linhas)

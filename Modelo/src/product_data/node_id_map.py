@@ -4,7 +4,7 @@ import os
 caminho_config = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "maps"))
 sys.path.append(caminho_config)
 
-from data.machines_ids import machines
+from products_ids import machines
 
 class MachineMap:
     
@@ -16,12 +16,12 @@ class MachineMap:
         print(especificMachine)
         chaves = list(especificMachine.keys())
         
-        valores_fixos = ["Parado / Rodando", "Tempo parado atual", "Ultimo tempo parado", "Tempo parado do dia", "Tempo parado do dia anterior", "Tempo parado na semana anterior", "Eficiencia atual", "Batidas"]
+        valores_fixos = ["Código do pano", "Pano", "Cliente", "Urdição", "Posição", "Data prometida", "Picks", "Metros tecidos", "Total a tecer", "Último evento", "Observação", "Data de início de tecimento", "Hora de início de tecimento"]
         
         node_id_map = {chave: valor for chave, valor in zip(chaves, valores_fixos)}
         
         return node_id_map
 
 if __name__ == "__main__":
-    teste = MachineMap("CLT1")
+    teste = MachineMap("TP100 / Tear 01")
     teste.map()

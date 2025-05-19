@@ -1,7 +1,5 @@
 "use client";
 
-import ReactMarkdown from 'react-markdown'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import React, { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,9 +15,10 @@ export default function Chatbot() {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
-    const [isToggleActive, setIsToggleActive] = useState(false);
     const socketRef = useRef(null);
-    const messagesEndRef = useRef(null);
+    const containerRef = useRef(null);
+    const lastUserMessageRef = useRef(null);
+    const [setIsToggleActive] = useState(false);
 
     function generateUUID() {
         return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -39,23 +38,32 @@ export default function Chatbot() {
     }
 
     useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+        if (!containerRef.current || !lastUserMessageRef.current) return;
+
+        lastUserMessageRef.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
     }, [messages]);
 
     useEffect(() => {
         const userId = getOrCreateUserId();
+        fetch("http://localhost:8001/logs/toggle", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ toggle: false, userId }),
+        })
+            .then(res => res.json())
+            .then(data => console.log("Toggle reset no servidor:", data))
+            .catch(err => console.error("Erro ao resetar toggle no servidor:", err));
+    }, []);
 
-        fetch(`http://localhost:8001/logs/toggle/${userId}`)
-            .then((res) => {
-                if (!res.ok) throw new Error("Nenhum toggle encontrado");
-                return res.json();
-            })
-            .then(({ button }) => {
-                setIsToggleActive(Boolean(button));
-            })
-            .catch((err) => {
-                console.warn("Toggle não inicializado:", err);
-            });
+    const lastUserIndex = messages
+        .map(msg => msg.sender)
+        .lastIndexOf('user');
+
+    useEffect(() => {
+        const userId = getOrCreateUserId();
 
         const ws = new WebSocket(`ws://localhost:8001?userId=${encodeURIComponent(userId)}`);
         socketRef.current = ws;
@@ -93,19 +101,15 @@ export default function Chatbot() {
 
     const handleToggleChange = async (e) => {
         const toggle = e.target.checked;
-        setIsToggleActive(toggle);
+        console.log("Valor do toggle:", toggle);
         const userId = getOrCreateUserId();
-
-        try {
-            const res = await fetch("http://localhost:8001/logs/toggle", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ toggle, userId }),
-            });
-            const data = await res.json();
-            console.log("Toggle salvo:", data);
-        } catch (err) {
-            console.error("Erro ao salvar toggle:", err);
+        await fetch("http://localhost:8001/logs/toggle", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ toggle, userId }),
+        });
+        if (typeof window !== "undefined") {
+            localStorage.setItem("isToggleActive", JSON.stringify(toggle));
         }
     };
 
@@ -140,12 +144,17 @@ export default function Chatbot() {
         }
     };
 
-    useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, [messages]);
-
     const CODE_DELIM = '```';
-    const LINE_BREAK_TOKEN = /<br\s*\/?>/gi;
+
+    const parseInlineBold = (text) => {
+        const parts = text.split(/(\*\*[^*]+\*\*)/g);
+        return parts.map((part, i) => {
+            const m = part.match(/^\*\*(.+)\*\*$/);
+            return m
+                ? <strong key={i}>{m[1]}</strong>
+                : <React.Fragment key={i}>{part}</React.Fragment>;
+        });
+    };
 
     const renderContent = (text) => {
         const parts = text.split(CODE_DELIM);
@@ -156,28 +165,77 @@ export default function Chatbot() {
                 return (
                     <pre
                         key={idx}
-                        className="overflow-x-auto rounded-md p-2"
-                        style={{ backgroundColor: '#2d2d2d' }}
+                        className="overflow-x-auto rounded-md p-2 bg-gray-900"
                     >
-                        <code style={{ fontFamily: 'monospace', color: '#e0e0e0' }}>
+                        <code className="font-mono text-gray-200">
                             {code}
                         </code>
                     </pre>
                 );
             }
 
-            const lines = part.split(LINE_BREAK_TOKEN);
+            const lines = part.split(/\r?\n/);
+
             return (
-                <p key={idx} className="whitespace-pre-wrap font-medium">
-                    {lines.map((line, i) => (
-                        <React.Fragment key={i}>
-                            {line}
-                            {i < lines.length - 1 && <br />}
-                        </React.Fragment>
-                    ))}
-                </p>
+                <React.Fragment key={idx}>
+                    {lines.map((rawLine, i) => {
+                        const line = rawLine.trim();
+                        if (!line) {
+                            return <br key={i} />;
+                        }
+
+                        if (line.startsWith('### ')) {
+                            const content = line.slice(4).trim();
+                            return (
+                                <h3
+                                    key={i}
+                                    className="text-2xl font-bold mt-6 mb-2"
+                                >
+                                    {parseInlineBold(content)}
+                                </h3>
+                            );
+                        }
+
+                        if (line.startsWith('#### ')) {
+                            const content = line.slice(5).trim();
+                            return (
+                                <h4
+                                    key={i}
+                                    className="text-xl font-bold mt-4 mb-1"
+                                >
+                                    {parseInlineBold(content)}
+                                </h4>
+                            );
+                        }
+
+                        if (line.startsWith('*** ')) {
+                            const content = line.slice(4).trim();
+                            return (
+                                <p key={i} className="font-medium">
+                                    <strong>{content}</strong>
+                                </p>
+                            );
+                        }
+
+                        if (/^[-*]\s+/.test(line)) {
+                            const marker = line.slice(0, line.indexOf(' ') + 1);
+                            const content = line.slice(marker.length);
+                            return (
+                                <p key={i} className="whitespace-pre-wrap font-medium">
+                                    {marker}{parseInlineBold(content)}
+                                </p>
+                            );
+                        }
+
+                        return (
+                            <p key={i} className="whitespace-pre-wrap font-medium">
+                                {parseInlineBold(line)}
+                            </p>
+                        );
+                    })}
+                </React.Fragment>
             );
-        })
+        });
     };
 
     return (
@@ -190,7 +248,7 @@ export default function Chatbot() {
                         <input
                             type="checkbox"
                             className="neo-toggle-input"
-                            checked={isToggleActive ?? false}
+                            defaultChecked={false}
                             onChange={handleToggleChange}
                         />
                         <span className="neo-toggle">
@@ -226,24 +284,29 @@ export default function Chatbot() {
                     <div className="circle"></div>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 flex-1">
                     <Card className="h-[75vh] w-full border border-[#3498db] bg-slate-900 rounded-md shadow-md overflow-hidden animate-border card-with-background">
                         <CardContent
-                            ref={messagesEndRef}
+                            ref={containerRef}
                             className="h-full overflow-y-auto p-4 space-y-3"
                         >
-                            {messages.map((msg, i) => (
-                                <div
-                                    key={i}
-                                    className={`p-3 rounded-md shadow-sm break-words max-w-fit font-bold
+                            {messages.map((msg, i) => {
+                                const isLastUser = msg.sender === 'user' && i === lastUserIndex;
+
+                                return (
+                                    <div
+                                        key={i}
+                                        ref={isLastUser ? lastUserMessageRef : undefined}
+                                        className={`p-3 rounded-md shadow-sm break-words max-w-fit font-bold
                                         ${msg.sender === 'user'
-                                            ? 'bg-[#3498db] text-white self-end ml-auto'
-                                            : 'bot-reponse-bg text-gray-300 self-start'
-                                        }`}
-                                >
-                                    {renderContent(msg.text)}
-                                </div>
-                            ))}
+                                                ? 'bg-[#3498db] text-white self-end ml-auto'
+                                                : 'bot-reponse-bg text-gray-300 self-start'
+                                            }`}
+                                    >
+                                        {renderContent(msg.text)}
+                                    </div>
+                                );
+                            })}
                         </CardContent>
                     </Card>
 
@@ -272,7 +335,6 @@ export default function Chatbot() {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

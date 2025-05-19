@@ -1,5 +1,4 @@
 import pyodbc
-from datetime import datetime
 
 class Conversation:
     def __init__(self, message, user_id):
