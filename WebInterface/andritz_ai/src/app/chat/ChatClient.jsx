@@ -1,41 +1,32 @@
 "use client";
 
+import { useSession, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import React, { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import "../globals.css";
 
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(";").shift();
-}
-
-export default function Chatbot() {
+export default function Chatbot({ email }) {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
     const socketRef = useRef(null);
     const containerRef = useRef(null);
     const lastUserMessageRef = useRef(null);
-    const [setIsToggleActive] = useState(false);
+    const { data: session, status } = useSession();
+    const router = useRouter();
 
-    function generateUUID() {
-        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-            const r = (Math.random() * 16) | 0,
-                v = c === "x" ? r : (r & 0x3) | 0x8;
-            return v.toString(16);
-        });
-    }
+    const handleLogout = () => {
+        signOut({ callbackUrl: "/login" });
+    };
 
-    function getOrCreateUserId() {
-        let userId = getCookie("user_id");
-        if (!userId) {
-            userId = generateUUID();
-            document.cookie = `user_id=${userId}; path=/; max-age=${60 * 60 * 24 * 365}`;
+    useEffect(() => {
+        if (status === "loading") return;
+        if (!session) {
+            router.push(`/api/auth/signin?callbackUrl=/chat`);
         }
-        return userId;
-    }
+    }, [session, status, router]);
 
     useEffect(() => {
         if (!containerRef.current || !lastUserMessageRef.current) return;
@@ -47,7 +38,7 @@ export default function Chatbot() {
     }, [messages]);
 
     useEffect(() => {
-        const userId = getOrCreateUserId();
+        const userId = email;
         fetch("http://localhost:8001/logs/toggle", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -63,7 +54,7 @@ export default function Chatbot() {
         .lastIndexOf('user');
 
     useEffect(() => {
-        const userId = getOrCreateUserId();
+        const userId = email;
 
         const ws = new WebSocket(`ws://localhost:8001?userId=${encodeURIComponent(userId)}`);
         socketRef.current = ws;
@@ -102,7 +93,7 @@ export default function Chatbot() {
     const handleToggleChange = async (e) => {
         const toggle = e.target.checked;
         console.log("Valor do toggle:", toggle);
-        const userId = getOrCreateUserId();
+        const userId = email;
         await fetch("http://localhost:8001/logs/toggle", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -115,7 +106,7 @@ export default function Chatbot() {
 
     const sendMessage = async () => {
         if (!input.trim()) return;
-        const userId = getOrCreateUserId();
+        const userId = email;
         setLoading(true);
 
         const textToSend = input;
@@ -243,7 +234,9 @@ export default function Chatbot() {
             <div className="absolute inset-0 -z-10"></div>
 
             <div className="flex flex-col h-full w-full border border-[#3498db] p-6 rounded-lg shadow-lg overflow-auto">
+
                 <div className="flex justify-between text-center relative mb-6">
+                    
                     <label className="neo-toggle-container left-0">
                         <input
                             type="checkbox"
@@ -267,13 +260,22 @@ export default function Chatbot() {
                                 <span className="neo-thumb-pulse"></span>
                             </span>
                         </span>
-                        <span className="neo-status">
+                        <span className="neo-status top-10">
                             <span className="neo-status-indicator">
                                 <span className="neo-status-text">Andritz Mode</span>
                                 <span className="neo-status-dot"></span>
                             </span>
                         </span>
                     </label>
+
+                    <div className="flex items-center text-center">
+                        <button
+                            onClick={handleLogout}
+                            className="ml-auto text-sm text-white px-3 py-1 bg-slate-900 border border-[#3498db] button-out"
+                        >
+                            Sair
+                        </button>
+                    </div>
                 </div>
 
                 <div className="flex justify-center items-center relative w-full circle-container">
@@ -335,6 +337,6 @@ export default function Chatbot() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }

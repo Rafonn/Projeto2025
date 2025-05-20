@@ -127,9 +127,12 @@
     align-items: center;
     font-family: Arial, sans-serif;
     background-image: url('../images/fundo.png');
-    background-size: cover;       /* faz a imagem cobrir toda a área */
-    background-position: center;  /* centra a imagem */
-    background-repeat: no-repeat; /* evita repetição da imagem */
+    background-size: cover;
+    /* faz a imagem cobrir toda a área */
+    background-position: center;
+    /* centra a imagem */
+    background-repeat: no-repeat;
+    /* evita repetição da imagem */
     background-color: #202123;
   }
 }
@@ -192,6 +195,56 @@
   }
 }
 
+/* 1. Definimos a animação de mudança de cor */
+@keyframes color-pulse {
+  0% {
+    /* Cor inicial */
+    color: #3B82F6;
+    /* azul médio (Tailwind: blue-500) */
+  }
+
+  50% {
+    /* Cor intermediária */
+    color: #60A5FA;
+    /* azul mais claro (Tailwind: blue-400) */
+  }
+
+  100% {
+    /* Volta à cor inicial */
+    color: #3B82F6;
+    /* azul médio */
+  }
+}
+
+.main-page h1,
+.main-page p {
+  animation: color-pulse 3s ease-in-out infinite;
+}
+
+.button-out {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-out:hover {
+  background-color: #ff0000;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-out:active {
+  transform: translateY(-1px);
+}
+
 .animate-border {
   position: relative;
 }
@@ -213,6 +266,32 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.login-card-with-background {
+  background-image: url('../images/logo.png');
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@keyframes pulse-shadow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.pulse-shadow {
+  will-change: box-shadow;
+
+  animation: pulse-shadow 5s ease-in-out infinite;
 }
 
 .bot-reponse-bg {
@@ -272,12 +351,10 @@
   position: absolute;
   inset: 0;
   background: var(--toggle-bg);
-  background-image: linear-gradient(
-    -45deg,
-    rgba(20, 20, 20, 0.8) 0%,
-    rgba(30, 30, 30, 0.3) 50%,
-    rgba(20, 20, 20, 0.8) 100%
-  );
+  background-image: linear-gradient(-45deg,
+      rgba(20, 20, 20, 0.8) 0%,
+      rgba(30, 30, 30, 0.3) 50%,
+      rgba(20, 20, 20, 0.8) 100%);
   opacity: 1;
   transition: all var(--toggle-transition);
 }
@@ -285,11 +362,9 @@
 .neo-grid-layer {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(71, 80, 87, 0.05) 1px,
-      transparent 1px
-    ),
+      transparent 1px),
     linear-gradient(to bottom, rgba(71, 80, 87, 0.05) 1px, transparent 1px);
   background-size: 5px 5px;
   opacity: 0;
@@ -406,11 +481,9 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    var(--toggle-on-color) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      var(--toggle-on-color) 0%,
+      transparent 70%);
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.4s ease-out;
@@ -479,17 +552,17 @@
   transition: all var(--toggle-transition);
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-thumb {
+.neo-toggle-input:checked+.neo-toggle .neo-thumb {
   transform: translateX(calc(var(--toggle-width) - 38px));
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-thumb-ring {
+.neo-toggle-input:checked+.neo-toggle .neo-thumb-ring {
   background-color: var(--toggle-on-color);
   border-color: rgba(54, 249, 199, 0.3);
   box-shadow: 0 0 15px rgba(54, 249, 199, 0.5);
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-thumb-wave {
+.neo-toggle-input:checked+.neo-toggle .neo-thumb-wave {
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -497,61 +570,61 @@
   border: 1px solid #fff;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-thumb-pulse {
+.neo-toggle-input:checked+.neo-toggle .neo-thumb-pulse {
   transform: scale(1.2);
   opacity: 0.3;
   animation: neo-pulse 1.5s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-track-highlight {
+.neo-toggle-input:checked+.neo-toggle .neo-track-highlight {
   background: linear-gradient(90deg, transparent, rgba(54, 249, 199, 0.2));
   opacity: 1;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-grid-layer {
+.neo-toggle-input:checked+.neo-toggle .neo-grid-layer {
   opacity: 1;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-analyzer {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-analyzer {
   opacity: 1;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-bar:nth-child(1) {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-bar:nth-child(1) {
   animation: neo-spectrum 0.9s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-bar:nth-child(2) {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-bar:nth-child(2) {
   animation: neo-spectrum 0.8s 0.1s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-bar:nth-child(3) {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-bar:nth-child(3) {
   animation: neo-spectrum 1.1s 0.2s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-bar:nth-child(4) {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-bar:nth-child(4) {
   animation: neo-spectrum 0.7s 0.1s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-spectrum-bar:nth-child(5) {
+.neo-toggle-input:checked+.neo-toggle .neo-spectrum-bar:nth-child(5) {
   animation: neo-spectrum 0.9s 0.15s infinite;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-status-dot {
+.neo-toggle-input:checked+.neo-toggle .neo-status-dot {
   background-color: var(--toggle-on-color);
   box-shadow: 0 0 8px var(--toggle-on-color);
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-status-text {
+.neo-toggle-input:checked+.neo-toggle .neo-status-text {
   color: var(--toggle-on-color);
   content: "ACTIVE";
 }
 
-.neo-toggle-input:checked + .neo-toggle + .neo-value-display {
+.neo-toggle-input:checked+.neo-toggle+.neo-value-display {
   opacity: 1;
   transform: translateY(0);
 }
 
-.neo-toggle-input:checked + .neo-toggle + .neo-value-display .neo-value-text {
+.neo-toggle-input:checked+.neo-toggle+.neo-value-display .neo-value-text {
   color: var(--toggle-on-color);
 }
 
@@ -559,8 +632,8 @@
   transform: scale(1.05);
 }
 
-.neo-toggle-input:not(:checked) + .neo-toggle:hover .neo-thumb-wave::before,
-.neo-toggle-input:not(:checked) + .neo-toggle:hover .neo-thumb-wave::after {
+.neo-toggle-input:not(:checked)+.neo-toggle:hover .neo-thumb-wave::before,
+.neo-toggle-input:not(:checked)+.neo-toggle:hover .neo-thumb-wave::after {
   opacity: 1;
 }
 
@@ -577,10 +650,12 @@
     transform: scale(1);
     opacity: 0.5;
   }
+
   50% {
     transform: scale(1.5);
     opacity: 0.2;
   }
+
   100% {
     transform: scale(1);
     opacity: 0.5;
@@ -591,9 +666,11 @@
   0% {
     height: 3px;
   }
+
   50% {
     height: 8px;
   }
+
   100% {
     height: 3px;
   }
@@ -614,11 +691,11 @@
     transform 1s ease;
 }
 
-.neo-toggle-input:checked + .neo-toggle .neo-status-text::before {
+.neo-toggle-input:checked+.neo-toggle .neo-status-text::before {
   content: "ACTIVE";
 }
 
-.neo-toggle-input:not(:checked) + .neo-toggle .neo-status-text::before {
+.neo-toggle-input:not(:checked)+.neo-toggle .neo-status-text::before {
   content: "STANDBY";
 }
 
@@ -672,26 +749,51 @@
 }
 
 @keyframes rotateX {
-  from { transform: rotateX(0deg); }
-  to { transform: rotateX(360deg); }
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
 }
 
 @keyframes rotateY {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 @keyframes rotateZ {
-  from { transform: rotateZ(0deg); }
-  to { transform: rotateZ(360deg); }
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes rotateDiagonal1 {
-  from { transform: rotate3d(1, 1, 0, 0deg); }
-  to { transform: rotate3d(1, 1, 0, 360deg); }
+  from {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
 }
 
 @keyframes rotateDiagonal2 {
-  from { transform: rotate3d(-1, 1, 0, 0deg); }
-  to { transform: rotate3d(-1, 1, 0, 360deg); }
+  from {
+    transform: rotate3d(-1, 1, 0, 0deg);
+  }
+
+  to {
+    transform: rotate3d(-1, 1, 0, 360deg);
+  }
 }
